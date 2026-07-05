@@ -21,17 +21,6 @@ export default function HomeScreen({
         <div className="home-hero">
           <div className="home-icon">⚛️</div>
           <h1>React Interview Quiz</h1>
-          <p>
-            Nauka pytań rekrutacyjnych z React na podstawie repozytorium{' '}
-            <a
-              href="https://github.com/sudheerj/reactjs-interview-questions"
-              target="_blank"
-              rel="noreferrer"
-            >
-              sudheerj/reactjs-interview-questions
-            </a>
-            .
-          </p>
         </div>
 
         <div className="home-actions">
