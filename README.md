@@ -1,10 +1,16 @@
 # React Interview Quiz
 
-Aplikacja do nauki pytań rekrutacyjnych z React — w stylu quizu z pytaniami i odpowiedziami.
+A quiz app for practicing React interview questions.
 
-Źródło pytań: [sudheerj/reactjs-interview-questions](https://github.com/sudheerj/reactjs-interview-questions)
+## Credits & license
 
-## Uruchomienie (Git Bash)
+Question and answer content is derived from
+[sudheerj/reactjs-interview-questions](https://github.com/sudheerj/reactjs-interview-questions)
+by Sudheer Jonna, used under the MIT License. The full copyright notice and
+license text are reproduced in [ATTRIBUTION.md](./ATTRIBUTION.md), as required
+by the MIT License.
+
+## Run locally (Git Bash)
 
 ```bash
 cd /c/Users/Tomasz/react-interview-quiz
@@ -12,9 +18,9 @@ npm install
 npm run dev
 ```
 
-Aplikacja będzie dostępna pod adresem `http://localhost:5173`.
+The app will be available at `http://localhost:5173`.
 
-## Aktualizacja pytań z GitHub
+## Update questions from GitHub
 
 ```bash
 cd /c/Users/Tomasz/react-interview-quiz
@@ -22,11 +28,13 @@ rm scripts/README.md
 npm run parse
 ```
 
-## Funkcje
+## Features
 
-- 400+ pytań z odpowiedziami
-- Każde pytanie ma 3 opcje: 1 poprawna i 2 błędne (A/B/C)
-- Nauka wszystkich pytań lub wybranej kategorii
-- Sprawdzanie odpowiedzi i pełne wyjaśnienie po weryfikacji
-- Oznaczanie trudnych pytań (zapis w `localStorage`)
-- Nawigacja: poprzednie / następne pytanie
+- 400+ questions with answers, tags and difficulty
+- Each question has 4 options (A/B/C/D): 1 correct and 3 incorrect
+- Practice all questions or a selected category
+- Answer checking, key points and full explanation after verification
+- Resume where you left off + track passed questions (saved in `localStorage`)
+- "Start over" from question 1
+- Mark difficult questions (saved in `localStorage`)
+- Navigation: previous / next question
