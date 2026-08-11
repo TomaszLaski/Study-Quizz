@@ -223,8 +223,20 @@
   color: #90a4ae;
 }
 
+.home-author {
+  margin: 0 0 10px;
+  color: #455a64;
+  font-weight: 600;
+}
+
 .home-credit a {
-  color: #1565c0;
+  color: #0d47a1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.home-credit a:hover {
+  text-decoration: underline;
 }
 
 .category-grid h2 {

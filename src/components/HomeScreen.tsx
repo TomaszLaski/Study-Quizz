@@ -199,6 +199,16 @@ export default function HomeScreen({
         )}
 
         <footer className="home-credit">
+          <p className="home-author">
+            Autor:{' '}
+            <a
+              href="https://www.linkedin.com/in/tomasz-%C5%82aski-7888b2185/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Tomasz Łaski
+            </a>
+          </p>
           {course.id === 'jsm' ? (
             <>
               Źródło: przykładowe pytania egzaminacyjne PZŻ (Jachtowy Sternik Morski) + klucz
