@@ -208,11 +208,6 @@ export default function QuizScreen({
                   )}
                 </div>
               )}
-              {current.needsReview && (
-                <p className="figure-review-note" role="note">
-                  Do weryfikacji: {current.needsReview}
-                </p>
-              )}
               {current.tags.length > 0 && (
                 <ul className="tag-list" aria-label="Tags">
                   {current.tags.map((tag) => (

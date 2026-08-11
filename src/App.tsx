@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import reactQuestionsData from './data/questions.json';
 import jsmQuestionsData from './data/jsm-questions.json';
 import patternsQuestionsData from './data/patterns-questions.json';
@@ -14,6 +14,17 @@ const QUESTIONS_BY_COURSE: Record<CourseId, Question[]> = {
   jsm: jsmQuestionsData as Question[],
   patterns: patternsQuestionsData as Question[],
 };
+
+/** Share-only JSM entry: #/jsm or ?course=jsm — no way back to other courses. */
+function getStandaloneCourse(): CourseId | null {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('course') === 'jsm') return 'jsm';
+
+  const hash = window.location.hash.replace(/^#\/?/, '').toLowerCase();
+  if (hash === 'jsm' || hash.startsWith('jsm/')) return 'jsm';
+
+  return null;
+}
 
 function storageKey(course: CourseId, kind: 'difficult' | 'passed' | 'last') {
   return `quiz-${course}-${kind}`;
@@ -42,13 +53,28 @@ function loadLastId(course: CourseId): number | null {
 }
 
 export default function App() {
-  const [screen, setScreen] = useState<'courses' | 'home' | 'quiz'>('courses');
-  const [courseId, setCourseId] = useState<CourseId | null>(null);
+  const standaloneCourse = useMemo(() => getStandaloneCourse(), []);
+  const [screen, setScreen] = useState<'courses' | 'home' | 'quiz'>(
+    standaloneCourse ? 'home' : 'courses',
+  );
+  const [courseId, setCourseId] = useState<CourseId | null>(standaloneCourse);
   const [activeQuestions, setActiveQuestions] = useState<Question[]>([]);
   const [startIndex, setStartIndex] = useState(0);
-  const [difficultIds, setDifficultIds] = useState<number[]>([]);
-  const [passedIds, setPassedIds] = useState<number[]>([]);
-  const [lastId, setLastId] = useState<number | null>(null);
+  const [difficultIds, setDifficultIds] = useState<number[]>(() =>
+    standaloneCourse ? loadIds(storageKey(standaloneCourse, 'difficult')) : [],
+  );
+  const [passedIds, setPassedIds] = useState<number[]>(() =>
+    standaloneCourse ? loadIds(storageKey(standaloneCourse, 'passed')) : [],
+  );
+  const [lastId, setLastId] = useState<number | null>(() =>
+    standaloneCourse ? loadLastId(standaloneCourse) : null,
+  );
+
+  useEffect(() => {
+    if (standaloneCourse === 'jsm') {
+      document.title = 'Jachtowy Sternik Morski — Study Quizz';
+    }
+  }, [standaloneCourse]);
 
   const course = useMemo(
     () => COURSES.find((c) => c.id === courseId) ?? null,
@@ -90,11 +116,12 @@ export default function App() {
   }, []);
 
   const backToCourses = useCallback(() => {
+    if (standaloneCourse) return;
     setScreen('courses');
     setCourseId(null);
     setActiveQuestions([]);
     setStartIndex(0);
-  }, []);
+  }, [standaloneCourse]);
 
   const startQuiz = useCallback((questions: Question[], index = 0) => {
     if (questions.length === 0) return;
@@ -181,6 +208,10 @@ export default function App() {
   }, []);
 
   if (screen === 'courses') {
+    if (standaloneCourse) {
+      // Should not happen — keep user inside locked course
+      return null;
+    }
     return <CoursePicker onSelect={selectCourse} counts={courseCounts} />;
   }
 
@@ -201,6 +232,7 @@ export default function App() {
   }
 
   if (!course) {
+    if (standaloneCourse) return null;
     return <CoursePicker onSelect={selectCourse} counts={courseCounts} />;
   }
 
@@ -214,6 +246,7 @@ export default function App() {
       hasProgress={hasProgress}
       resumeNumber={resumeIndex + 1}
       requiresScope={course.requiresScope}
+      hideBack={Boolean(standaloneCourse)}
       onBack={backToCourses}
       onContinue={continueAll}
       onStartOver={startOver}

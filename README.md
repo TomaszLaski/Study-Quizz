@@ -45,6 +45,11 @@ Przykładowe pytania egzaminacyjne PZŻ z kluczem odpowiedzi — wybór zakresu 
 
 https://tomaszlaski.github.io/Study-Quizz/
 
+**Tylko JSM (do udostępniania):**  
+https://tomaszlaski.github.io/Study-Quizz/#/jsm  
+
+Ten link otwiera od razu Jachtowy Sternik Morski — bez wyboru innych kursów i bez przycisku powrotu do listy kursów. Z głównej strony nadal możesz wejść w JSM jak dotychczas.
+
 Deploy: push na `main` → GitHub Actions (Settings → Pages → Source: GitHub Actions).
 
 ## Lokalnie
@@ -54,4 +59,5 @@ npm install
 npm run dev
 ```
 
-Aplikacja: `http://127.0.0.1:5173/`
+Aplikacja: `http://127.0.0.1:5173/Study-Quizz/`  
+JSM standalone: `http://127.0.0.1:5173/Study-Quizz/#/jsm`

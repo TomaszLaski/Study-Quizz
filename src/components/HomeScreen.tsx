@@ -10,6 +10,7 @@ interface HomeScreenProps {
   hasProgress: boolean;
   resumeNumber: number;
   requiresScope: boolean;
+  hideBack?: boolean;
   onBack: () => void;
   onContinue: () => void;
   onStartOver: () => void;
@@ -27,6 +28,7 @@ export default function HomeScreen({
   hasProgress,
   resumeNumber,
   requiresScope,
+  hideBack = false,
   onBack,
   onContinue,
   onStartOver,
@@ -73,9 +75,11 @@ export default function HomeScreen({
   return (
     <div className="home-page">
       <div className="home-card">
-        <button type="button" className="back-link" onClick={onBack}>
-          ← Wybór kursu
-        </button>
+        {!hideBack && (
+          <button type="button" className="back-link" onClick={onBack}>
+            ← Wybór kursu
+          </button>
+        )}
 
         <div className="home-hero">
           <div className="home-icon">{course.icon}</div>

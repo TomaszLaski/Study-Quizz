@@ -199,17 +199,6 @@
   max-height: 200px;
 }
 
-.figure-review-note {
-  margin: 12px 0 0;
-  padding: 8px 10px;
-  font-size: 0.8rem;
-  line-height: 1.4;
-  color: #5d4037;
-  background: #fff8e1;
-  border: 1px solid #ffe082;
-  border-radius: 4px;
-}
-
 .options-list {
   display: flex;
   flex-direction: column;
