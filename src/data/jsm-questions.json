@@ -268,7 +268,7 @@
     "shortAnswer": "Krętlik z widełkami/szeklą łączący bezpośrednio trzon kotwicy z łańcuchem",
     "answer": "**Poprawna odpowiedź: C.**\n\nKrętlik z widełkami/szeklą łączący bezpośrednio trzon kotwicy z łańcuchem",
     "keyPoints": [
-      "Krętlik z widełkami/szeklą — łączy bezpośrednio trzon kotwicy z łańcuchem"
+      "Wg PDF: C (w arkuszu ze znakiem ?)"
     ],
     "codeExamples": [],
     "tags": [
@@ -298,7 +298,8 @@
       "jsm-figures/q8-a.png",
       "jsm-figures/q8-b.png",
       "jsm-figures/q8-c.png"
-    ]
+    ],
+    "needsReview": "W PDF odpowied? oznaczona jako 8-C? (ze znakiem zapytania)."
   },
   {
     "id": 9,
@@ -307,10 +308,10 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Która z pokazanych kotwic ma największą siłę trzymania? (w oryginale: rysunki A/B/C)",
-    "shortAnswer": "Kotwica pługowa / Bruce (największa uniwersalna siła trzymania)",
-    "answer": "**Poprawna odpowiedź: B.**\n\nKotwica pługowa / Bruce (największa uniwersalna siła trzymania)",
+    "shortAnswer": "Kotwica Danfortha (p?etwa)",
+    "answer": "**Poprawna odpowied?: C.**\n\nKotwica Danfortha (p?etwa)\n\n(Litera wg PDF z odpowiedziami.)",
     "keyPoints": [
-      "Kotwica pługowa/Bruce ma największą uniwersalną siłę trzymania"
+      "Wg PDF z odpowiedziami: C ? kotwica Danfortha"
     ],
     "codeExamples": [],
     "tags": [
@@ -321,18 +322,18 @@
     "options": [
       {
         "label": "A",
-        "text": "Kotwica admiralicji (patent / stock)",
+        "text": "Kotwica bezstockowa (np. Halla)",
         "correct": false
       },
       {
         "label": "B",
-        "text": "Kotwica pługowa / Bruce (największa uniwersalna siła trzymania)",
-        "correct": true
+        "text": "Kotwica p?ugowa CQR",
+        "correct": false
       },
       {
         "label": "C",
-        "text": "Kotwica grzybkowa / rzeczna",
-        "correct": false
+        "text": "Kotwica Danfortha (p?etwa)",
+        "correct": true
       }
     ],
     "correctUnknown": false,
@@ -608,8 +609,8 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Bateria akumulatorów (12 V) o pojemności ok. 200 Ah jest prawie całkowicie rozładowana. Ile godzin należy prawidłowo ją ładować, jeżeli generator ma moc ok. 0,48 kW?",
-    "shortAnswer": "Ok. 5 godzin prądem 40 A",
-    "answer": "**Poprawna odpowiedź: C.**\n\nOk. 5 godzin prądem 40 A",
+    "shortAnswer": "Ok. 10 godzin prądem 20 A",
+    "answer": "**Poprawna odpowied?: A.**\n\nOk. 10 godzin prądem 20 A",
     "keyPoints": [
       "0,48 kW / 12 V = 40 A → 200 Ah / 40 A ≈ 5 h"
     ],
@@ -623,7 +624,7 @@
       {
         "label": "A",
         "text": "Ok. 10 godzin prądem 20 A",
-        "correct": false
+        "correct": true
       },
       {
         "label": "B",
@@ -633,7 +634,7 @@
       {
         "label": "C",
         "text": "Ok. 5 godzin prądem 40 A",
-        "correct": true
+        "correct": false
       }
     ],
     "correctUnknown": false
@@ -1052,8 +1053,8 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Przy odbiorze pirotechniki ( na rejs pełnomorski) przekazano 8 rakiet czerwonych i pławkę \"pomarańczowy dym\". Czy jest to stan zgodny z",
-    "shortAnswer": "Nie",
-    "answer": "**Poprawna odpowiedź: B.**\n\nNie",
+    "shortAnswer": "Tak, o ile posiadają aktualną datę ważności",
+    "answer": "**Poprawna odpowied?: C.**\n\nTak, o ile posiadają aktualną datę ważności",
     "keyPoints": [
       "Wyposażenie pirotechniczne na rejs pełnomorski jest większe (por. pyt. 299)"
     ],
@@ -1072,12 +1073,12 @@
       {
         "label": "B",
         "text": "Nie",
-        "correct": true
+        "correct": false
       },
       {
         "label": "C",
         "text": "Tak, o ile posiadają aktualną datę ważności",
-        "correct": false
+        "correct": true
       }
     ],
     "correctUnknown": false
@@ -1908,8 +1909,8 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Dysponujemy TYLKO atlasem pływów i mapą danego akwenu. Czy jesteśmy w stanie ustalić kierunek i szybkość prądu dla danego momentu żeglugi?",
-    "shortAnswer": "Tak, na mapie są podane punkty (romby z literą) pozwalajace na znalezienie w tabeli kierunku i szybkości prądu.",
-    "answer": "**Poprawna odpowiedź: B.**\n\nTak, na mapie są podane punkty (romby z literą) pozwalajace na znalezienie w tabeli kierunku i szybkości prądu.",
+    "shortAnswer": "Nie",
+    "answer": "**Poprawna odpowied?: C.**\n\nNie",
     "keyPoints": [
       "Romby na mapie + tabela prądów, odniesione do godziny HW z tablic"
     ],
@@ -1928,12 +1929,12 @@
       {
         "label": "B",
         "text": "Tak, na mapie są podane punkty (romby z literą) pozwalajace na znalezienie w tabeli kierunku i szybkości prądu.",
-        "correct": true
+        "correct": false
       },
       {
         "label": "C",
         "text": "Nie",
-        "correct": false
+        "correct": true
       }
     ],
     "correctUnknown": false
@@ -2355,10 +2356,11 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Jedna kratka na rysunku ( między strzałkami) odpowiada 0,5 sek. (kolor żółty- światło, kolor czarny-przerwa) Określić rodaj i okres tego światła?",
-    "shortAnswer": "Błyskowe, okres 2 sek. (Fl)",
-    "answer": "**Poprawna odpowiedź: A.**\n\nBłyskowe, okres 2 sek. (Fl)",
+    "shortAnswer": "Migające (Q)",
+    "answer": "**Poprawna odpowied?: B.**\n\nMigające (Q)",
     "keyPoints": [
-      "Krótki błysk 0,5 s + przerwa 1,5 s → Fl, okres 2 s"
+      "R?wne odcinki ?wiat?o/przerwa 0,5 s ? ?wiat?o migaj?ce (Q)",
+      "Wg PDF z odpowiedziami: B"
     ],
     "codeExamples": [],
     "tags": [
@@ -2370,12 +2372,12 @@
       {
         "label": "A",
         "text": "Błyskowe, okres 2 sek. (Fl)",
-        "correct": true
+        "correct": false
       },
       {
         "label": "B",
         "text": "Migające (Q)",
-        "correct": false
+        "correct": true
       },
       {
         "label": "C",
@@ -2732,8 +2734,8 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Po której stronie należy mijać taką pławę (system kardynalny)?",
-    "shortAnswer": "Po jej stronie północnej",
-    "answer": "**Poprawna odpowiedź: A.**\n\nPo jej stronie północnej",
+    "shortAnswer": "Po jej stronie zachodniej",
+    "answer": "**Poprawna odpowied?: B.**\n\nPo jej stronie zachodniej",
     "keyPoints": [
       "Znak kardynalny północny — mijać od strony północnej"
     ],
@@ -2747,12 +2749,12 @@
       {
         "label": "A",
         "text": "Po jej stronie północnej",
-        "correct": true
+        "correct": false
       },
       {
         "label": "B",
         "text": "Po jej stronie zachodniej",
-        "correct": false
+        "correct": true
       },
       {
         "label": "C",
@@ -3253,9 +3255,11 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Na rysunku pokazano diagram kierunku i prędkości wiatru dla jednej doby ( godziny od 08.00 do 08.00). Prognoza ICM. Jak zmieni się kierunek wiatru w ciągu tej doby?\"",
-    "shortAnswer": null,
-    "answer": "Oficjalny klucz odpowiedzi nie jest dołączony do przykładowego arkusza PZŻ. Porównaj wybraną odpowiedź z materiałami szkoleniowymi / podręcznikiem.",
-    "keyPoints": [],
+    "shortAnswer": "na początku okresu SE 30B na końcu S-SW 2°B",
+    "answer": "**Poprawna odpowied?: A.**\n\nna początku okresu SE 30B na końcu S-SW 2°B",
+    "keyPoints": [
+      "Wg PDF z odpowiedziami: A"
+    ],
     "codeExamples": [],
     "tags": [
       "jsm",
@@ -3266,7 +3270,7 @@
       {
         "label": "A",
         "text": "na początku okresu SE 30B na końcu S-SW 2°B",
-        "correct": false
+        "correct": true
       },
       {
         "label": "B",
@@ -3279,9 +3283,9 @@
         "correct": false
       }
     ],
-    "correctUnknown": true,
+    "correctUnknown": false,
     "figure": "jsm-figures/q88.png",
-    "needsReview": "Diagram w skanie nieczytelny; brak oficjalnego klucza (correctUnknown)."
+    "needsReview": "Odpowied? A wg PDF z odpowiedziami; diagram w skanie s?abo czytelny ? warto potwierdzi? z rysunku."
   },
   {
     "id": 89,
@@ -3916,7 +3920,7 @@
   {
     "id": 106,
     "sourceNum": 106,
-    "category": "MPZZM (przepisy)",
+    "category": "Meteorologia",
     "course": "jsm",
     "difficulty": "medium",
     "question": "Ile wynosi wilgotność względna powietrza zawierającego 5 g pary wodnej/m3 jeżeli w danej temperaturze ilość pary nasycającej 1 m3 powietrza",
@@ -3928,7 +3932,7 @@
     "codeExamples": [],
     "tags": [
       "jsm",
-      "MPZZM (przepisy)"
+      "Meteorologia"
     ],
     "relatedQuestions": [],
     "options": [
@@ -3990,7 +3994,7 @@
   {
     "id": 108,
     "sourceNum": 108,
-    "category": "MPZZM (przepisy)",
+    "category": "Meteorologia",
     "course": "jsm",
     "difficulty": "medium",
     "question": "W komunikacie meteorologicznym podano, że nad środkowym Bałtykiem będzie przemieszczał się front chłodny z zachodu na wschód. Jakiej pogody",
@@ -4002,7 +4006,7 @@
     "codeExamples": [],
     "tags": [
       "jsm",
-      "MPZZM (przepisy)"
+      "Meteorologia"
     ],
     "relatedQuestions": [],
     "options": [
@@ -4253,12 +4257,11 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Na kursie zaobserwowano światła jak na rysunku. Jak należy postapić?",
-    "shortAnswer": "Dwa czerwone + białe (kotwiczne) = statek na mieliźnie. Sprawdzić położenie na mapie i głębokości; ominąć biorąc pod uwagę głębokości.",
-    "answer": "**Poprawna odpowiedź: C.**\n\nNa rysunku widać **dwa światła czerwone w linii pionowej** oraz **białe światło kotwiczne** z przodu — to oznakowanie **statku na mieliźnie** (nie trzech czerwonych = ograniczony zanurzeniem).\n\nNależy sprawdzić położenie na mapie i głębokości oraz ominąć biorąc pod uwagę głębokości.",
+    "shortAnswer": "Sprawdzi? po?o?enie na mapie i g??boko?ci. Omin?? bior?c pod uwag? g??boko?ci.",
+    "answer": "**Poprawna odpowied?: C.**\n\nNa rysunku: dwa ?wiat?a czerwone w linii pionowej oraz bia?e ?wiat?o kotwiczne ? oznakowanie typowe dla **statku na mieli?nie**. Nale?y sprawdzi? po?o?enie na mapie i g??boko?ci oraz omin?? bior?c je pod uwag?.\n\n(Trzy czerwone w pionie bez bia?ego kotwicznego oznacza?yby statek ograniczony zanurzeniem.)",
     "keyPoints": [
-      "Dwa czerwone w pionie + białe (kotwiczne) = statek na mieliźnie",
-      "Trzy czerwone w pionie (bez białego kotwicznego) = ograniczony zanurzeniem",
-      "Ominąć z uwzględnieniem głębokości / mapy"
+      "Dwa czerwone w pionie + bia?e (kotwiczne) = statek na mieli?nie",
+      "Sprawdzi? map? i g??boko?ci; omin?? z ich uwzgl?dnieniem"
     ],
     "codeExamples": [],
     "tags": [
@@ -4284,8 +4287,7 @@
       }
     ],
     "correctUnknown": false,
-    "figure": "jsm-figures/q115.png",
-    "needsReview": "Klucz MD m?wi? o 3 czerwonych (ograniczony zanurzeniem), ale rysunek w arkuszu ma 2 czerwone + bia?e (= na mieli?nie). Litera C zostawiona ? pasuje do mielizny. Zweryfikuj z instruktorem."
+    "figure": "jsm-figures/q115.png"
   },
   {
     "id": 116,
@@ -4369,8 +4371,8 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Wody śródlądowe. Statek pasażerski nadał serię podwójnych krótkich dźwięków. Co to oznacza?",
-    "shortAnswer": "Człowiek za burtą",
-    "answer": "**Poprawna odpowiedź: C.**\n\nCzłowiek za burtą",
+    "shortAnswer": "Niebezpieczeństwo zderzenia",
+    "answer": "**Poprawna odpowied?: B.**\n\nNiebezpieczeństwo zderzenia",
     "keyPoints": [
       "Sygnał podwójnych krótkich dźwięków — „człowiek za burtą\""
     ],
@@ -4389,12 +4391,12 @@
       {
         "label": "B",
         "text": "Niebezpieczeństwo zderzenia",
-        "correct": false
+        "correct": true
       },
       {
         "label": "C",
         "text": "Człowiek za burtą",
-        "correct": true
+        "correct": false
       }
     ],
     "correctUnknown": false
@@ -5827,7 +5829,7 @@
   {
     "id": 157,
     "sourceNum": 157,
-    "category": "MPZZM (przepisy)",
+    "category": "Nawigacja",
     "course": "jsm",
     "difficulty": "medium",
     "question": "Na jachcie mamy ploter z funkcją MOB. Jakie informacje z tego urządzenia będą nam NAJBARDZIEJ przydatne w przypadku manewru \"człowiek za burtą\", po wciśnięciu przycisku MOB.",
@@ -5839,7 +5841,7 @@
     "codeExamples": [],
     "tags": [
       "jsm",
-      "MPZZM (przepisy)"
+      "Nawigacja"
     ],
     "relatedQuestions": [],
     "options": [
@@ -5864,7 +5866,7 @@
   {
     "id": 158,
     "sourceNum": 158,
-    "category": "MPZZM (przepisy)",
+    "category": "Nawigacja",
     "course": "jsm",
     "difficulty": "medium",
     "question": "Czy mapy w rzucie Merkatora sa wiernoodległościowe?",
@@ -5876,7 +5878,7 @@
     "codeExamples": [],
     "tags": [
       "jsm",
-      "MPZZM (przepisy)"
+      "Nawigacja"
     ],
     "relatedQuestions": [],
     "options": [
@@ -5938,7 +5940,7 @@
   {
     "id": 160,
     "sourceNum": 160,
-    "category": "MPZZM (przepisy)",
+    "category": "Nawigacja",
     "course": "jsm",
     "difficulty": "medium",
     "question": "Jak zamawiać potrzebne na rejs mapy?",
@@ -5950,7 +5952,7 @@
     "codeExamples": [],
     "tags": [
       "jsm",
-      "MPZZM (przepisy)"
+      "Nawigacja"
     ],
     "relatedQuestions": [],
     "options": [
@@ -5975,7 +5977,7 @@
   {
     "id": 161,
     "sourceNum": 161,
-    "category": "MPZZM (przepisy)",
+    "category": "Nawigacja",
     "course": "jsm",
     "difficulty": "medium",
     "question": "Jak należy odmierzać odległości na mapie w rzucie Merkatora?",
@@ -5987,7 +5989,7 @@
     "codeExamples": [],
     "tags": [
       "jsm",
-      "MPZZM (przepisy)"
+      "Nawigacja"
     ],
     "relatedQuestions": [],
     "options": [
@@ -6012,7 +6014,7 @@
   {
     "id": 162,
     "sourceNum": 162,
-    "category": "MPZZM (przepisy)",
+    "category": "Nawigacja",
     "course": "jsm",
     "difficulty": "medium",
     "question": "Największy wpływ na dryf jachtu - poprawkę na wiatr mają?",
@@ -6024,7 +6026,7 @@
     "codeExamples": [],
     "tags": [
       "jsm",
-      "MPZZM (przepisy)"
+      "Nawigacja"
     ],
     "relatedQuestions": [],
     "options": [
@@ -6049,7 +6051,7 @@
   {
     "id": 163,
     "sourceNum": 163,
-    "category": "MPZZM (przepisy)",
+    "category": "Nawigacja",
     "course": "jsm",
     "difficulty": "medium",
     "question": "Jacht z pozycji Ş = 54° 35` N i Š = 24° 10` E przepłynął kursem KDd = 000° na pozycję Ş = 54° 39` N i Š = 24° 10` E. Ile Mm przebył?",
@@ -6061,7 +6063,7 @@
     "codeExamples": [],
     "tags": [
       "jsm",
-      "MPZZM (przepisy)"
+      "Nawigacja"
     ],
     "relatedQuestions": [],
     "options": [
@@ -6127,9 +6129,11 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Godzina 15.00, pozycja jachtu na mapie w pobliżu znaku \"A\". W tablicach pływów znaleziono, że wysoka woda w Dover będzie o godzinie 18.04,",
-    "shortAnswer": null,
-    "answer": "Oficjalny klucz odpowiedzi nie jest dołączony do przykładowego arkusza PZŻ. Porównaj wybraną odpowiedź z materiałami szkoleniowymi / podręcznikiem.",
-    "keyPoints": [],
+    "shortAnswer": "224°, 2,5 węzła",
+    "answer": "**Poprawna odpowied?: C.**\n\n224°, 2,5 węzła",
+    "keyPoints": [
+      "Wg PDF z odpowiedziami: C"
+    ],
     "codeExamples": [],
     "tags": [
       "jsm",
@@ -6150,11 +6154,11 @@
       {
         "label": "C",
         "text": "224°, 2,5 węzła",
-        "correct": false
+        "correct": true
       }
     ],
-    "correctUnknown": true,
-    "needsReview": "Diagram w skanie nieczytelny; brak oficjalnego klucza (correctUnknown)."
+    "correctUnknown": false,
+    "needsReview": "Odpowied? wg PDF z odpowiedziami; diagram w skanie s?abo czytelny ? warto potwierdzi? z rysunku."
   },
   {
     "id": 166,
@@ -8088,8 +8092,8 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Kompletujemy załogę na rejs pełnomorski. Czy w składzie załogi musi być osoba posiadająca świadectwo radiooperatora?",
-    "shortAnswer": "Tylko w przypadku kiedy jacht jest wyposażony w radiotelefon UKF",
-    "answer": "**Poprawna odpowiedź: B.**\n\nTylko w przypadku kiedy jacht jest wyposażony w radiotelefon UKF",
+    "shortAnswer": "Tak, bo na jachcie musi być radiotelefon UKF",
+    "answer": "**Poprawna odpowied?: A.**\n\nTak, bo na jachcie musi być radiotelefon UKF",
     "keyPoints": [
       "Świadectwo wymagane tylko, gdy jacht ma radiotelefon UKF"
     ],
@@ -8103,12 +8107,12 @@
       {
         "label": "A",
         "text": "Tak, bo na jachcie musi być radiotelefon UKF",
-        "correct": false
+        "correct": true
       },
       {
         "label": "B",
         "text": "Tylko w przypadku kiedy jacht jest wyposażony w radiotelefon UKF",
-        "correct": true
+        "correct": false
       },
       {
         "label": "C",
@@ -8866,8 +8870,8 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Czy na jachtach dopuszcza się brak map papierowych ?",
-    "shortAnswer": "Tak o ile system obsługujacy mapy wektorowe będzie zdublowany.",
-    "answer": "**Poprawna odpowiedź: C.**\n\nTak o ile system obsługujacy mapy wektorowe będzie zdublowany.",
+    "shortAnswer": "Nie, w żadnym wypadku",
+    "answer": "**Poprawna odpowied?: B.**\n\nNie, w żadnym wypadku",
     "keyPoints": [
       "Dopuszczalne przy zdublowanym systemie map wektorowych"
     ],
@@ -8886,12 +8890,12 @@
       {
         "label": "B",
         "text": "Nie, w żadnym wypadku",
-        "correct": false
+        "correct": true
       },
       {
         "label": "C",
         "text": "Tak o ile system obsługujacy mapy wektorowe będzie zdublowany.",
-        "correct": true
+        "correct": false
       }
     ],
     "correctUnknown": false
@@ -9569,8 +9573,8 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Jakie środki bezpieczeństwa osobistego i w jakiej ilości powinny być na jachcie (bandera polska)?",
-    "shortAnswer": "Pasy ratunkowe dla całej załogi, Pasy bezpieczeństwa dla całej załogi",
-    "answer": "**Poprawna odpowiedź: A.**\n\nPasy ratunkowe dla całej załogi, Pasy bezpieczeństwa dla całej załogi",
+    "shortAnswer": "Pasy ratunkowe dla całej załogi + 1, pasy bezpieczeństwa co najmniej dla połowy załogi",
+    "answer": "**Poprawna odpowied?: C.**\n\nPasy ratunkowe dla całej załogi + 1, pasy bezpieczeństwa co najmniej dla połowy załogi",
     "keyPoints": [
       "Pasy ratunkowe i pasy bezpieczeństwa dla całej załogi"
     ],
@@ -9584,7 +9588,7 @@
       {
         "label": "A",
         "text": "Pasy ratunkowe dla całej załogi, Pasy bezpieczeństwa dla całej załogi",
-        "correct": true
+        "correct": false
       },
       {
         "label": "B",
@@ -9594,7 +9598,7 @@
       {
         "label": "C",
         "text": "Pasy ratunkowe dla całej załogi + 1, pasy bezpieczeństwa co najmniej dla połowy załogi",
-        "correct": false
+        "correct": true
       }
     ],
     "correctUnknown": false
@@ -9865,8 +9869,8 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "W przypadku wypadnięcia człowieka za burtę oficer (członek załogi) wachtowy w pierwszej kolejności powinien wykonać następujące czynności (jacht pod żaglami):",
-    "shortAnswer": "Ogłosić alarm, rzucić środki ratunkowe (koło lub t.p.), wcisnąć przycisk MOB (GPS, Ploter), uruchomić silnik, wyznaczyć natychmiast obserwatora, dalsze działanie pod komendą kapitana.",
-    "answer": "**Poprawna odpowiedź: A.**\n\nOgłosić alarm, rzucić środki ratunkowe (koło lub t.p.), wcisnąć przycisk MOB (GPS, Ploter), uruchomić silnik, wyznaczyć natychmiast obserwatora, dalsze działanie pod komendą kapitana.",
+    "shortAnswer": "Ogłosić alarm, rzucić środki ratunkowe (koło lub t.p.), obserwować człowieka, rozpocząć manewr pod żaglami, zapisać pozycje z GPS, dalsze działanie pod komendą kapitana",
+    "answer": "**Poprawna odpowied?: B.**\n\nOgłosić alarm, rzucić środki ratunkowe (koło lub t.p.), obserwować człowieka, rozpocząć manewr pod żaglami, zapisać pozycje z GPS, dalsze działanie pod komendą kapitana",
     "keyPoints": [
       "Alarm, koło, MOB na ploterze, silnik, obserwator — dalej wg komend kapitana"
     ],
@@ -9880,12 +9884,12 @@
       {
         "label": "A",
         "text": "Ogłosić alarm, rzucić środki ratunkowe (koło lub t.p.), wcisnąć przycisk MOB (GPS, Ploter), uruchomić silnik, wyznaczyć natychmiast obserwatora, dalsze działanie pod komendą kapitana.",
-        "correct": true
+        "correct": false
       },
       {
         "label": "B",
         "text": "Ogłosić alarm, rzucić środki ratunkowe (koło lub t.p.), obserwować człowieka, rozpocząć manewr pod żaglami, zapisać pozycje z GPS, dalsze działanie pod komendą kapitana",
-        "correct": false
+        "correct": true
       },
       {
         "label": "C",
@@ -11090,8 +11094,8 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Przy odbiorze pirotechniki ( na rejs pełnomorski) przekazano 8 rakiet czerwonych i pławkę \"pomarańczowy dym\". Czy jest to stan zgodny z przepisami (bandera polska)?",
-    "shortAnswer": "Nie",
-    "answer": "**Poprawna odpowiedź: B.**\n\nNie",
+    "shortAnswer": "Tak, o ile posiadają ważny atest (datę ważności)",
+    "answer": "**Poprawna odpowied?: A.**\n\nTak, o ile posiadają ważny atest (datę ważności)",
     "keyPoints": [
       "Zestaw niezgodny z wymaganiami dla rejsu pełnomorskiego"
     ],
@@ -11105,12 +11109,12 @@
       {
         "label": "A",
         "text": "Tak, o ile posiadają ważny atest (datę ważności)",
-        "correct": false
+        "correct": true
       },
       {
         "label": "B",
         "text": "Nie",
-        "correct": true
+        "correct": false
       },
       {
         "label": "C",
@@ -11312,8 +11316,8 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Czy jachty powinny mieć gwizdek (zgodny z wymaganiami MPZZM) do nadawania sygnałów dźwiękowych?",
-    "shortAnswer": "Tak, ale tylko dłuższe od 12 m; krótsze mogą mieć urządzenia nie odpowiadające normom MPZZM",
-    "answer": "**Poprawna odpowiedź: C.**\n\nTak, ale tylko dłuższe od 12 m; krótsze mogą mieć urządzenia nie odpowiadające normom MPZZM",
+    "shortAnswer": "Tak, wszystkie jachty powinny mieć takie urządzenie odpowiadające wymaganiom MPZZM",
+    "answer": "**Poprawna odpowied?: B.**\n\nTak, wszystkie jachty powinny mieć takie urządzenie odpowiadające wymaganiom MPZZM",
     "keyPoints": [
       "MPZZM praw. 33: obowiązek dla ≥12 m; krótsze — inne środki sygnalizacji"
     ],
@@ -11332,12 +11336,12 @@
       {
         "label": "B",
         "text": "Tak, wszystkie jachty powinny mieć takie urządzenie odpowiadające wymaganiom MPZZM",
-        "correct": false
+        "correct": true
       },
       {
         "label": "C",
         "text": "Tak, ale tylko dłuższe od 12 m; krótsze mogą mieć urządzenia nie odpowiadające normom MPZZM",
-        "correct": true
+        "correct": false
       }
     ],
     "correctUnknown": false
@@ -11345,19 +11349,19 @@
   {
     "id": 306,
     "sourceNum": 306,
-    "category": "MPZZM (przepisy)",
+    "category": "Sygnalizacja i łączność",
     "course": "jsm",
     "difficulty": "medium",
     "question": "Na kanale 16 nadano komunikat: All stations... x3, Seelonce distress. Chcemy nawiązać łączność z mariną, która pracuje na kanale 69. Czy zgodnie z przepisami możemy to zrobić?",
-    "shortAnswer": "Nawiązujemy łączność, bo cisza radiowa dotyczy tylko kanłu 16",
-    "answer": "**Poprawna odpowiedź: B.**\n\nNawiązujemy łączność, bo cisza radiowa dotyczy tylko kanłu 16",
+    "shortAnswer": "Słuchać na kanale 16 i jeżeli nastapi przerwa w korespondencji przejść na kanał 69 i nawiązać łączność.",
+    "answer": "**Poprawna odpowied?: C.**\n\nSłuchać na kanale 16 i jeżeli nastapi przerwa w korespondencji przejść na kanał 69 i nawiązać łączność.",
     "keyPoints": [
       "Cisza radiowa dotyczy kanału 16; łączność na 69 jest dopuszczalna"
     ],
     "codeExamples": [],
     "tags": [
       "jsm",
-      "MPZZM (przepisy)"
+      "Sygnalizacja i łączność"
     ],
     "relatedQuestions": [],
     "options": [
@@ -11369,12 +11373,12 @@
       {
         "label": "B",
         "text": "Nawiązujemy łączność, bo cisza radiowa dotyczy tylko kanłu 16",
-        "correct": true
+        "correct": false
       },
       {
         "label": "C",
         "text": "Słuchać na kanale 16 i jeżeli nastapi przerwa w korespondencji przejść na kanał 69 i nawiązać łączność.",
-        "correct": false
+        "correct": true
       }
     ],
     "correctUnknown": false
@@ -11382,7 +11386,7 @@
   {
     "id": 307,
     "sourceNum": 307,
-    "category": "MPZZM (przepisy)",
+    "category": "Sygnalizacja i łączność",
     "course": "jsm",
     "difficulty": "medium",
     "question": "Chcemy nawiązac łączność, ale na kanale 16 słyszymy korespondencję w niebezpieczeństwie, po pewnym czasie usłyszeliśmy komunikat: All stations.. x3, SEELONCE FEENEE. Co to oznacza?",
@@ -11394,7 +11398,7 @@
     "codeExamples": [],
     "tags": [
       "jsm",
-      "MPZZM (przepisy)"
+      "Sygnalizacja i łączność"
     ],
     "relatedQuestions": [],
     "options": [
@@ -11419,7 +11423,7 @@
   {
     "id": 308,
     "sourceNum": 308,
-    "category": "MPZZM (przepisy)",
+    "category": "Sygnalizacja i łączność",
     "course": "jsm",
     "difficulty": "medium",
     "question": "Jeden z członków załogi przypadkowo wcisnął przycisk radiotelefonu \"DISTRESS\". Co powinniśmy zrobić?",
@@ -11431,7 +11435,7 @@
     "codeExamples": [],
     "tags": [
       "jsm",
-      "MPZZM (przepisy)"
+      "Sygnalizacja i łączność"
     ],
     "relatedQuestions": [],
     "options": [

@@ -247,9 +247,11 @@ export default function QuizScreen({
                   ? isPl
                     ? 'Dobrze! To poprawna odpowiedź.'
                     : 'Correct! That is the right answer.'
-                  : isPl
-                    ? 'Nie tym razem — porównaj z wyjaśnieniem poniżej.'
-                    : 'Not this time — see the full explanation below.'}
+                  : isJsm
+                    ? 'Nie tym razem — poprawna odpowiedź jest podświetlona.'
+                    : isPl
+                      ? 'Nie tym razem — porównaj z wyjaśnieniem poniżej.'
+                      : 'Not this time — see the full explanation below.'}
               </div>
             )}
 
@@ -261,7 +263,7 @@ export default function QuizScreen({
               </div>
             )}
 
-            {checked && review.showKeyPoints && (
+            {checked && !isJsm && review.showKeyPoints && (
               <div className="keypoints-panel">
                 <h2>{isPl ? 'Najważniejsze punkty' : 'Key points'}</h2>
                 <ul className="keypoints-list">
@@ -272,7 +274,7 @@ export default function QuizScreen({
               </div>
             )}
 
-            {checked && review.showAnswer && (
+            {checked && !isJsm && review.showAnswer && (
               <div className="answer-panel">
                 <h2>{isPl ? 'Jak myśleć / wyjaśnienie' : 'Full explanation'}</h2>
                 <AnswerMarkdown content={review.answerContent} />

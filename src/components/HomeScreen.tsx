@@ -212,9 +212,7 @@ export default function HomeScreen({
           {course.id === 'jsm' ? (
             <>
               Źródło: przykładowe pytania egzaminacyjne PZŻ (Jachtowy Sternik Morski) + klucz
-              odpowiedzi. Po sprawdzeniu zobaczysz poprawną literę, uzasadnienie i punkty do
-              zapamiętania. Pytania 88 i 165 (nieczytelne diagramy w skanie) wymagają
-              weryfikacji z oryginałem.
+              odpowiedzi. Po sprawdzeniu zobaczysz poprawną literę (podświetloną).
             </>
           ) : isPatterns ? (
             <>
