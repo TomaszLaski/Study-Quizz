@@ -3280,7 +3280,8 @@
       }
     ],
     "correctUnknown": true,
-    "figure": "jsm-figures/q88.png"
+    "figure": "jsm-figures/q88.png",
+    "needsReview": "Diagram w skanie nieczytelny; brak oficjalnego klucza (correctUnknown)."
   },
   {
     "id": 89,
@@ -4252,10 +4253,12 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Na kursie zaobserwowano światła jak na rysunku. Jak należy postapić?",
-    "shortAnswer": "Sprawdzić położenie na mapie i głębokości. Ominąć biorąc pod uwagę głębokości.",
-    "answer": "**Poprawna odpowiedź: C.**\n\nSprawdzić położenie na mapie i głębokości. Ominąć biorąc pod uwagę głębokości.",
+    "shortAnswer": "Dwa czerwone + białe (kotwiczne) = statek na mieliźnie. Sprawdzić położenie na mapie i głębokości; ominąć biorąc pod uwagę głębokości.",
+    "answer": "**Poprawna odpowiedź: C.**\n\nNa rysunku widać **dwa światła czerwone w linii pionowej** oraz **białe światło kotwiczne** z przodu — to oznakowanie **statku na mieliźnie** (nie trzech czerwonych = ograniczony zanurzeniem).\n\nNależy sprawdzić położenie na mapie i głębokości oraz ominąć biorąc pod uwagę głębokości.",
     "keyPoints": [
-      "Trzy czerwone w linii pionowej = statek ograniczony zanurzeniem — sprawdzić głębokości"
+      "Dwa czerwone w pionie + białe (kotwiczne) = statek na mieliźnie",
+      "Trzy czerwone w pionie (bez białego kotwicznego) = ograniczony zanurzeniem",
+      "Ominąć z uwzględnieniem głębokości / mapy"
     ],
     "codeExamples": [],
     "tags": [
@@ -4281,7 +4284,8 @@
       }
     ],
     "correctUnknown": false,
-    "figure": "jsm-figures/q115.png"
+    "figure": "jsm-figures/q115.png",
+    "needsReview": "Klucz MD m?wi? o 3 czerwonych (ograniczony zanurzeniem), ale rysunek w arkuszu ma 2 czerwone + bia?e (= na mieli?nie). Litera C zostawiona ? pasuje do mielizny. Zweryfikuj z instruktorem."
   },
   {
     "id": 116,
@@ -4927,7 +4931,8 @@
     "shortAnswer": "Zmienić kurs w lewo i minąć ta jednostkę prawą burtą",
     "answer": "**Poprawna odpowiedź: B.**\n\nZmienić kurs w lewo i minąć ta jednostkę prawą burtą",
     "keyPoints": [
-      "Zielone nad białym = statek trałujący — ustąpić, przechodząc za rufą"
+      "Zielone nad bia?ym = statek tra?uj?cy",
+      "Z prawej burty ? ust?pi? (zmiana kursu w lewo, min?? praw? burt?)"
     ],
     "codeExamples": [],
     "tags": [
@@ -6148,7 +6153,8 @@
         "correct": false
       }
     ],
-    "correctUnknown": true
+    "correctUnknown": true,
+    "needsReview": "Diagram w skanie nieczytelny; brak oficjalnego klucza (correctUnknown)."
   },
   {
     "id": 166,
@@ -11073,7 +11079,9 @@
         "correct": false
       }
     ],
-    "correctUnknown": false
+    "correctUnknown": false,
+    "figure": "jsm-figures/q298.png",
+    "needsReview": "W PDF brak osadzonego rysunku ? w aplikacji jest schemat sygna?u (machanie r?kami), nie skan z arkusza."
   },
   {
     "id": 299,

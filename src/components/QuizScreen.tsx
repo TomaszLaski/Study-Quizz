@@ -189,17 +189,17 @@ export default function QuizScreen({
                       ? 'question-figures is-multi'
                       : 'question-figures'
                   }
+                  aria-label="Rysunek do pytania"
                 >
                   {(Array.isArray(current.figure) ? current.figure : [current.figure]).map(
                     (path, i) => {
-                      const label = Array.isArray(current.figure)
-                        ? String.fromCharCode(65 + i)
-                        : null;
+                      const multi = Array.isArray(current.figure) && current.figure.length > 1;
+                      const label = multi ? String.fromCharCode(65 + i) : null;
                       const src = `${import.meta.env.BASE_URL}${path}`;
                       return (
                         <figure key={path} className="question-figure">
-                          {label && <figcaption>{label}</figcaption>}
-                          <a href={src} target="_blank" rel="noopener noreferrer">
+                          <figcaption>{label ? `Rysunek ${label}` : 'Rysunek'}</figcaption>
+                          <a href={src} target="_blank" rel="noopener noreferrer" title="Otwórz w pełnym rozmiarze">
                             <img src={src} alt={label ? `Rysunek ${label}` : 'Rysunek do pytania'} />
                           </a>
                         </figure>
@@ -207,6 +207,11 @@ export default function QuizScreen({
                     },
                   )}
                 </div>
+              )}
+              {current.needsReview && (
+                <p className="figure-review-note" role="note">
+                  Do weryfikacji: {current.needsReview}
+                </p>
               )}
               {current.tags.length > 0 && (
                 <ul className="tag-list" aria-label="Tags">

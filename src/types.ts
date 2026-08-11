@@ -31,6 +31,8 @@ export interface Question {
   figure?: string | string[];
   /** Official answer key missing — check shows selection only */
   correctUnknown?: boolean;
+  /** Human review needed: figure/key mismatch or uncertain mapping */
+  needsReview?: string;
 }
 
 export interface CourseMeta {

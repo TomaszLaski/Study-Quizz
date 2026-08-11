@@ -75,3 +75,14 @@
 .answer-markdown th {
   background: #e8f2ff;
 }
+
+.answer-markdown .answer-md-img {
+  display: block;
+  max-width: min(100%, 560px);
+  width: auto;
+  height: auto;
+  margin: 12px auto;
+  border: 1px solid #cfd8dc;
+  border-radius: 4px;
+  background: #fff;
+}
