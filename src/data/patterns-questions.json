@@ -1,0 +1,2705 @@
+[
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "medium",
+    "question": "Zadanie: 'Build a search box that fetches matching users as the user types and shows an autocomplete dropdown.'\n\nKtory wzorzec stosujesz?",
+    "shortAnswer": "Debounced async search",
+    "answer": "**Jak dojsc do odpowiedzi na rozmowie**\n\n1. Wypisz z tresci zadania slowa-klucze (dowod).\n2. Dopiero potem nazwij wzorzec (wniosek) -- nigdy odwrotnie.\n\nTu klucze to: as the user types, search, find matching, autocomplete, dropdown of results.\n\n**Dlaczego Debounced async search?** Sterownikiem jest wolny tekst. Bez Debounce zalasz API; bez AbortController dostaniesz race (stara odpowiedz nadpisze nowsza).\n\n**Kiedy stosujesz:** Wyszukiwarka, picker miasta/uzytkownika, filtr odpytujacy serwer. Input tekstowy steruje zapytaniem sieciowym.\n\n**Klocki:** Debounce, Async fetcher, Cleanup / anulowanie.",
+    "keyPoints": [
+      "Wzorzec: Debounced async search",
+      "Slowa-klucze: as the user types, search, find matching",
+      "Jesli wpisywanie EDYTUJE dane zamiast szukac -- to Auto-save form, nie Debounced search."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "rozpoznawanie",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Auto-save form",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Debounced async search",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Async dependent selects",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 1
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "medium",
+    "question": "Zadanie: 'Profile settings should auto-save after the user stops typing and show a Saved confirmation.'\n\nKtory wzorzec stosujesz?",
+    "shortAnswer": "Auto-save form",
+    "answer": "**Jak dojsc do odpowiedzi na rozmowie**\n\n1. Wypisz z tresci zadania slowa-klucze (dowod).\n2. Dopiero potem nazwij wzorzec (wniosek) -- nigdy odwrotnie.\n\nTu klucze to: auto-save, save after the user stops typing, Saved confirmation, Saving indicator.\n\n**Dlaczego Auto-save form?** User nie klika Submit -- UI musi komunikowac stan zapisu (Saving / Saved / Error) i chronić przed wyjsciem w trakcie zapisu (beforeunload).\n\n**Kiedy stosujesz:** Edycja profilu, panel ustawien, toggle preferencji. Zmiana danych + zapis na serwer + status, BEZ przycisku submit.\n\n**Klocki:** Debounce, Async fetcher, Cleanup / anulowanie, useEventListener.",
+    "keyPoints": [
+      "Wzorzec: Auto-save form",
+      "Slowa-klucze: auto-save, save after the user stops typing, Saved confirmation",
+      "Auto-save CZEKA na serwer i pokazuje 'Saved'. Optimistic CRUD pokazuje zmiane OD RAZU."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "rozpoznawanie",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Optimistic CRUD",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Debounced async search",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Auto-save form",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 2
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "medium",
+    "question": "Zadanie: 'Product feed that loads the next batch when the user scrolls to the bottom.'\n\nKtory wzorzec stosujesz?",
+    "shortAnswer": "Infinite scroll list",
+    "answer": "**Jak dojsc do odpowiedzi na rozmowie**\n\n1. Wypisz z tresci zadania slowa-klucze (dowod).\n2. Dopiero potem nazwij wzorzec (wniosek) -- nigdy odwrotnie.\n\nTu klucze to: infinite scroll, load more, scrolls to the bottom, next batch.\n\n**Dlaczego Infinite scroll list?** UX 'nieskonczonej listy' wymaga straznika loading (bez podwojnego fetchu), akumulacji stanu i sygnału 'koniec danych'.\n\n**Kiedy stosujesz:** Feed artykulow, lista produktow, duze wyniki. Kolejne porcje przy scrollu -- dane sie AKUMULUJA.\n\n**Klocki:** Async fetcher, Cleanup / anulowanie, useEventListener, Retry z backoffem.",
+    "keyPoints": [
+      "Wzorzec: Infinite scroll list",
+      "Slowa-klucze: infinite scroll, load more, scrolls to the bottom",
+      "Paginated data table: strony ZASTEPUJA sie i zyja w URL; tu porcje sie AKUMULUJA."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "rozpoznawanie",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Infinite scroll list",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Paginated data table",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Live data / polling",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 3
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "medium",
+    "question": "Zadanie: 'Inbox: click a message in the list to show its details in a side panel.'\n\nKtory wzorzec stosujesz?",
+    "shortAnswer": "Master-detail view",
+    "answer": "**Jak dojsc do odpowiedzi na rozmowie**\n\n1. Wypisz z tresci zadania slowa-klucze (dowod).\n2. Dopiero potem nazwij wzorzec (wniosek) -- nigdy odwrotnie.\n\nTu klucze to: select an item, show details, list and detail, side panel.\n\n**Dlaczego Master-detail view?** selectedId musi zyc w wspolnym przodku (lifting state up). Szybkie klikniecia wymagaja abort poprzedniego fetchu detalu.\n\n**Kiedy stosujesz:** Skrzynka mailowa, lista zamowien z detalem, panel admina. Lista + osobny widok elementu.\n\n**Klocki:** Async fetcher, Cleanup / anulowanie.",
+    "keyPoints": [
+      "Wzorzec: Master-detail view",
+      "Slowa-klucze: select an item, show details, list and detail",
+      "Detal w modalu zamiast panelu -- to NADAL Master-detail."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "rozpoznawanie",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Optimistic CRUD",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Master-detail view",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Multi-step wizard",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 4
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "medium",
+    "question": "Zadanie: 'Todo list where add/edit/delete should feel instant (optimistic), with rollback on failure.'\n\nKtory wzorzec stosujesz?",
+    "shortAnswer": "Optimistic CRUD",
+    "answer": "**Jak dojsc do odpowiedzi na rozmowie**\n\n1. Wypisz z tresci zadania slowa-klucze (dowod).\n2. Dopiero potem nazwij wzorzec (wniosek) -- nigdy odwrotnie.\n\nTu klucze to: add / edit / delete, feel instant, optimistic, update the list immediately.\n\n**Dlaczego Optimistic CRUD?** Zmieniasz UI przed odpowiedzią serwera. Dlatego musisz trzymac snapshot do rollbacku i radzic sobie z tymczasowymi id.\n\n**Kiedy stosujesz:** Lista todo, koszyk, tagi. Operacje na zbiorze + natychmiastowa reakcja UI.\n\n**Klocki:** Async fetcher, Cleanup / anulowanie.",
+    "keyPoints": [
+      "Wzorzec: Optimistic CRUD",
+      "Slowa-klucze: add / edit / delete, feel instant, optimistic",
+      "Bez 'instant/optimistic' + obecnosc 'Saved' -- to Auto-save form."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "rozpoznawanie",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Auto-save form",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Infinite scroll list",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Optimistic CRUD",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 5
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "medium",
+    "question": "Zadanie: 'Checkout with steps, next/back, progress indicator, and review before a single submit.'\n\nKtory wzorzec stosujesz?",
+    "shortAnswer": "Multi-step wizard",
+    "answer": "**Jak dojsc do odpowiedzi na rozmowie**\n\n1. Wypisz z tresci zadania slowa-klucze (dowod).\n2. Dopiero potem nazwij wzorzec (wniosek) -- nigdy odwrotnie.\n\nTu klucze to: steps, next / back, step 2 of 4, progress indicator, review before submit.\n\n**Dlaczego Multi-step wizard?** Kroki sie odmontowuja -- stan musi zyc w orchestratorze. Next waliduje biezacy krok; Submit waliduje calosc.\n\n**Kiedy stosujesz:** Checkout, onboarding, konfigurator, wniosek wieloetapowy. Kroki + jeden zapis na koncu.\n\n**Klocki:** useLocalStorage / persystencja.",
+    "keyPoints": [
+      "Wzorzec: Multi-step wizard",
+      "Slowa-klucze: steps, next / back, step 2 of 4",
+      "Jeden submit na koncu. 'Saved po kazdym kroku' = hybryda z Auto-save form."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "rozpoznawanie",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Multi-step wizard",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Auto-save form",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Paginated data table",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 6
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "medium",
+    "question": "Zadanie: 'Admin orders table with sortable columns, text filter, page 2 of N buttons; URL should be shareable.'\n\nKtory wzorzec stosujesz?",
+    "shortAnswer": "Paginated data table",
+    "answer": "**Jak dojsc do odpowiedzi na rozmowie**\n\n1. Wypisz z tresci zadania slowa-klucze (dowod).\n2. Dopiero potem nazwij wzorzec (wniosek) -- nigdy odwrotnie.\n\nTu klucze to: sortable columns, filter, page 2 of N, previous / next page, rows per page.\n\n**Dlaczego Paginated data table?** URL jest zrodlem prawdy (back + share). Zmiana filtra resetuje page=1; filtr tekstowy idzie przez Debounce.\n\n**Kiedy stosujesz:** Panel admina, zamowienia, raporty. Strony zastepuja sie; stan tabeli w URL.\n\n**Klocki:** Debounce, Async fetcher, Cleanup / anulowanie, Cache + deduplikacja, useLocalStorage / persystencja.",
+    "keyPoints": [
+      "Wzorzec: Paginated data table",
+      "Slowa-klucze: sortable columns, filter, page 2 of N",
+      "Infinite scroll AKUMULUJE; tu NADPISUJE. Samo 'page' nie przesadza."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "rozpoznawanie",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Infinite scroll list",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Paginated data table",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Master-detail view",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 7
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "medium",
+    "question": "Zadanie: 'Address form: when the user picks a country, load cities; picking a city loads districts.'\n\nKtory wzorzec stosujesz?",
+    "shortAnswer": "Async dependent selects",
+    "answer": "**Jak dojsc do odpowiedzi na rozmowie**\n\n1. Wypisz z tresci zadania slowa-klucze (dowod).\n2. Dopiero potem nazwij wzorzec (wniosek) -- nigdy odwrotnie.\n\nTu klucze to: depends on, based on selection, cascading, when the user picks X, load Y.\n\n**Dlaczego Async dependent selects?** Zmiana rodzica musi resetowac dzieci (inaczej bug danych). Kazdy poziom ma wlasny loading i abort.\n\n**Kiedy stosujesz:** Adres, kategoria->podkategoria, marka->model. Fetch opcji po WYBORZE, nie po wpisywaniu.\n\n**Klocki:** Async fetcher, Cleanup / anulowanie.",
+    "keyPoints": [
+      "Wzorzec: Async dependent selects",
+      "Slowa-klucze: depends on, based on selection, cascading",
+      "Debounced search: sterownik = TEKST + cisza. Tu sterownik = KLIK -- Debounce zbedny."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "rozpoznawanie",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Debounced async search",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Master-detail view",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Async dependent selects",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 8
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "medium",
+    "question": "Zadanie: 'Avatar upload with progress bar, cancel mid-upload, and drag-and-drop.'\n\nKtory wzorzec stosujesz?",
+    "shortAnswer": "File upload z progressem",
+    "answer": "**Jak dojsc do odpowiedzi na rozmowie**\n\n1. Wypisz z tresci zadania slowa-klucze (dowod).\n2. Dopiero potem nazwij wzorzec (wniosek) -- nigdy odwrotnie.\n\nTu klucze to: upload, progress bar, cancel upload, drag and drop, multiple files.\n\n**Dlaczego File upload z progressem?** Stan per plik (mapa id->stan). Cancel = xhr.abort() + cleanup. Waliduj typ/rozmiar PRZED wysylka.\n\n**Kiedy stosujesz:** Awatar, zalaczniki, import CSV. Dluga wysylka + pasek postepu + cancel.\n\n**Klocki:** Cleanup / anulowanie, Retry z backoffem.",
+    "keyPoints": [
+      "Wzorzec: File upload z progressem",
+      "Slowa-klucze: upload, progress bar, cancel upload",
+      "fetch() nie daje postepu -- potrzebny XHR + upload.onprogress i stan progress 0-100."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "rozpoznawanie",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "File upload z progressem",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Auto-save form",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Optimistic CRUD",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 9
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "medium",
+    "question": "Zadanie: 'Metrics dashboard that refreshes every 5s and pauses when the tab becomes hidden.'\n\nKtory wzorzec stosujesz?",
+    "shortAnswer": "Live data / polling",
+    "answer": "**Jak dojsc do odpowiedzi na rozmowie**\n\n1. Wypisz z tresci zadania slowa-klucze (dowod).\n2. Dopiero potem nazwij wzorzec (wniosek) -- nigdy odwrotnie.\n\nTu klucze to: real-time, refresh every, live updates, when the tab becomes active.\n\n**Dlaczego Live data / polling?** Pauzuj przy document.hidden. Unikaj nakladajacych sie requestow (pomin tick gdy loading). Callback intervalu w useRef.\n\n**Kiedy stosujesz:** Dashboard metryk, kursy, status joba, powiadomienia. Swiezosc danych jako wymog.\n\n**Klocki:** Async fetcher, Cleanup / anulowanie, useEventListener, Retry z backoffem.",
+    "keyPoints": [
+      "Wzorzec: Live data / polling",
+      "Slowa-klucze: real-time, refresh every, live updates",
+      "Infinite scroll dokleja; polling ZASTEPUJE wynik. Instant po kliku usera = Optimistic CRUD."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "rozpoznawanie",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Optimistic CRUD",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Live data / polling",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Infinite scroll list",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 10
+  },
+  {
+    "category": "Wzorce -- wyszukiwanie i dane",
+    "difficulty": "easy",
+    "question": "Kiedy stosowac wzorzec 'Debounced async search'?",
+    "shortAnswer": "Wyszukiwarka, picker miasta/uzytkownika, filtr odpytujacy serwer. Input tekstowy steruje zapytaniem sieciowym.",
+    "answer": "**Debounced async search** (typeahead / autocomplete / live search)\n\nSterownikiem jest wolny tekst. Bez Debounce zalasz API; bez AbortController dostaniesz race (stara odpowiedz nadpisze nowsza).\n\n**Sygnaly w tresci zadania:** as the user types, search, find matching, autocomplete, dropdown of results.\n\n**Z czego skladasz:** Debounce, Async fetcher, Cleanup / anulowanie.\n\n**Typowe pomyłki:** Jesli wpisywanie EDYTUJE dane zamiast szukac -- to Auto-save form, nie Debounced search.",
+    "keyPoints": [
+      "Wyszukiwarka, picker miasta/uzytkownika, filtr odpytujacy serwer. Input tekstowy steruje zapytaniem sieciowym.",
+      "Alias: typeahead / autocomplete / live search",
+      "Nie myl: Jesli wpisywanie EDYTUJE dane zamiast szukac -- to Auto-save form, nie Debounced search."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kiedy",
+      "stosowanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Edycja profilu, panel ustawien, toggle preferencji. Zmiana danych + zapis na serwer + status, BEZ przycisku submit.",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Feed artykulow, lista produktow, duze wyniki. Kolejne porcje przy scrollu -- dane sie AKUMULUJA.",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Wyszukiwarka, picker miasta/uzytkownika, filtr odpytujacy serwer. Input tekstowy steruje zapytaniem sieciowym.",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 11
+  },
+  {
+    "category": "Wzorce -- wyszukiwanie i dane",
+    "difficulty": "easy",
+    "question": "Kiedy stosowac wzorzec 'Auto-save form'?",
+    "shortAnswer": "Edycja profilu, panel ustawien, toggle preferencji. Zmiana danych + zapis na serwer + status, BEZ przycisku submit.",
+    "answer": "**Auto-save form** (save-as-you-type / settings panel)\n\nUser nie klika Submit -- UI musi komunikowac stan zapisu (Saving / Saved / Error) i chronić przed wyjsciem w trakcie zapisu (beforeunload).\n\n**Sygnaly w tresci zadania:** auto-save, save after the user stops typing, Saved confirmation, Saving indicator.\n\n**Z czego skladasz:** Debounce, Async fetcher, Cleanup / anulowanie, useEventListener.\n\n**Typowe pomyłki:** Auto-save CZEKA na serwer i pokazuje 'Saved'. Optimistic CRUD pokazuje zmiane OD RAZU.",
+    "keyPoints": [
+      "Edycja profilu, panel ustawien, toggle preferencji. Zmiana danych + zapis na serwer + status, BEZ przycisku submit.",
+      "Alias: save-as-you-type / settings panel",
+      "Nie myl: Auto-save CZEKA na serwer i pokazuje 'Saved'. Optimistic CRUD pokazuje zmiane OD RAZU."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kiedy",
+      "stosowanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Edycja profilu, panel ustawien, toggle preferencji. Zmiana danych + zapis na serwer + status, BEZ przycisku submit.",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Feed artykulow, lista produktow, duze wyniki. Kolejne porcje przy scrollu -- dane sie AKUMULUJA.",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Skrzynka mailowa, lista zamowien z detalem, panel admina. Lista + osobny widok elementu.",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 12
+  },
+  {
+    "category": "Wzorce -- wyszukiwanie i dane",
+    "difficulty": "easy",
+    "question": "Kiedy stosowac wzorzec 'Infinite scroll list'?",
+    "shortAnswer": "Feed artykulow, lista produktow, duze wyniki. Kolejne porcje przy scrollu -- dane sie AKUMULUJA.",
+    "answer": "**Infinite scroll list** (load-more / paginated feed)\n\nUX 'nieskonczonej listy' wymaga straznika loading (bez podwojnego fetchu), akumulacji stanu i sygnału 'koniec danych'.\n\n**Sygnaly w tresci zadania:** infinite scroll, load more, scrolls to the bottom, next batch.\n\n**Z czego skladasz:** Async fetcher, Cleanup / anulowanie, useEventListener, Retry z backoffem.\n\n**Typowe pomyłki:** Paginated data table: strony ZASTEPUJA sie i zyja w URL; tu porcje sie AKUMULUJA.",
+    "keyPoints": [
+      "Feed artykulow, lista produktow, duze wyniki. Kolejne porcje przy scrollu -- dane sie AKUMULUJA.",
+      "Alias: load-more / paginated feed",
+      "Nie myl: Paginated data table: strony ZASTEPUJA sie i zyja w URL; tu porcje sie AKUMULUJA."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kiedy",
+      "stosowanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Skrzynka mailowa, lista zamowien z detalem, panel admina. Lista + osobny widok elementu.",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Feed artykulow, lista produktow, duze wyniki. Kolejne porcje przy scrollu -- dane sie AKUMULUJA.",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Lista todo, koszyk, tagi. Operacje na zbiorze + natychmiastowa reakcja UI.",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 13
+  },
+  {
+    "category": "Wzorce -- wyszukiwanie i dane",
+    "difficulty": "easy",
+    "question": "Kiedy stosowac wzorzec 'Master-detail view'?",
+    "shortAnswer": "Skrzynka mailowa, lista zamowien z detalem, panel admina. Lista + osobny widok elementu.",
+    "answer": "**Master-detail view** (list + detail / split view)\n\nselectedId musi zyc w wspolnym przodku (lifting state up). Szybkie klikniecia wymagaja abort poprzedniego fetchu detalu.\n\n**Sygnaly w tresci zadania:** select an item, show details, list and detail, side panel.\n\n**Z czego skladasz:** Async fetcher, Cleanup / anulowanie.\n\n**Typowe pomyłki:** Detal w modalu zamiast panelu -- to NADAL Master-detail.",
+    "keyPoints": [
+      "Skrzynka mailowa, lista zamowien z detalem, panel admina. Lista + osobny widok elementu.",
+      "Alias: list + detail / split view",
+      "Nie myl: Detal w modalu zamiast panelu -- to NADAL Master-detail."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kiedy",
+      "stosowanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Lista todo, koszyk, tagi. Operacje na zbiorze + natychmiastowa reakcja UI.",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Checkout, onboarding, konfigurator, wniosek wieloetapowy. Kroki + jeden zapis na koncu.",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Skrzynka mailowa, lista zamowien z detalem, panel admina. Lista + osobny widok elementu.",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 14
+  },
+  {
+    "category": "Wzorce -- wyszukiwanie i dane",
+    "difficulty": "easy",
+    "question": "Kiedy stosowac wzorzec 'Optimistic CRUD'?",
+    "shortAnswer": "Lista todo, koszyk, tagi. Operacje na zbiorze + natychmiastowa reakcja UI.",
+    "answer": "**Optimistic CRUD** (instant-feedback add/edit/delete)\n\nZmieniasz UI przed odpowiedzią serwera. Dlatego musisz trzymac snapshot do rollbacku i radzic sobie z tymczasowymi id.\n\n**Sygnaly w tresci zadania:** add / edit / delete, feel instant, optimistic, update the list immediately.\n\n**Z czego skladasz:** Async fetcher, Cleanup / anulowanie.\n\n**Typowe pomyłki:** Bez 'instant/optimistic' + obecnosc 'Saved' -- to Auto-save form.",
+    "keyPoints": [
+      "Lista todo, koszyk, tagi. Operacje na zbiorze + natychmiastowa reakcja UI.",
+      "Alias: instant-feedback add/edit/delete",
+      "Nie myl: Bez 'instant/optimistic' + obecnosc 'Saved' -- to Auto-save form."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kiedy",
+      "stosowanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Lista todo, koszyk, tagi. Operacje na zbiorze + natychmiastowa reakcja UI.",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Checkout, onboarding, konfigurator, wniosek wieloetapowy. Kroki + jeden zapis na koncu.",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Panel admina, zamowienia, raporty. Strony zastepuja sie; stan tabeli w URL.",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 15
+  },
+  {
+    "category": "Wzorce -- formularze i zaawansowane",
+    "difficulty": "easy",
+    "question": "Kiedy stosowac wzorzec 'Multi-step wizard'?",
+    "shortAnswer": "Checkout, onboarding, konfigurator, wniosek wieloetapowy. Kroki + jeden zapis na koncu.",
+    "answer": "**Multi-step wizard** (checkout / onboarding / formularz krokowy)\n\nKroki sie odmontowuja -- stan musi zyc w orchestratorze. Next waliduje biezacy krok; Submit waliduje calosc.\n\n**Sygnaly w tresci zadania:** steps, next / back, step 2 of 4, progress indicator, review before submit.\n\n**Z czego skladasz:** useLocalStorage / persystencja.\n\n**Typowe pomyłki:** Jeden submit na koncu. 'Saved po kazdym kroku' = hybryda z Auto-save form.",
+    "keyPoints": [
+      "Checkout, onboarding, konfigurator, wniosek wieloetapowy. Kroki + jeden zapis na koncu.",
+      "Alias: checkout / onboarding / formularz krokowy",
+      "Nie myl: Jeden submit na koncu. 'Saved po kazdym kroku' = hybryda z Auto-save form."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kiedy",
+      "stosowanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Panel admina, zamowienia, raporty. Strony zastepuja sie; stan tabeli w URL.",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Checkout, onboarding, konfigurator, wniosek wieloetapowy. Kroki + jeden zapis na koncu.",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Adres, kategoria->podkategoria, marka->model. Fetch opcji po WYBORZE, nie po wpisywaniu.",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 16
+  },
+  {
+    "category": "Wzorce -- formularze i zaawansowane",
+    "difficulty": "easy",
+    "question": "Kiedy stosowac wzorzec 'Paginated data table'?",
+    "shortAnswer": "Panel admina, zamowienia, raporty. Strony zastepuja sie; stan tabeli w URL.",
+    "answer": "**Paginated data table** (sort + filtr + strony z przyciskami)\n\nURL jest zrodlem prawdy (back + share). Zmiana filtra resetuje page=1; filtr tekstowy idzie przez Debounce.\n\n**Sygnaly w tresci zadania:** sortable columns, filter, page 2 of N, previous / next page, rows per page.\n\n**Z czego skladasz:** Debounce, Async fetcher, Cleanup / anulowanie, Cache + deduplikacja, useLocalStorage / persystencja.\n\n**Typowe pomyłki:** Infinite scroll AKUMULUJE; tu NADPISUJE. Samo 'page' nie przesadza.",
+    "keyPoints": [
+      "Panel admina, zamowienia, raporty. Strony zastepuja sie; stan tabeli w URL.",
+      "Alias: sort + filtr + strony z przyciskami",
+      "Nie myl: Infinite scroll AKUMULUJE; tu NADPISUJE. Samo 'page' nie przesadza."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kiedy",
+      "stosowanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Adres, kategoria->podkategoria, marka->model. Fetch opcji po WYBORZE, nie po wpisywaniu.",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Awatar, zalaczniki, import CSV. Dluga wysylka + pasek postepu + cancel.",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Panel admina, zamowienia, raporty. Strony zastepuja sie; stan tabeli w URL.",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 17
+  },
+  {
+    "category": "Wzorce -- formularze i zaawansowane",
+    "difficulty": "easy",
+    "question": "Kiedy stosowac wzorzec 'Async dependent selects'?",
+    "shortAnswer": "Adres, kategoria->podkategoria, marka->model. Fetch opcji po WYBORZE, nie po wpisywaniu.",
+    "answer": "**Async dependent selects** (kaskadowe selecty / cascading dropdowns)\n\nZmiana rodzica musi resetowac dzieci (inaczej bug danych). Kazdy poziom ma wlasny loading i abort.\n\n**Sygnaly w tresci zadania:** depends on, based on selection, cascading, when the user picks X, load Y.\n\n**Z czego skladasz:** Async fetcher, Cleanup / anulowanie.\n\n**Typowe pomyłki:** Debounced search: sterownik = TEKST + cisza. Tu sterownik = KLIK -- Debounce zbedny.",
+    "keyPoints": [
+      "Adres, kategoria->podkategoria, marka->model. Fetch opcji po WYBORZE, nie po wpisywaniu.",
+      "Alias: kaskadowe selecty / cascading dropdowns",
+      "Nie myl: Debounced search: sterownik = TEKST + cisza. Tu sterownik = KLIK -- Debounce zbedny."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kiedy",
+      "stosowanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Adres, kategoria->podkategoria, marka->model. Fetch opcji po WYBORZE, nie po wpisywaniu.",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Awatar, zalaczniki, import CSV. Dluga wysylka + pasek postepu + cancel.",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Dashboard metryk, kursy, status joba, powiadomienia. Swiezosc danych jako wymog.",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 18
+  },
+  {
+    "category": "Wzorce -- formularze i zaawansowane",
+    "difficulty": "easy",
+    "question": "Kiedy stosowac wzorzec 'File upload z progressem'?",
+    "shortAnswer": "Awatar, zalaczniki, import CSV. Dluga wysylka + pasek postepu + cancel.",
+    "answer": "**File upload z progressem** (upload / drag&drop / cancel)\n\nStan per plik (mapa id->stan). Cancel = xhr.abort() + cleanup. Waliduj typ/rozmiar PRZED wysylka.\n\n**Sygnaly w tresci zadania:** upload, progress bar, cancel upload, drag and drop, multiple files.\n\n**Z czego skladasz:** Cleanup / anulowanie, Retry z backoffem.\n\n**Typowe pomyłki:** fetch() nie daje postepu -- potrzebny XHR + upload.onprogress i stan progress 0-100.",
+    "keyPoints": [
+      "Awatar, zalaczniki, import CSV. Dluga wysylka + pasek postepu + cancel.",
+      "Alias: upload / drag&drop / cancel",
+      "Nie myl: fetch() nie daje postepu -- potrzebny XHR + upload.onprogress i stan progress 0-100."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kiedy",
+      "stosowanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Dashboard metryk, kursy, status joba, powiadomienia. Swiezosc danych jako wymog.",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Awatar, zalaczniki, import CSV. Dluga wysylka + pasek postepu + cancel.",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Wyszukiwarka, picker miasta/uzytkownika, filtr odpytujacy serwer. Input tekstowy steruje zapytaniem sieciowym.",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 19
+  },
+  {
+    "category": "Wzorce -- formularze i zaawansowane",
+    "difficulty": "easy",
+    "question": "Kiedy stosowac wzorzec 'Live data / polling'?",
+    "shortAnswer": "Dashboard metryk, kursy, status joba, powiadomienia. Swiezosc danych jako wymog.",
+    "answer": "**Live data / polling** (dashboard / refresh every X / live)\n\nPauzuj przy document.hidden. Unikaj nakladajacych sie requestow (pomin tick gdy loading). Callback intervalu w useRef.\n\n**Sygnaly w tresci zadania:** real-time, refresh every, live updates, when the tab becomes active.\n\n**Z czego skladasz:** Async fetcher, Cleanup / anulowanie, useEventListener, Retry z backoffem.\n\n**Typowe pomyłki:** Infinite scroll dokleja; polling ZASTEPUJE wynik. Instant po kliku usera = Optimistic CRUD.",
+    "keyPoints": [
+      "Dashboard metryk, kursy, status joba, powiadomienia. Swiezosc danych jako wymog.",
+      "Alias: dashboard / refresh every X / live",
+      "Nie myl: Infinite scroll dokleja; polling ZASTEPUJE wynik. Instant po kliku usera = Optimistic CRUD."
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kiedy",
+      "stosowanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Wyszukiwarka, picker miasta/uzytkownika, filtr odpytujacy serwer. Input tekstowy steruje zapytaniem sieciowym.",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Edycja profilu, panel ustawien, toggle preferencji. Zmiana danych + zapis na serwer + status, BEZ przycisku submit.",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Dashboard metryk, kursy, status joba, powiadomienia. Swiezosc danych jako wymog.",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 20
+  },
+  {
+    "category": "Porownania i pulapki",
+    "difficulty": "hard",
+    "question": "User edytuje email w ustawieniach; po ciszy wysylany jest PATCH i pojawia sie 'Saved'. Ktory wzorzec?",
+    "shortAnswer": "Auto-save form -- czeka na serwer i pokazuje potwierdzenie 'Saved'",
+    "answer": "**Werdykt:** Auto-save form -- czeka na serwer i pokazuje potwierdzenie 'Saved'\n\n**Jak myslec:** Na rozmowie oddziel 'cisze przed zapisem' od 'instant UI'. Cisza + Saved = Auto-save (Debounce + status zapisu). Instant bez Saved = Optimistic CRUD. Debounce moze byc w obu -- nie jest wystarczajacym dowodem.",
+    "keyPoints": [
+      "Slowo 'Saved confirmation' = Auto-save form",
+      "Optimistic nie czeka na 'Saved' -- zmienia UI od razu",
+      "Debounce sam w sobie nie decyduje o wzorcu"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "porownanie",
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Auto-save form -- czeka na serwer i pokazuje potwierdzenie 'Saved'",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Optimistic CRUD -- zmiana widoczna od razu, bez czekania na 'Saved'",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Debounced async search -- bo jest debounce przed wyslaniem",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 21
+  },
+  {
+    "category": "Porownania i pulapki",
+    "difficulty": "hard",
+    "question": "Feed laduje kolejne posty przy scrollu (dane sie doklejaja). Tabela admina ma przyciski 'strona 2 z N' i stan w URL. Ktore wzorce?",
+    "shortAnswer": "Scroll + akumulacja = Infinite scroll list; przyciski + URL = Paginated data table",
+    "answer": "**Werdykt:** Scroll + akumulacja = Infinite scroll list; przyciski + URL = Paginated data table\n\n**Jak myslec:** Pytaj: czy dane sie doklejaja, czy strona zastępuje poprzednia? Czy stan ma byc share'owalny w URL? To dwa rozne kontrakty UI i stanu -- nie wystarczy uslyszec 'paginacja'.",
+    "keyPoints": [
+      "Akumulacja przy scrollu = Infinite scroll list",
+      "Przyciski stron + URL = Paginated data table",
+      "Samo 'page' nie przesadza"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "porownanie",
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Oba to Infinite scroll list, bo jest slowo 'page'",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Scroll + akumulacja = Infinite scroll list; przyciski + URL = Paginated data table",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Oba to Paginated data table, bo jest paginacja",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 22
+  },
+  {
+    "category": "Porownania i pulapki",
+    "difficulty": "hard",
+    "question": "Select kraju laduje liste miast po kliknieciu. Search box laduje wyniki podczas wpisywania. Ktore wzorce?",
+    "shortAnswer": "Klik wyboru -> Async dependent selects; wpisywanie -> Debounced async search",
+    "answer": "**Werdykt:** Klik wyboru -> Async dependent selects; wpisywanie -> Debounced async search\n\n**Jak myslec:** Roznica jest w sterowniku: dyskretny wybor vs ciagly tekst. Przy tekscie potrzebujesz Debounce i abort race. Przy kliku Debounce zwykle zbedny, ale reset dzieci i abort przy szybkim klikaniu -- tak.",
+    "keyPoints": [
+      "Wyzwalacz = klik/wybor -> Async dependent selects",
+      "Wyzwalacz = tekst + cisza -> Debounced async search",
+      "Sam fakt fetchu nic nie rozstrzyga"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "porownanie",
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Oba to Debounced async search, bo jest fetch danych",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Oba to Async dependent selects, bo jest zaleznosc miedzy polami",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Klik wyboru -> Async dependent selects; wpisywanie -> Debounced async search",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 23
+  },
+  {
+    "category": "Porownania i pulapki",
+    "difficulty": "hard",
+    "question": "Zadanie: 'instant update of the list' przy delete. Ktos proponuje formularz z auto-save i statusem Saved. Co jest nie tak?",
+    "shortAnswer": "To Optimistic CRUD -- 'instant' oznacza pokazanie zmiany przed odpowiedzia serwera, nie czekanie na Saved",
+    "answer": "**Werdykt:** To Optimistic CRUD -- 'instant' oznacza pokazanie zmiany przed odpowiedzia serwera, nie czekanie na Saved\n\n**Jak myslec:** Auto-save i Optimistic oba mowia z serwerem, ale kontrakt UX jest przeciwny: czekasz na potwierdzenie vs kłamiesz UI i robisz rollback. 'Instant' w tresci jest twardym dowodem na Optimistic.",
+    "keyPoints": [
+      "'instant/optimistic' => Optimistic CRUD",
+      "'Saved' bez instant => Auto-save form",
+      "Polling to swiezosc BEZ akcji usera"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "porownanie",
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "To Optimistic CRUD -- 'instant' oznacza pokazanie zmiany przed odpowiedzia serwera, nie czekanie na Saved",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Auto-save form jest OK, bo tez zapisuje na serwer",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "To Live data / polling, bo lista ma byc swieza",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 24
+  },
+  {
+    "category": "Porownania i pulapki",
+    "difficulty": "hard",
+    "question": "'Refresh every 5 seconds' vs 'update the UI instantly after user clicks delete'. Ktore wzorce?",
+    "shortAnswer": "Odswiezanie co 5 sekund -> Live data / polling; instant po kliku -> Optimistic CRUD",
+    "answer": "**Werdykt:** Odswiezanie co 5 sekund -> Live data / polling; instant po kliku -> Optimistic CRUD\n\n**Jak myslec:** Polling odpowiada na wymog swiezosci danych w czasie. Optimistic odpowiada na wymog poczucia responsywnosci po mutacji. Moga wspolistniec w jednym ekranie, ale to dwa rozne problemy.",
+    "keyPoints": [
+      "Interwal bez akcji usera = Live data / polling",
+      "Natychmiast po akcji usera = Optimistic CRUD",
+      "Szybkie UI != polling"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "porownanie",
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Oba to Live data / polling, bo dane sie odswiezaja",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Odswiezanie co 5 sekund -> Live data / polling; instant po kliku -> Optimistic CRUD",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Oba to Optimistic CRUD, bo UI reaguje szybko",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 25
+  },
+  {
+    "category": "Porownania i pulapki",
+    "difficulty": "hard",
+    "question": "Checkout ma 4 kroki i jedno klikniecie 'Kup' na koncu. Formularz profilu zapisuje zmiany po kazdym kroku bez przycisku. Ktore wzorce?",
+    "shortAnswer": "Checkout jednorazowy submit -> Multi-step wizard; formularz z zapisem co krok -> hybryda Multi-step wizard + Auto-save form",
+    "answer": "**Werdykt:** Checkout jednorazowy submit -> Multi-step wizard; formularz z zapisem co krok -> hybryda Multi-step wizard + Auto-save form\n\n**Jak myslec:** Wizard odpowiada za orchestracje krokow i stan. Auto-save odpowiada za zapis w tle. Jesli w tresci jest 'Saved after each step', masz hybryde -- nie wybieraj tylko jednego z przyzwyczajenia.",
+    "keyPoints": [
+      "Jeden submit na koncu = czysty Multi-step wizard",
+      "Zapis po kroku = dokladasz Auto-save form",
+      "Same 'kroki' nie wystarcza"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "porownanie",
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Oba to Multi-step wizard, bo sa kroki",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Oba to Auto-save form, bo zapis jest automatyczny",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Checkout jednorazowy submit -> Multi-step wizard; formularz z zapisem co krok -> hybryda Multi-step wizard + Auto-save form",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 26
+  },
+  {
+    "category": "Wzorce -- wyszukiwanie i dane",
+    "difficulty": "medium",
+    "question": "Race condition przy typeaheadzie -- odpowiedz dla 'war' wraca po odpowiedzi dla 'warsz'. Co robic?",
+    "shortAnswer": "Anulowac poprzedni request przy kazdej nowej wartosci (AbortController + Cleanup / anulowanie)",
+    "answer": "**Poprawne zachowanie:** Anulowac poprzedni request przy kazdej nowej wartosci (AbortController + Cleanup / anulowanie)\n\n**Kontekst wzorca 'Debounced async search':** Sterownikiem jest wolny tekst. Bez Debounce zalasz API; bez AbortController dostaniesz race (stara odpowiedz nadpisze nowsza).\n\n**Inne typowe pulapki tego wzorca:**\n- Race condition -- anuluj poprzedni request (AbortController)\n- Stan idle na starcie -- nie pokazuj 'brak wynikow' zanim user wpisal\n- Min. dlugosc query (2-3 znaki)",
+    "keyPoints": [
+      "Anulowac poprzedni request przy kazdej nowej wartosci (AbortController + Cleanup / anulowanie)",
+      "Race condition -- anuluj poprzedni request (AbortController)",
+      "Stan idle na starcie -- nie pokazuj 'brak wynikow' zanim user wpisal"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Anulowac poprzedni request przy kazdej nowej wartosci (AbortController + Cleanup / anulowanie)",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Zwiekszyc debounce do 5 sekund",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Pokazac wszystkie odpowiedzi naraz i wybrac ostatnia",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 27
+  },
+  {
+    "category": "Wzorce -- wyszukiwanie i dane",
+    "difficulty": "medium",
+    "question": "Jak aktualizowac liste po dociagnieciu kolejnej strony w Infinite scroll?",
+    "shortAnswer": "Akumulacja: setItems(prev => [...prev, ...new]) -- nowa strona doklejana do poprzednich",
+    "answer": "**Poprawne zachowanie:** Akumulacja: setItems(prev => [...prev, ...new]) -- nowa strona doklejana do poprzednich\n\n**Kontekst wzorca 'Infinite scroll list':** UX 'nieskonczonej listy' wymaga straznika loading (bez podwojnego fetchu), akumulacji stanu i sygnału 'koniec danych'.\n\n**Inne typowe pulapki tego wzorca:**\n- Blokuj fetch gdy loading trwa\n- setItems(prev => [...prev, ...new])\n- Rozpoznaj koniec stron z API",
+    "keyPoints": [
+      "Akumulacja: setItems(prev => [...prev, ...new]) -- nowa strona doklejana do poprzednich",
+      "Blokuj fetch gdy loading trwa",
+      "setItems(prev => [...prev, ...new])"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Nadpisanie: setItems(new) -- lista zastepowana co strone",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Akumulacja: setItems(prev => [...prev, ...new]) -- nowa strona doklejana do poprzednich",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Zapis tylko do URL bez lokalnego stanu",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 28
+  },
+  {
+    "category": "Wzorce -- formularze i zaawansowane",
+    "difficulty": "medium",
+    "question": "Co powinno byc zrodlem prawdy dla page/sort/filter w Paginated data table?",
+    "shortAnswer": "URL (URLSearchParams) -- back button i share linkiem dzialaja poprawnie",
+    "answer": "**Poprawne zachowanie:** URL (URLSearchParams) -- back button i share linkiem dzialaja poprawnie\n\n**Kontekst wzorca 'Paginated data table':** URL jest zrodlem prawdy (back + share). Zmiana filtra resetuje page=1; filtr tekstowy idzie przez Debounce.\n\n**Inne typowe pulapki tego wzorca:**\n- URL jako source of truth\n- Zmiana filtra -> page=1\n- Sort/filtr po stronie serwera\n- Debounce na filtr tekstowy",
+    "keyPoints": [
+      "URL (URLSearchParams) -- back button i share linkiem dzialaja poprawnie",
+      "URL jako source of truth",
+      "Zmiana filtra -> page=1"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Wylacznie useState w kontenerze tabeli",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "localStorage bez odzwierciedlenia w URL",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "URL (URLSearchParams) -- back button i share linkiem dzialaja poprawnie",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 29
+  },
+  {
+    "category": "Wzorce -- formularze i zaawansowane",
+    "difficulty": "medium",
+    "question": "User zmienia filtr tekstowy bedac na stronie 7 wynikow. Co zrobic z numerem strony?",
+    "shortAnswer": "Zresetowac page do 1 -- inaczej user laduje na pustej stronie 7",
+    "answer": "**Poprawne zachowanie:** Zresetowac page do 1 -- inaczej user laduje na pustej stronie 7\n\n**Kontekst wzorca 'Paginated data table':** URL jest zrodlem prawdy (back + share). Zmiana filtra resetuje page=1; filtr tekstowy idzie przez Debounce.\n\n**Inne typowe pulapki tego wzorca:**\n- URL jako source of truth\n- Zmiana filtra -> page=1\n- Sort/filtr po stronie serwera\n- Debounce na filtr tekstowy",
+    "keyPoints": [
+      "Zresetowac page do 1 -- inaczej user laduje na pustej stronie 7",
+      "URL jako source of truth",
+      "Zmiana filtra -> page=1"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Zresetowac page do 1 -- inaczej user laduje na pustej stronie 7",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Zostawic page=7 bez zmian",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Przejsc automatycznie na ostatnia dostepna strone",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 30
+  },
+  {
+    "category": "Wzorce -- formularze i zaawansowane",
+    "difficulty": "medium",
+    "question": "User zmienia kraj w kaskadowym select. Co powinno stac sie z polem 'miasto' i 'dzielnica'?",
+    "shortAnswer": "Zresetowac wartosci dzieci -- miasto z poprzedniego kraju to bug danych",
+    "answer": "**Poprawne zachowanie:** Zresetowac wartosci dzieci -- miasto z poprzedniego kraju to bug danych\n\n**Kontekst wzorca 'Async dependent selects':** Zmiana rodzica musi resetowac dzieci (inaczej bug danych). Kazdy poziom ma wlasny loading i abort.\n\n**Inne typowe pulapki tego wzorca:**\n- Reset dzieci po zmianie rodzica\n- Abort przy szybkim klikaniu\n- Disabled dopoki rodzic niewybrany\n- Loading per poziom",
+    "keyPoints": [
+      "Zresetowac wartosci dzieci -- miasto z poprzedniego kraju to bug danych",
+      "Reset dzieci po zmianie rodzica",
+      "Abort przy szybkim klikaniu"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Zostawic poprzednie wartosci dla wygody usera",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Zresetowac wartosci dzieci -- miasto z poprzedniego kraju to bug danych",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Wyslac poprzedni cityId do API i poczekac na blad",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 31
+  },
+  {
+    "category": "Wzorce -- formularze i zaawansowane",
+    "difficulty": "medium",
+    "question": "Dlaczego sam fetch() nie wystarczy do wyswietlenia paska postepu uploadu?",
+    "shortAnswer": "fetch nie eksponuje postepu wysylania -- potrzebny XMLHttpRequest z upload.onprogress",
+    "answer": "**Poprawne zachowanie:** fetch nie eksponuje postepu wysylania -- potrzebny XMLHttpRequest z upload.onprogress\n\n**Kontekst wzorca 'File upload z progressem':** Stan per plik (mapa id->stan). Cancel = xhr.abort() + cleanup. Waliduj typ/rozmiar PRZED wysylka.\n\n**Inne typowe pulapki tego wzorca:**\n- XHR zamiast fetch dla progress\n- Stan per plik\n- xhr.abort() przy cancel\n- Walidacja przed uploadem",
+    "keyPoints": [
+      "fetch nie eksponuje postepu wysylania -- potrzebny XMLHttpRequest z upload.onprogress",
+      "XHR zamiast fetch dla progress",
+      "Stan per plik"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "fetch zawsze blokuje glowny watek UI",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "fetch nie obsluguje FormData z plikami binarnymi",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "fetch nie eksponuje postepu wysylania -- potrzebny XMLHttpRequest z upload.onprogress",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 32
+  },
+  {
+    "category": "Wzorce -- formularze i zaawansowane",
+    "difficulty": "medium",
+    "question": "Polling bije w API gdy karta przegladarki jest w tle. Jak prawidlowo to obsluzyc?",
+    "shortAnswer": "Pauzowac gdy document.hidden; odswiezac natychmiast po powrocie karty (visibilitychange)",
+    "answer": "**Poprawne zachowanie:** Pauzowac gdy document.hidden; odswiezac natychmiast po powrocie karty (visibilitychange)\n\n**Kontekst wzorca 'Live data / polling':** Pauzuj przy document.hidden. Unikaj nakladajacych sie requestow (pomin tick gdy loading). Callback intervalu w useRef.\n\n**Inne typowe pulapki tego wzorca:**\n- useRef na callback intervalu\n- Pauza gdy document.hidden\n- Pomin tick gdy loading\n- Abort poprzedniego fetchu",
+    "keyPoints": [
+      "Pauzowac gdy document.hidden; odswiezac natychmiast po powrocie karty (visibilitychange)",
+      "useRef na callback intervalu",
+      "Pauza gdy document.hidden"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Pauzowac gdy document.hidden; odswiezac natychmiast po powrocie karty (visibilitychange)",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Skrocic interwal do 100 ms by nadrobiac zaleglosci",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Uzyc tylko setTimeout bez cleanup w efekcie",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 33
+  },
+  {
+    "category": "Wzorce -- formularze i zaawansowane",
+    "difficulty": "medium",
+    "question": "Gdzie powinien mieszkac stan danych wszystkich krokow wizarda?",
+    "shortAnswer": "W orchestratorze / kontenerze nad krokami -- odmontowany krok traci swoj lokalny stan",
+    "answer": "**Poprawne zachowanie:** W orchestratorze / kontenerze nad krokami -- odmontowany krok traci swoj lokalny stan\n\n**Kontekst wzorca 'Multi-step wizard':** Kroki sie odmontowuja -- stan musi zyc w orchestratorze. Next waliduje biezacy krok; Submit waliduje calosc.\n\n**Inne typowe pulapki tego wzorca:**\n- Stan w orchestratorze nad krokami\n- Walidacja per krok vs calosc\n- Back nie czysci wczesniejszych danych",
+    "keyPoints": [
+      "W orchestratorze / kontenerze nad krokami -- odmontowany krok traci swoj lokalny stan",
+      "Stan w orchestratorze nad krokami",
+      "Walidacja per krok vs calosc"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Lokalnie w kazdym kroku osobno -- odpowiedzialnosc kazdego komponentu",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "W orchestratorze / kontenerze nad krokami -- odmontowany krok traci swoj lokalny stan",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Tylko w URL bez React state",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 34
+  },
+  {
+    "category": "Wzorce -- wyszukiwanie i dane",
+    "difficulty": "medium",
+    "question": "Optimistic delete sie nie udal na serwerze -- serwer zwrocil blad. Co dalej?",
+    "shortAnswer": "Rollback -- przywroc poprzedni stan listy zachowany przed mutacja",
+    "answer": "**Poprawne zachowanie:** Rollback -- przywroc poprzedni stan listy zachowany przed mutacja\n\n**Kontekst wzorca 'Optimistic CRUD':** Zmieniasz UI przed odpowiedzią serwera. Dlatego musisz trzymac snapshot do rollbacku i radzic sobie z tymczasowymi id.\n\n**Inne typowe pulapki tego wzorca:**\n- Rollback przy bledzie mutacji\n- Tymczasowe id przed id z serwera\n- Spojnosc przy rownoczesnych mutacjach",
+    "keyPoints": [
+      "Rollback -- przywroc poprzedni stan listy zachowany przed mutacja",
+      "Rollback przy bledzie mutacji",
+      "Tymczasowe id przed id z serwera"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Zostawic element usuniety w UI -- serwer to mniej wazny",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Odswiezac cala strone (window.location.reload)",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Rollback -- przywroc poprzedni stan listy zachowany przed mutacja",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 35
+  },
+  {
+    "category": "Wzorce -- wyszukiwanie i dane",
+    "difficulty": "medium",
+    "question": "Gdzie trzymac selectedId (id wybranego elementu listy) w Master-detail view?",
+    "shortAnswer": "W rodzicu (lifting state up) -- najnizszy wspolny przodek listy i panelu detalu",
+    "answer": "**Poprawne zachowanie:** W rodzicu (lifting state up) -- najnizszy wspolny przodek listy i panelu detalu\n\n**Kontekst wzorca 'Master-detail view':** selectedId musi zyc w wspolnym przodku (lifting state up). Szybkie klikniecia wymagaja abort poprzedniego fetchu detalu.\n\n**Inne typowe pulapki tego wzorca:**\n- Abort przy szybkim przeklikiwaniu\n- Placeholder gdy nic nie wybrano\n- selectedId w rodzicu, nie w liscie",
+    "keyPoints": [
+      "W rodzicu (lifting state up) -- najnizszy wspolny przodek listy i panelu detalu",
+      "Abort przy szybkim przeklikiwaniu",
+      "Placeholder gdy nic nie wybrano"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "pulapka"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "W rodzicu (lifting state up) -- najnizszy wspolny przodek listy i panelu detalu",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Wylacznie wewnatrz komponentu listy",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Wylacznie w panelu detalu",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 36
+  },
+  {
+    "category": "Klocki -- podstawa",
+    "difficulty": "easy",
+    "question": "Kiedy uzywasz klocka 'Debounce'?",
+    "shortAnswer": "Search-as-you-type, auto-save, resize -- 'po ostatniej zmianie, nie po kazdej'.",
+    "answer": "**Debounce**\n\nPod spodem: setTimeout + clearTimeout w cleanup efektu. To nie throttle -- throttle przepuszcza co X ms nawet bez ciszy.\n\n**Po co w praktyce:** Search-as-you-type, auto-save, resize -- 'po ostatniej zmianie, nie po kazdej'.\n\n**Uzywany w:** Debounced async search, Auto-save form, Paginated data table (filtr).",
+    "keyPoints": [
+      "Search-as-you-type, auto-save, resize -- 'po ostatniej zmianie, nie po kazdej'.",
+      "Opoznia akcje az minie X ms ciszy. Kazda nowa zmiana resetuje timer.",
+      "Widzisz m.in. w: Debounced async search, Auto-save form"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "klocek",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Kazde pobieranie z API -- najczestszy klocek.",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Search-as-you-type, auto-save, resize -- 'po ostatniej zmianie, nie po kazdej'.",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Zawsze gdy efekt startuje cos dluzej niz render -- obowiazek, nie opcja.",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 37
+  },
+  {
+    "category": "Klocki -- podstawa",
+    "difficulty": "easy",
+    "question": "Kiedy uzywasz klocka 'Async fetcher'?",
+    "shortAnswer": "Kazde pobieranie z API -- najczestszy klocek.",
+    "answer": "**Async fetcher**\n\nDiscriminated union eliminuje nielegalne kombinacje (loading+error). fetch nie rzuca na 4xx/5xx -- sprawdz res.ok. empty != error != idle.\n\n**Po co w praktyce:** Kazde pobieranie z API -- najczestszy klocek.\n\n**Uzywany w:** prawie wszystkie wzorce-komponenty.",
+    "keyPoints": [
+      "Kazde pobieranie z API -- najczestszy klocek.",
+      "Pobiera dane i modeluje stany: idle / loading / success / error / empty.",
+      "Widzisz m.in. w: prawie wszystkie wzorce-komponenty"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "klocek",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Zawsze gdy efekt startuje cos dluzej niz render -- obowiazek, nie opcja.",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Infinite scroll, upload, polling -- gdy porazka bywa chwilowa i operacja jest bezpieczna do ponowienia.",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Kazde pobieranie z API -- najczestszy klocek.",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 38
+  },
+  {
+    "category": "Klocki -- podstawa",
+    "difficulty": "easy",
+    "question": "Kiedy uzywasz klocka 'Cleanup / anulowanie'?",
+    "shortAnswer": "Zawsze gdy efekt startuje cos dluzej niz render -- obowiazek, nie opcja.",
+    "answer": "**Cleanup / anulowanie**\n\nDla fetch: AbortController.abort() w cleanup. AbortError w catch ignorujesz -- to intencja. StrictMode montuje 2x w devie.\n\n**Po co w praktyce:** Zawsze gdy efekt startuje cos dluzej niz render -- obowiazek, nie opcja.\n\n**Uzywany w:** prawie wszystkie wzorce-komponenty.",
+    "keyPoints": [
+      "Zawsze gdy efekt startuje cos dluzej niz render -- obowiazek, nie opcja.",
+      "Zatrzymuje timer/fetch/listener przy unmount lub zmianie zaleznosci.",
+      "Widzisz m.in. w: prawie wszystkie wzorce-komponenty"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "klocek",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Zawsze gdy efekt startuje cos dluzej niz render -- obowiazek, nie opcja.",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Infinite scroll, upload, polling -- gdy porazka bywa chwilowa i operacja jest bezpieczna do ponowienia.",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Dwa komponenty o to samo; powrot do strony tabeli; powtorzone query.",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 39
+  },
+  {
+    "category": "Klocki -- zaawansowane",
+    "difficulty": "easy",
+    "question": "Kiedy uzywasz klocka 'Retry z backoffem'?",
+    "shortAnswer": "Infinite scroll, upload, polling -- gdy porazka bywa chwilowa i operacja jest bezpieczna do ponowienia.",
+    "answer": "**Retry z backoffem**\n\nNie retry'uj 4xx ani AbortError. Limit prob obowiazkowy. Jitter chroni przed thundering herd.\n\n**Po co w praktyce:** Infinite scroll, upload, polling -- gdy porazka bywa chwilowa i operacja jest bezpieczna do ponowienia.\n\n**Uzywany w:** Infinite scroll list, File upload z progressem, Live data / polling.",
+    "keyPoints": [
+      "Infinite scroll, upload, polling -- gdy porazka bywa chwilowa i operacja jest bezpieczna do ponowienia.",
+      "Ponawia nieudane zadanie z limitem prob i rosnacym odstepem.",
+      "Widzisz m.in. w: Infinite scroll list, File upload z progressem"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "klocek",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Dwa komponenty o to samo; powrot do strony tabeli; powtorzone query.",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Infinite scroll, upload, polling -- gdy porazka bywa chwilowa i operacja jest bezpieczna do ponowienia.",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Szkic wizarda, preferencje tabeli, motyw. NIE dla sekretow.",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 40
+  },
+  {
+    "category": "Klocki -- zaawansowane",
+    "difficulty": "easy",
+    "question": "Kiedy uzywasz klocka 'Cache + deduplikacja'?",
+    "shortAnswer": "Dwa komponenty o to samo; powrot do strony tabeli; powtorzone query.",
+    "answer": "**Cache + deduplikacja**\n\nKolejnosc: cache -> inflight -> nowy fetch. Klucz = endpoint + parametry. Po mutacji inwaliduj. Nie cache'uj bledow.\n\n**Po co w praktyce:** Dwa komponenty o to samo; powrot do strony tabeli; powtorzone query.\n\n**Uzywany w:** Debounced async search, Paginated data table.",
+    "keyPoints": [
+      "Dwa komponenty o to samo; powrot do strony tabeli; powtorzone query.",
+      "Ten sam klucz = jeden fetch. Inflight wspoldzielony, wynik zapamietany.",
+      "Widzisz m.in. w: Debounced async search, Paginated data table"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "klocek",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Szkic wizarda, preferencje tabeli, motyw. NIE dla sekretow.",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Scroll, resize, keydown, beforeunload, visibilitychange, click-outside.",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Dwa komponenty o to samo; powrot do strony tabeli; powtorzone query.",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 41
+  },
+  {
+    "category": "Klocki -- zaawansowane",
+    "difficulty": "easy",
+    "question": "Kiedy uzywasz klocka 'useLocalStorage / persystencja'?",
+    "shortAnswer": "Szkic wizarda, preferencje tabeli, motyw. NIE dla sekretow.",
+    "answer": "**useLocalStorage / persystencja**\n\nCzytaj w lazy initializerze useState (raz). JSON.parse w try/catch. storage event tylko z INNYCH kart. Guard SSR.\n\n**Po co w praktyce:** Szkic wizarda, preferencje tabeli, motyw. NIE dla sekretow.\n\n**Uzywany w:** Multi-step wizard, Paginated data table.",
+    "keyPoints": [
+      "Szkic wizarda, preferencje tabeli, motyw. NIE dla sekretow.",
+      "Stan Reacta w localStorage -- przezywa refresh, sync miedzy kartami.",
+      "Widzisz m.in. w: Multi-step wizard, Paginated data table"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "klocek",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Szkic wizarda, preferencje tabeli, motyw. NIE dla sekretow.",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Scroll, resize, keydown, beforeunload, visibilitychange, click-outside.",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Search-as-you-type, auto-save, resize -- 'po ostatniej zmianie, nie po kazdej'.",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 42
+  },
+  {
+    "category": "Klocki -- zaawansowane",
+    "difficulty": "easy",
+    "question": "Kiedy uzywasz klocka 'useEventListener'?",
+    "shortAnswer": "Scroll, resize, keydown, beforeunload, visibilitychange, click-outside.",
+    "answer": "**useEventListener**\n\nHandler w useRef = bez remove+add co render. Ta sama referencja do add i remove. passive:true dla scroll gdy bez preventDefault.\n\n**Po co w praktyce:** Scroll, resize, keydown, beforeunload, visibilitychange, click-outside.\n\n**Uzywany w:** Auto-save form, Infinite scroll list, Live data / polling.",
+    "keyPoints": [
+      "Scroll, resize, keydown, beforeunload, visibilitychange, click-outside.",
+      "addEventListener z cleanupem i swiezym handlerem przez useRef.",
+      "Widzisz m.in. w: Auto-save form, Infinite scroll list"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "klocek",
+      "kiedy"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Search-as-you-type, auto-save, resize -- 'po ostatniej zmianie, nie po kazdej'.",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Scroll, resize, keydown, beforeunload, visibilitychange, click-outside.",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Kazde pobieranie z API -- najczestszy klocek.",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 43
+  },
+  {
+    "category": "Klocki -> wzorce",
+    "difficulty": "medium",
+    "question": "Z jakich klockow skladasz wzorzec 'Debounced async search'?",
+    "shortAnswer": "Debounce + Async fetcher + Cleanup / anulowanie (+ Cache + deduplikacja dla powtorzonego query)",
+    "answer": "**Sklad:** Debounce + Async fetcher + Cleanup / anulowanie (+ Cache + deduplikacja dla powtorzonego query)\n\n**Dlaczego wlasnie te:** Debounce limituje requesty, Async fetcher trzyma stany UI, Cleanup abortuje race. Cache dokladasz gdy to samo query wraca.\n\nNa rozmowie nie wymieniaj kodow -- mow nazwami klockow i rolami, jakie pelnia w tym UX.",
+    "keyPoints": [
+      "Debounce + Async fetcher + Cleanup / anulowanie (+ Cache + deduplikacja dla powtorzonego query)",
+      "Kazdy feature to zwykle 3-5 klockow"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kompozycja",
+      "klocki"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "useLocalStorage / persystencja + useEventListener",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Tylko Retry z backoffem",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Debounce + Async fetcher + Cleanup / anulowanie (+ Cache + deduplikacja dla powtorzonego query)",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 44
+  },
+  {
+    "category": "Klocki -> wzorce",
+    "difficulty": "medium",
+    "question": "Z jakich klockow skladasz wzorzec 'Auto-save form'?",
+    "shortAnswer": "Debounce + Async fetcher + Cleanup / anulowanie + useEventListener (beforeunload)",
+    "answer": "**Sklad:** Debounce + Async fetcher + Cleanup / anulowanie + useEventListener (beforeunload)\n\n**Dlaczego wlasnie te:** Debounce czeka na cisze, fetcher zapisuje i pokazuje status, cleanup chroni przed race, useEventListener pilnuje beforeunload.\n\nNa rozmowie nie wymieniaj kodow -- mow nazwami klockow i rolami, jakie pelnia w tym UX.",
+    "keyPoints": [
+      "Debounce + Async fetcher + Cleanup / anulowanie + useEventListener (beforeunload)",
+      "Kazdy feature to zwykle 3-5 klockow"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kompozycja",
+      "klocki"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Debounce + Async fetcher + Cleanup / anulowanie + useEventListener (beforeunload)",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Cache + deduplikacja + useLocalStorage / persystencja",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Tylko Debounce",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 45
+  },
+  {
+    "category": "Klocki -> wzorce",
+    "difficulty": "medium",
+    "question": "Z jakich klockow skladasz wzorzec 'Infinite scroll list'?",
+    "shortAnswer": "Async fetcher + Cleanup / anulowanie + useEventListener (intersection) + Retry z backoffem",
+    "answer": "**Sklad:** Async fetcher + Cleanup / anulowanie + useEventListener (intersection) + Retry z backoffem\n\n**Dlaczego wlasnie te:** Intersection/scroll odpala kolejna strone, fetcher akumuluje, cleanup/abort i retry pilnuja niestabilnej sieci.\n\nNa rozmowie nie wymieniaj kodow -- mow nazwami klockow i rolami, jakie pelnia w tym UX.",
+    "keyPoints": [
+      "Async fetcher + Cleanup / anulowanie + useEventListener (intersection) + Retry z backoffem",
+      "Kazdy feature to zwykle 3-5 klockow"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kompozycja",
+      "klocki"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Debounce + useLocalStorage / persystencja",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Async fetcher + Cleanup / anulowanie + useEventListener (intersection) + Retry z backoffem",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Cache + deduplikacja + useLocalStorage / persystencja",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 46
+  },
+  {
+    "category": "Klocki -> wzorce",
+    "difficulty": "medium",
+    "question": "Z jakich klockow skladasz wzorzec 'Paginated data table'?",
+    "shortAnswer": "Debounce (filtr) + Async fetcher + Cleanup / anulowanie + Cache + deduplikacja + useLocalStorage / persystencja",
+    "answer": "**Sklad:** Debounce (filtr) + Async fetcher + Cleanup / anulowanie + Cache + deduplikacja + useLocalStorage / persystencja\n\n**Dlaczego wlasnie te:** Filtr tekstowy idzie przez Debounce, stan stron cache'ujesz, URL/persystencja trzymaja preferencje. Sam fetcher nie wystarczy.\n\nNa rozmowie nie wymieniaj kodow -- mow nazwami klockow i rolami, jakie pelnia w tym UX.",
+    "keyPoints": [
+      "Debounce (filtr) + Async fetcher + Cleanup / anulowanie + Cache + deduplikacja + useLocalStorage / persystencja",
+      "Kazdy feature to zwykle 3-5 klockow"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kompozycja",
+      "klocki"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Tylko Async fetcher",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "useEventListener + Retry z backoffem",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Debounce (filtr) + Async fetcher + Cleanup / anulowanie + Cache + deduplikacja + useLocalStorage / persystencja",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 47
+  },
+  {
+    "category": "Klocki -> wzorce",
+    "difficulty": "medium",
+    "question": "Z jakich klockow skladasz wzorzec 'File upload z progressem'?",
+    "shortAnswer": "Cleanup / anulowanie (abort XHR) + Retry z backoffem",
+    "answer": "**Sklad:** Cleanup / anulowanie (abort XHR) + Retry z backoffem\n\n**Dlaczego wlasnie te:** Tu rdzeniem jest XHR z progress + mozliwosc abort i rozsądny retry. Klasyczny fetch/async fetcher bez progress nie spelnia UX.\n\nNa rozmowie nie wymieniaj kodow -- mow nazwami klockow i rolami, jakie pelnia w tym UX.",
+    "keyPoints": [
+      "Cleanup / anulowanie (abort XHR) + Retry z backoffem",
+      "Kazdy feature to zwykle 3-5 klockow"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kompozycja",
+      "klocki"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Cleanup / anulowanie (abort XHR) + Retry z backoffem",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Debounce + Cache + deduplikacja",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "useLocalStorage / persystencja + Async fetcher bez progress",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 48
+  },
+  {
+    "category": "Klocki -> wzorce",
+    "difficulty": "medium",
+    "question": "Z jakich klockow skladasz wzorzec 'Live data / polling'?",
+    "shortAnswer": "Async fetcher + Cleanup / anulowanie + useEventListener (visibilitychange) + Retry z backoffem",
+    "answer": "**Sklad:** Async fetcher + Cleanup / anulowanie + useEventListener (visibilitychange) + Retry z backoffem\n\n**Dlaczego wlasnie te:** Fetcher odswieza dane, visibilitychange pauzuje w tle, cleanup/abort i retry chronia przed nakladaniem i chwilowymi bledami.\n\nNa rozmowie nie wymieniaj kodow -- mow nazwami klockow i rolami, jakie pelnia w tym UX.",
+    "keyPoints": [
+      "Async fetcher + Cleanup / anulowanie + useEventListener (visibilitychange) + Retry z backoffem",
+      "Kazdy feature to zwykle 3-5 klockow"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "kompozycja",
+      "klocki"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Debounce + useLocalStorage / persystencja",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Async fetcher + Cleanup / anulowanie + useEventListener (visibilitychange) + Retry z backoffem",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Tylko Cache + deduplikacja",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 49
+  },
+  {
+    "category": "Klocki -- podstawa",
+    "difficulty": "hard",
+    "question": "Jak dziala Debounce pod spodem? Opisz mechanizm.",
+    "shortAnswer": "setTimeout ustawia wartosc/akcje na pozniej; clearTimeout w cleanup efektu kasuje poprzedni timer przy kazdej nowej zmianie",
+    "answer": "**Mechanizm:** setTimeout ustawia wartosc/akcje na pozniej; clearTimeout w cleanup efektu kasuje poprzedni timer przy kazdej nowej zmianie\n\n**Szerszy kontekst:** Pod spodem: setTimeout + clearTimeout w cleanup efektu. To nie throttle -- throttle przepuszcza co X ms nawet bez ciszy.\n\n**Pilnuj tez:**\n- Cleanup timera w return useEffect\n- ReturnType<typeof setTimeout>\n- Nie mylic z throttle",
+    "keyPoints": [
+      "setTimeout ustawia wartosc/akcje na pozniej; clearTimeout w cleanup efektu kasuje poprzedni timer przy kazdej nowej zmianie",
+      "Cleanup timera w return useEffect",
+      "ReturnType<typeof setTimeout>"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "mechanizm"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "throttle: przepuszcza jedno zdarzenie co X ms niezaleznie od ciszy miedzy zdarzeniami",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "requestAnimationFrame bez zadnego cleanup",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "setTimeout ustawia wartosc/akcje na pozniej; clearTimeout w cleanup efektu kasuje poprzedni timer przy kazdej nowej zmianie",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 50
+  },
+  {
+    "category": "Klocki -- podstawa",
+    "difficulty": "hard",
+    "question": "Dlaczego stany fetchu modelowac jako discriminated union (idle | loading | success | error | empty), a nie osobne booleany?",
+    "shortAnswer": "Eliminuje nielegalne kombinacje stanow (np. loading + error naraz) i wymusza obsluge kazdego stanu w UI",
+    "answer": "**Mechanizm:** Eliminuje nielegalne kombinacje stanow (np. loading + error naraz) i wymusza obsluge kazdego stanu w UI\n\n**Szerszy kontekst:** Discriminated union eliminuje nielegalne kombinacje (loading+error). fetch nie rzuca na 4xx/5xx -- sprawdz res.ok. empty != error != idle.\n\n**Pilnuj tez:**\n- Sprawdzaj res.ok\n- empty != error\n- idle != empty",
+    "keyPoints": [
+      "Eliminuje nielegalne kombinacje stanow (np. loading + error naraz) i wymusza obsluge kazdego stanu w UI",
+      "Sprawdzaj res.ok",
+      "empty != error"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "mechanizm"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Eliminuje nielegalne kombinacje stanow (np. loading + error naraz) i wymusza obsluge kazdego stanu w UI",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "TypeScript wymaga zawsze 5 pol w obiekcie stanu",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Zeby moc uniknac uzywania useEffect",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 51
+  },
+  {
+    "category": "Klocki -- podstawa",
+    "difficulty": "hard",
+    "question": "User szybko zmienia query w search. Co robi AbortController w cleanup useEffect?",
+    "shortAnswer": "Wywoluje abort() na poprzednim fetchu; AbortError w catch ignorujesz -- to intencja, nie blad",
+    "answer": "**Mechanizm:** Wywoluje abort() na poprzednim fetchu; AbortError w catch ignorujesz -- to intencja, nie blad\n\n**Szerszy kontekst:** Dla fetch: AbortController.abort() w cleanup. AbortError w catch ignorujesz -- to intencja. StrictMode montuje 2x w devie.\n\n**Pilnuj tez:**\n- AbortError to nie blad UI\n- Ta sama referencja add/remove\n- Poprawny cleanup pod StrictMode",
+    "keyPoints": [
+      "Wywoluje abort() na poprzednim fetchu; AbortError w catch ignorujesz -- to intencja, nie blad",
+      "AbortError to nie blad UI",
+      "Ta sama referencja add/remove"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "mechanizm"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Ponawia stary fetch w tle z nizszym priorytetem",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Wywoluje abort() na poprzednim fetchu; AbortError w catch ignorujesz -- to intencja, nie blad",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Zapisuje oba wyniki do cache bez klucza i wybiera pozniejszy",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 52
+  },
+  {
+    "category": "Klocki -- zaawansowane",
+    "difficulty": "hard",
+    "question": "Dla jakich statusow HTTP i bledow NIE powinienes robic retry?",
+    "shortAnswer": "4xx (blad klienta -- retry nic nie da) oraz AbortError (to intencja anulowania, nie awaria)",
+    "answer": "**Mechanizm:** 4xx (blad klienta -- retry nic nie da) oraz AbortError (to intencja anulowania, nie awaria)\n\n**Szerszy kontekst:** Nie retry'uj 4xx ani AbortError. Limit prob obowiazkowy. Jitter chroni przed thundering herd.\n\n**Pilnuj tez:**\n- Bez retry na 4xx i AbortError\n- Twardy limit prob\n- Jitter przy backoffie",
+    "keyPoints": [
+      "4xx (blad klienta -- retry nic nie da) oraz AbortError (to intencja anulowania, nie awaria)",
+      "Bez retry na 4xx i AbortError",
+      "Twardy limit prob"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "mechanizm"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Tylko dla statusu 200 OK",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Dla wszystkich 5xx bez zadnego limitu prob",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "4xx (blad klienta -- retry nic nie da) oraz AbortError (to intencja anulowania, nie awaria)",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 53
+  },
+  {
+    "category": "Klocki -- zaawansowane",
+    "difficulty": "hard",
+    "question": "Jaka jest kolejnosc sprawdzania w fetchOnce (cache + dedup)?",
+    "shortAnswer": "Najpierw cache -> potem inflight (dolacz do trwajacego Promise) -> dopiero nowy fetch",
+    "answer": "**Mechanizm:** Najpierw cache -> potem inflight (dolacz do trwajacego Promise) -> dopiero nowy fetch\n\n**Szerszy kontekst:** Kolejnosc: cache -> inflight -> nowy fetch. Klucz = endpoint + parametry. Po mutacji inwaliduj. Nie cache'uj bledow.\n\n**Pilnuj tez:**\n- Klucz = endpoint + parametry\n- Inwalidacja po mutacji\n- inflight czysc w finally\n- Nie cache'uj bledow",
+    "keyPoints": [
+      "Najpierw cache -> potem inflight (dolacz do trwajacego Promise) -> dopiero nowy fetch",
+      "Klucz = endpoint + parametry",
+      "Inwalidacja po mutacji"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "mechanizm"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Najpierw cache -> potem inflight (dolacz do trwajacego Promise) -> dopiero nowy fetch",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Zawsze nowy fetch, wynik zapisz do cache",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Tylko localStorage -- bez trzymania Promise w pamieci",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 54
+  },
+  {
+    "category": "Klocki -- zaawansowane",
+    "difficulty": "hard",
+    "question": "Dlaczego czytac localStorage w lazy initializerze useState (funkcja), a nie w ciele komponentu?",
+    "shortAnswer": "Lazy initializer wykonuje sie RAZ na mount; czytanie w ciele komponentu powtarza sie co render",
+    "answer": "**Mechanizm:** Lazy initializer wykonuje sie RAZ na mount; czytanie w ciele komponentu powtarza sie co render\n\n**Szerszy kontekst:** Czytaj w lazy initializerze useState (raz). JSON.parse w try/catch. storage event tylko z INNYCH kart. Guard SSR.\n\n**Pilnuj tez:**\n- Lazy initializer, nie body render\n- try/catch na JSON.parse\n- storage event tylko inne karty\n- NIE trzymaj sekretow",
+    "keyPoints": [
+      "Lazy initializer wykonuje sie RAZ na mount; czytanie w ciele komponentu powtarza sie co render",
+      "Lazy initializer, nie body render",
+      "try/catch na JSON.parse"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "mechanizm"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Bo localStorage dziala wylacznie wewnatrz useEffect",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Lazy initializer wykonuje sie RAZ na mount; czytanie w ciele komponentu powtarza sie co render",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Bo SSR wymaga czytania co render na serwerze",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 55
+  },
+  {
+    "category": "Klocki -- zaawansowane",
+    "difficulty": "hard",
+    "question": "Po co trzymac handler w useRef zamiast przekazywac go bezposrednio do addEventListener?",
+    "shortAnswer": "Subskrypcja widzi zawsze swiezy callback bez kosztownego remove+add przy kazdym renderze",
+    "answer": "**Mechanizm:** Subskrypcja widzi zawsze swiezy callback bez kosztownego remove+add przy kazdym renderze\n\n**Szerszy kontekst:** Handler w useRef = bez remove+add co render. Ta sama referencja do add i remove. passive:true dla scroll gdy bez preventDefault.\n\n**Pilnuj tez:**\n- Ta sama referencja add/remove\n- Handler w useRef\n- passive: true gdy mozliwe",
+    "keyPoints": [
+      "Subskrypcja widzi zawsze swiezy callback bez kosztownego remove+add przy kazdym renderze",
+      "Ta sama referencja add/remove",
+      "Handler w useRef"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "mechanizm"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Zeby ominac TypeScript i miec typ any",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Bo addEventListener wymaga ref DOM, nie funkcji",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Subskrypcja widzi zawsze swiezy callback bez kosztownego remove+add przy kazdym renderze",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 56
+  },
+  {
+    "category": "Architektura",
+    "difficulty": "medium",
+    "question": "Co oznacza wzorzec Container / presentational w React?",
+    "shortAnswer": "Logika i stan w kontenerze, render w glupich komponentach bez wlasnego stanu. Testowalnosc renderu bez mockow sieci, reuzycje prezentacji z inna logika.",
+    "answer": "**Odpowiedz:** Logika i stan w kontenerze, render w glupich komponentach bez wlasnego stanu. Testowalnosc renderu bez mockow sieci, reuzycje prezentacji z inna logika.\n\n**Dlaczego tak:** To nie zakaz hookow -- to podzial odpowiedzialnosci. Mozesz miec smart hooka w kontenerze i czysty komponent listy/detalu karmiony propsami.",
+    "keyPoints": [
+      "Kontener = stan + efekty + dane",
+      "Presentational = props in, UI out",
+      "Latwiejsze testy i reuzycie UI"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "architektura",
+      "senior"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Logika i stan w kontenerze, render w glupich komponentach bez wlasnego stanu. Testowalnosc renderu bez mockow sieci, reuzycje prezentacji z inna logika.",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Wszystkie komponenty musza miec wlasny fetch",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Zakaz uzywania hookow",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 57
+  },
+  {
+    "category": "Architektura",
+    "difficulty": "medium",
+    "question": "Gdzie powinien mieszkac selectedId w Master-detail view? Jaka zasada to reguluje?",
+    "shortAnswer": "W najnizszym wspolnym przodku listy i panelu detalu -- zasada Lifting state up",
+    "answer": "**Odpowiedz:** W najnizszym wspolnym przodku listy i panelu detalu -- zasada Lifting state up\n\n**Dlaczego tak:** Redux/localStorage wchodza dopiero gdy ten sam wybor jest potrzebny daleko w drzewie albo ma przezyc refresh. Na start: lokalny stan rodzica.",
+    "keyPoints": [
+      "Lifting state up = najnizszy wspolny przodek",
+      "Lista i detal wspoldziela selectedId",
+      "Globalny store nie jest domyslny"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "architektura",
+      "senior"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Zawsze w globalnym Redux store",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "W najnizszym wspolnym przodku listy i panelu detalu -- zasada Lifting state up",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Tylko w localStorage",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 58
+  },
+  {
+    "category": "Architektura",
+    "difficulty": "medium",
+    "question": "Kiedy ekstrahowac logike do custom hooka (np. useSearch, useAutoSave)?",
+    "shortAnswer": "Gdy useEffect z logika jest dlugi albo duet stan+efekt powtarza sie w dwoch miejscach",
+    "answer": "**Odpowiedz:** Gdy useEffect z logika jest dlugi albo duet stan+efekt powtarza sie w dwoch miejscach\n\n**Dlaczego tak:** Hook ma sens, gdy izolujesz kontrakt (input -> stan/akcje) i chcesz testowac/logike uzyc ponownie. Przedwczesna ekstrakcja zwykle utrudnia refaktor UI.",
+    "keyPoints": [
+      "Sygnal: dlugi efekt albo duplikacja",
+      "Komponent mowi CO, hook JAK",
+      "Nie ekstrahuj 'na zapas'"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "architektura",
+      "senior"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Zawsze na poczatku projektu, zanim powstanie UI",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Tylko gdy uzywasz class components",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Gdy useEffect z logika jest dlugi albo duet stan+efekt powtarza sie w dwoch miejscach",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 59
+  },
+  {
+    "category": "Architektura",
+    "difficulty": "medium",
+    "question": "Kiedy siegnac po Compound components?",
+    "shortAnswer": "Gdy API komponentu w propsach wyglada jak konfiguracja XML (Tabs, Accordion, Menu)",
+    "answer": "**Odpowiedz:** Gdy API komponentu w propsach wyglada jak konfiguracja XML (Tabs, Accordion, Menu)\n\n**Dlaczego tak:** Compound components daja elastyczny sklad JSX kosztem ukrytego contextu. Do prostego inputa to overkill -- do zestawu wspolpracujacych czesci UI bardzo naturalne.",
+    "keyPoints": [
+      "Rodzic trzyma stan, dzieci czytaja context",
+      "Dobry fit: Tabs / Accordion / Menu",
+      "Gdy propsy staja sie 'XML-em'"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "architektura",
+      "senior"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Gdy API komponentu w propsach wyglada jak konfiguracja XML (Tabs, Accordion, Menu)",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Zamiast kazdego controlled inputa",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Tylko w SSR",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 60
+  },
+  {
+    "category": "Architektura",
+    "difficulty": "medium",
+    "question": "Jaki sygnal sugeruje, ze warto przepisac kilka useState na reducer jako maszyne stanow?",
+    "shortAnswer": "Trzy powiazane useState aktualizowane zawsze razem -- nielegalne przejscia nie powinny istniec w typach",
+    "answer": "**Odpowiedz:** Trzy powiazane useState aktualizowane zawsze razem -- nielegalne przejscia nie powinny istniec w typach\n\n**Dlaczego tak:** Reducer/maszyna stanow swieci, gdy stany sa dyskretne i powiazane (jak Async fetcher). Przy jednym booleanie zwykle wystarczy useState.",
+    "keyPoints": [
+      "Wiele pol stanu zmienia sie razem",
+      "Chcesz zabronic nielegalnych kombinacji",
+      "Event -> przejscie zamiast luźnych setterow"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "architektura",
+      "senior"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Masz tylko jeden boolean",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Trzy powiazane useState aktualizowane zawsze razem -- nielegalne przejscia nie powinny istniec w typach",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Chcesz uniknac TypeScript",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 61
+  },
+  {
+    "category": "Architektura",
+    "difficulty": "medium",
+    "question": "Jaka jest zasada nadrzedna rozpoznawania wzorca z tresci pytania rekrutacyjnego?",
+    "shortAnswer": "Najpierw wypisz slowa-klucze z tresci (dowod), potem nazwij wzorzec (wniosek) -- nigdy odwrotnie",
+    "answer": "**Odpowiedz:** Najpierw wypisz slowa-klucze z tresci (dowod), potem nazwij wzorzec (wniosek) -- nigdy odwrotnie\n\n**Dlaczego tak:** Rekruterzy celowo mieszaja podobne wzorce. Jesli zaczniesz od nazwy, latwo racjonalizujesz zla odpowiedz. Dowod z tresci chroni przed ta pulapka.",
+    "keyPoints": [
+      "Najpierw dowod (slowa-klucze)",
+      "Potem wniosek (nazwa wzorca)",
+      "Nie zgaduj 'ulubionego' wzorca"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "architektura",
+      "senior"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Najpierw wybierz ulubiony wzorzec, potem dopasuj tresc pytania",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Zawsze zaczynaj od Optimistic CRUD jako najbezpieczniejszego domyslu",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Najpierw wypisz slowa-klucze z tresci (dowod), potem nazwij wzorzec (wniosek) -- nigdy odwrotnie",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 62
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "easy",
+    "question": "W zadaniu slyszysz: 'as the user types' + wyniki z API. Jaki wzorzec?",
+    "shortAnswer": "Debounced async search",
+    "answer": "**Wzorzec:** Debounced async search\n\n**Dlaczego:** Tekst steruje wyszukiwaniem. Jesli tekst edytuje encje i pojawia sie Saved -- to juz Auto-save.\n\nNa rozmowie wypowiedz najpierw te slowa-klucze jako dowod, dopiero potem nazwe wzorca.",
+    "keyPoints": [
+      "'as the user types' + wyniki z API => Debounced async search",
+      "Najpierw dowod z tresci, potem nazwa"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "slowa-klucze",
+      "rozpoznawanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Debounced async search",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Auto-save form (jesli wpisywanie edytuje dane)",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Async dependent selects",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 63
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "easy",
+    "question": "W zadaniu slyszysz: 'auto-save' / 'Saved confirmation' / 'Saving indicator'. Jaki wzorzec?",
+    "shortAnswer": "Auto-save form",
+    "answer": "**Wzorzec:** Auto-save form\n\n**Dlaczego:** Status zapisu po ciszy = Auto-save. Instant bez Saved = Optimistic. Interwal bez akcji = polling.\n\nNa rozmowie wypowiedz najpierw te slowa-klucze jako dowod, dopiero potem nazwe wzorca.",
+    "keyPoints": [
+      "'auto-save' / 'Saved confirmation' / 'Saving indicator' => Auto-save form",
+      "Najpierw dowod z tresci, potem nazwa"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "slowa-klucze",
+      "rozpoznawanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Optimistic CRUD",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Auto-save form",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Live data / polling",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 64
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "easy",
+    "question": "W zadaniu slyszysz: 'load more' / 'scroll to bottom' / 'next batch'. Jaki wzorzec?",
+    "shortAnswer": "Infinite scroll list",
+    "answer": "**Wzorzec:** Infinite scroll list\n\n**Dlaczego:** Doklejanie porcji przy scrollu. Przyciski 'page 2 of N' + URL to inna historia.\n\nNa rozmowie wypowiedz najpierw te slowa-klucze jako dowod, dopiero potem nazwe wzorca.",
+    "keyPoints": [
+      "'load more' / 'scroll to bottom' / 'next batch' => Infinite scroll list",
+      "Najpierw dowod z tresci, potem nazwa"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "slowa-klucze",
+      "rozpoznawanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Paginated data table (przyciski stron)",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Master-detail view",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Infinite scroll list",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 65
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "easy",
+    "question": "W zadaniu slyszysz: 'select an item' + 'show details' / 'side panel'. Jaki wzorzec?",
+    "shortAnswer": "Master-detail view",
+    "answer": "**Wzorzec:** Master-detail view\n\n**Dlaczego:** Wybor elementu listy otwiera detal. Forma (panel/modal) nie zmienia wzorca.\n\nNa rozmowie wypowiedz najpierw te slowa-klucze jako dowod, dopiero potem nazwe wzorca.",
+    "keyPoints": [
+      "'select an item' + 'show details' / 'side panel' => Master-detail view",
+      "Najpierw dowod z tresci, potem nazwa"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "slowa-klucze",
+      "rozpoznawanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Master-detail view",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Multi-step wizard",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "File upload z progressem",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 66
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "easy",
+    "question": "W zadaniu slyszysz: 'add/edit/delete' + 'feel instant' / 'optimistic'. Jaki wzorzec?",
+    "shortAnswer": "Optimistic CRUD",
+    "answer": "**Wzorzec:** Optimistic CRUD\n\n**Dlaczego:** Mutacja zbioru + natychmiastowe UI i rollback. To nie search i nie Saved-after-typing.\n\nNa rozmowie wypowiedz najpierw te slowa-klucze jako dowod, dopiero potem nazwe wzorca.",
+    "keyPoints": [
+      "'add/edit/delete' + 'feel instant' / 'optimistic' => Optimistic CRUD",
+      "Najpierw dowod z tresci, potem nazwa"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "slowa-klucze",
+      "rozpoznawanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Auto-save form",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Optimistic CRUD",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Debounced async search",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 67
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "easy",
+    "question": "W zadaniu slyszysz: 'steps' / 'next/back' / 'review before submit'. Jaki wzorzec?",
+    "shortAnswer": "Multi-step wizard",
+    "answer": "**Wzorzec:** Multi-step wizard\n\n**Dlaczego:** Orchestracja krokow i jeden finalny submit (chyba ze tresc doda auto-save).\n\nNa rozmowie wypowiedz najpierw te slowa-klucze jako dowod, dopiero potem nazwe wzorca.",
+    "keyPoints": [
+      "'steps' / 'next/back' / 'review before submit' => Multi-step wizard",
+      "Najpierw dowod z tresci, potem nazwa"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "slowa-klucze",
+      "rozpoznawanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Auto-save form",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Paginated data table",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Multi-step wizard",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 68
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "easy",
+    "question": "W zadaniu slyszysz: 'sortable columns' + 'page 2 of N' + przyciski stron. Jaki wzorzec?",
+    "shortAnswer": "Paginated data table",
+    "answer": "**Wzorzec:** Paginated data table\n\n**Dlaczego:** Tabela z zamiana stron i zwykle stanem w URL. Nie myl z akumulujacym feedem.\n\nNa rozmowie wypowiedz najpierw te slowa-klucze jako dowod, dopiero potem nazwe wzorca.",
+    "keyPoints": [
+      "'sortable columns' + 'page 2 of N' + przyciski stron => Paginated data table",
+      "Najpierw dowod z tresci, potem nazwa"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "slowa-klucze",
+      "rozpoznawanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Paginated data table",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Infinite scroll list",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Live data / polling",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 69
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "easy",
+    "question": "W zadaniu slyszysz: 'depends on selection' / 'cascading dropdowns' / 'when the user picks X, load Y'. Jaki wzorzec?",
+    "shortAnswer": "Async dependent selects",
+    "answer": "**Wzorzec:** Async dependent selects\n\n**Dlaczego:** Fetch po wyborze, nie po wpisywaniu. Reset dzieci po zmianie rodzica.\n\nNa rozmowie wypowiedz najpierw te slowa-klucze jako dowod, dopiero potem nazwe wzorca.",
+    "keyPoints": [
+      "'depends on selection' / 'cascading dropdowns' / 'when the user picks X, load Y' => Async dependent selects",
+      "Najpierw dowod z tresci, potem nazwa"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "slowa-klucze",
+      "rozpoznawanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Debounced async search (gdy tekst, nie klik)",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Async dependent selects",
+        "correct": true
+      },
+      {
+        "label": "C",
+        "text": "Optimistic CRUD",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 70
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "easy",
+    "question": "W zadaniu slyszysz: 'upload' + 'progress bar' + 'cancel upload'. Jaki wzorzec?",
+    "shortAnswer": "File upload z progressem",
+    "answer": "**Wzorzec:** File upload z progressem\n\n**Dlaczego:** Progress i cancel wymagaja XHR/abort -- zwykly fetch/async fetcher nie wystarczy.\n\nNa rozmowie wypowiedz najpierw te slowa-klucze jako dowod, dopiero potem nazwe wzorca.",
+    "keyPoints": [
+      "'upload' + 'progress bar' + 'cancel upload' => File upload z progressem",
+      "Najpierw dowod z tresci, potem nazwa"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "slowa-klucze",
+      "rozpoznawanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Auto-save form",
+        "correct": false
+      },
+      {
+        "label": "B",
+        "text": "Async fetcher bez progress",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "File upload z progressem",
+        "correct": true
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 71
+  },
+  {
+    "category": "Rozpoznawanie (kiedy uzywac)",
+    "difficulty": "easy",
+    "question": "W zadaniu slyszysz: 'refresh every X seconds' / 'live updates' / 'when the tab becomes active'. Jaki wzorzec?",
+    "shortAnswer": "Live data / polling",
+    "answer": "**Wzorzec:** Live data / polling\n\n**Dlaczego:** Swiezosc w czasie + pauza w tle. Instant po kliku to nie polling.\n\nNa rozmowie wypowiedz najpierw te slowa-klucze jako dowod, dopiero potem nazwe wzorca.",
+    "keyPoints": [
+      "'refresh every X seconds' / 'live updates' / 'when the tab becomes active' => Live data / polling",
+      "Najpierw dowod z tresci, potem nazwa"
+    ],
+    "codeExamples": [],
+    "tags": [
+      "slowa-klucze",
+      "rozpoznawanie"
+    ],
+    "relatedQuestions": [],
+    "options": [
+      {
+        "label": "A",
+        "text": "Live data / polling",
+        "correct": true
+      },
+      {
+        "label": "B",
+        "text": "Optimistic CRUD (instant po akcji usera)",
+        "correct": false
+      },
+      {
+        "label": "C",
+        "text": "Infinite scroll list",
+        "correct": false
+      }
+    ],
+    "course": "patterns",
+    "correctUnknown": false,
+    "id": 72
+  }
+]

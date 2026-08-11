@@ -1,11 +1,28 @@
 import { useEffect, useState, type FormEvent } from 'react';
-import type { Question } from '../types';
+import type { CourseMeta, Question } from '../types';
 import AnswerMarkdown from './AnswerMarkdown';
 import './QuizScreen.css';
+
+/** Hide explanation when it only repeats key points (no extra value). */
+function explanationAddsValue(answer: string, keyPoints: string[]): boolean {
+  const normalized = answer.replace(/\*\*/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
+  if (!normalized) return false;
+  if (keyPoints.length === 0) return true;
+
+  const points = keyPoints.map((p) => p.replace(/\s+/g, ' ').trim().toLowerCase()).filter(Boolean);
+  const pointsJoined = points.join(' ');
+  const covered = points.every((p) => normalized.includes(p));
+  if (!covered) return true;
+
+  // Extra prose beyond the bullets (headings, "dlaczego", steps, etc.)
+  const extraChars = normalized.length - pointsJoined.length;
+  return extraChars > 60;
+}
 
 interface QuizScreenProps {
   questions: Question[];
   initialIndex: number;
+  course: CourseMeta;
   difficultIds: number[];
   passedIds: number[];
   onToggleDifficult: (id: number) => void;
@@ -17,6 +34,7 @@ interface QuizScreenProps {
 export default function QuizScreen({
   questions,
   initialIndex,
+  course,
   difficultIds,
   passedIds,
   onToggleDifficult,
@@ -29,8 +47,6 @@ export default function QuizScreen({
   const [selectedLabel, setSelectedLabel] = useState<string | null>(null);
   const [checked, setChecked] = useState(false);
   const [jumpValue, setJumpValue] = useState('');
-  // While dragging the slider we only preview the target; navigation is
-  // committed on release.
   const [dragValue, setDragValue] = useState<number | null>(null);
 
   const current = questions[index];
@@ -39,8 +55,12 @@ export default function QuizScreen({
   const progress = total > 1 ? (displayIndex / (total - 1)) * 100 : 100;
   const isDifficult = difficultIds.includes(current.id);
   const isPassed = passedIds.includes(current.id);
+  const isJsm = course.id === 'jsm';
+  const isPatterns = course.id === 'patterns';
+  const isPl = isJsm || isPatterns;
+  const unknownKey = Boolean(current.correctUnknown);
+  const hasOfficialCorrect = current.options.some((o) => o.correct);
 
-  // Remember the last visited question so the session can be resumed later.
   useEffect(() => {
     onProgress(current.id);
   }, [current.id, onProgress]);
@@ -54,8 +74,14 @@ export default function QuizScreen({
   const handleCheck = () => {
     if (!selectedLabel) return;
     setChecked(true);
-    const isCorrect = current.options.find((o) => o.label === selectedLabel)?.correct;
-    if (isCorrect) onPass(current.id);
+    if (hasOfficialCorrect) {
+      const isCorrect = current.options.find((o) => o.label === selectedLabel)?.correct;
+      if (isCorrect) onPass(current.id);
+    }
+  };
+
+  const markMastered = () => {
+    onPass(current.id);
   };
 
   const commitDrag = () => {
@@ -80,10 +106,20 @@ export default function QuizScreen({
       return classes.join(' ');
     }
 
+    if (unknownKey || !hasOfficialCorrect) {
+      if (selectedLabel === label) classes.push('is-selected');
+      return classes.join(' ');
+    }
+
     if (isCorrect) classes.push('is-correct');
     else if (selectedLabel === label) classes.push('is-wrong');
     return classes.join(' ');
   };
+
+  const selectedIsCorrect =
+    selectedLabel != null &&
+    hasOfficialCorrect &&
+    Boolean(current.options.find((o) => o.label === selectedLabel)?.correct);
 
   return (
     <div className="quiz-page">
@@ -91,25 +127,25 @@ export default function QuizScreen({
         <header className="quiz-header">
           <div className="quiz-meta">
             <div className="meta-item">
-              <span className="meta-label">Category</span>
+              <span className="meta-label">{isPl ? 'Zakres' : 'Category'}</span>
               <span className="meta-value">{current.category}</span>
             </div>
             <div className="meta-item">
-              <span className="meta-label">Difficulty</span>
-              <span className={`meta-value difficulty difficulty-${current.difficulty}`}>
-                {current.difficulty}
-              </span>
+              <span className="meta-label">{isPl ? 'Kurs' : 'Course'}</span>
+              <span className="meta-value">{course.title}</span>
             </div>
             {isPassed && (
               <div className="meta-item">
                 <span className="meta-label">Status</span>
-                <span className="meta-value passed-badge">✓ Passed</span>
+                <span className="meta-value passed-badge">
+                  {isPl ? '✓ Opanowane' : '✓ Passed'}
+                </span>
               </div>
             )}
           </div>
           <button type="button" className="btn-exit" onClick={onExit}>
             <span className="exit-icon">✕</span>
-            END SESSION
+            {isPl ? 'ZAKOŃCZ NAUKĘ' : 'END SESSION'}
           </button>
         </header>
 
@@ -117,7 +153,7 @@ export default function QuizScreen({
           <section className="quiz-main">
             <div className="question-panel">
               <div className="question-icon" aria-hidden="true">
-                ⚛️
+                {course.icon}
               </div>
               <h1 className="question-text">{current.question}</h1>
               {current.tags.length > 0 && (
@@ -148,17 +184,29 @@ export default function QuizScreen({
               ))}
             </div>
 
-            {checked && (
-              <div className={`result-banner ${selectedLabel && current.options.find((o) => o.label === selectedLabel)?.correct ? 'is-correct' : 'is-wrong'}`}>
-                {selectedLabel && current.options.find((o) => o.label === selectedLabel)?.correct
-                  ? 'Correct! That is the right answer.'
-                  : 'Not this time — see the full explanation below.'}
+            {checked && hasOfficialCorrect && (
+              <div className={`result-banner ${selectedIsCorrect ? 'is-correct' : 'is-wrong'}`}>
+                {selectedIsCorrect
+                  ? isPl
+                    ? 'Dobrze! To poprawna odpowiedź.'
+                    : 'Correct! That is the right answer.'
+                  : isPl
+                    ? 'Nie tym razem — porównaj z wyjaśnieniem poniżej.'
+                    : 'Not this time — see the full explanation below.'}
+              </div>
+            )}
+
+            {checked && (unknownKey || !hasOfficialCorrect) && (
+              <div className="result-banner is-study">
+                Wybrano odpowiedź <strong>{selectedLabel}</strong>. Arkusz PZŻ nie zawiera
+                oficjalnego klucza — zweryfikuj z podręcznikiem / instruktorrem. Możesz oznaczyć
+                pytanie jako opanowane.
               </div>
             )}
 
             {checked && current.keyPoints.length > 0 && (
               <div className="keypoints-panel">
-                <h2>Key points</h2>
+                <h2>{isPl ? 'Najważniejsze punkty' : 'Key points'}</h2>
                 <ul className="keypoints-list">
                   {current.keyPoints.map((point, i) => (
                     <li key={i}>{point}</li>
@@ -167,9 +215,9 @@ export default function QuizScreen({
               </div>
             )}
 
-            {checked && (
+            {checked && current.answer && explanationAddsValue(current.answer, current.keyPoints) && (
               <div className="answer-panel">
-                <h2>Full explanation</h2>
+                <h2>{isPl ? 'Jak myśleć / wyjaśnienie' : 'Full explanation'}</h2>
                 <AnswerMarkdown content={current.answer} />
               </div>
             )}
@@ -177,7 +225,9 @@ export default function QuizScreen({
 
           <aside className="quiz-sidebar">
             <div className="sidebar-progress">
-              <span className="progress-label">Question number</span>
+              <span className="progress-label">
+                {isPl ? 'Numer pytania' : 'Question number'}
+              </span>
               <div className="progress-count">
                 {displayIndex + 1}/{total}
               </div>
@@ -186,7 +236,7 @@ export default function QuizScreen({
                 <div className="progress-bar">
                   <div className="progress-fill" style={{ width: `${progress}%` }} />
                   <span className="progress-thumb" style={{ left: `${progress}%` }}>
-                    ⚛️
+                    {course.icon}
                   </span>
                   <input
                     type="range"
@@ -208,7 +258,7 @@ export default function QuizScreen({
 
             <form className="jump-form" onSubmit={handleJump}>
               <label className="jump-label" htmlFor="jump-input">
-                Go to question
+                {isPl ? 'Idź do pytania' : 'Go to question'}
               </label>
               <div className="jump-row">
                 <input
@@ -222,7 +272,7 @@ export default function QuizScreen({
                   placeholder={`1–${total}`}
                 />
                 <button type="submit" className="btn-action jump-btn">
-                  GO
+                  {isPl ? 'OK' : 'GO'}
                 </button>
               </div>
             </form>
@@ -234,14 +284,25 @@ export default function QuizScreen({
                 disabled={!selectedLabel || checked}
                 onClick={handleCheck}
               >
-                CHECK ANSWER
+                {isPl ? 'SPRAWDŹ ODPOWIEDŹ' : 'CHECK ANSWER'}
               </button>
+              {isJsm && checked && (unknownKey || !hasOfficialCorrect) && !isPassed && (
+                <button type="button" className="btn-action btn-mastered" onClick={markMastered}>
+                  OZNACZ JAKO OPANOWANE
+                </button>
+              )}
               <button
                 type="button"
                 className={`btn-action ${isDifficult ? 'is-active' : ''}`}
                 onClick={() => onToggleDifficult(current.id)}
               >
-                {isDifficult ? 'REMOVE FROM DIFFICULT' : 'ADD TO DIFFICULT'}
+                {isDifficult
+                  ? isPl
+                    ? 'USUŃ Z TRUDNYCH'
+                    : 'REMOVE FROM DIFFICULT'
+                  : isPl
+                    ? 'DODAJ DO TRUDNYCH'
+                    : 'ADD TO DIFFICULT'}
               </button>
               <button
                 type="button"
@@ -249,7 +310,7 @@ export default function QuizScreen({
                 disabled={index >= total - 1}
                 onClick={() => goTo(index + 1)}
               >
-                NEXT QUESTION →
+                {isPl ? 'NASTĘPNE PYTANIE →' : 'NEXT QUESTION →'}
               </button>
               <button
                 type="button"
@@ -257,7 +318,7 @@ export default function QuizScreen({
                 disabled={index <= 0}
                 onClick={() => goTo(index - 1)}
               >
-                ← PREVIOUS QUESTION
+                {isPl ? '← POPRZEDNIE PYTANIE' : '← PREVIOUS QUESTION'}
               </button>
               <button
                 type="button"
@@ -265,12 +326,13 @@ export default function QuizScreen({
                 disabled={index <= 0}
                 onClick={() => goTo(0)}
               >
-                ⟲ START OVER
+                {isPl ? '⟲ OD POCZĄTKU' : '⟲ START OVER'}
               </button>
             </div>
 
             <div className="sidebar-stats">
-              Passed {passedIds.length} · Question ID {current.id}
+              {isPl ? 'Opanowane' : 'Passed'} {passedIds.length}
+              {current.sourceNum != null ? ` · Nr ${current.sourceNum}` : ` · ID ${current.id}`}
             </div>
           </aside>
         </div>

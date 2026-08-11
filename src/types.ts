@@ -1,3 +1,5 @@
+export type CourseId = 'react' | 'jsm' | 'patterns';
+
 export interface QuestionOption {
   label: string;
   text: string;
@@ -23,6 +25,46 @@ export interface Question {
   tags: string[];
   relatedQuestions: number[];
   options: QuestionOption[];
+  course?: CourseId;
+  sourceNum?: number;
+  /** Official answer key missing — check shows selection only */
+  correctUnknown?: boolean;
 }
+
+export interface CourseMeta {
+  id: CourseId;
+  title: string;
+  subtitle: string;
+  icon: string;
+  accent: string;
+  requiresScope: boolean;
+}
+
+export const COURSES: CourseMeta[] = [
+  {
+    id: 'react',
+    title: 'React Interview',
+    subtitle: 'Pytania rekrutacyjne z React (Q&A + test A/B/C)',
+    icon: '⚛️',
+    accent: '#0d47a1',
+    requiresScope: false,
+  },
+  {
+    id: 'patterns',
+    title: 'React Interview: Wzorce',
+    subtitle: 'Wzorce + Klocki — kiedy używać, rozpoznawanie, pułapki',
+    icon: '🧩',
+    accent: '#6a1b9a',
+    requiresScope: true,
+  },
+  {
+    id: 'jsm',
+    title: 'Jachtowy Sternik Morski',
+    subtitle: 'Przykładowe pytania egzaminacyjne PZŻ — wybierz zakres',
+    icon: '⛵',
+    accent: '#00695c',
+    requiresScope: true,
+  },
+];
 
 export type QuizMode = 'all' | 'category' | 'difficult';

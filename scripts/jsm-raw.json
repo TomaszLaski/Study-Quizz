@@ -1,0 +1,3489 @@
+[
+  {
+    "num": 1,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Na jachcie jest urządzenie sterowe ze sterociągami. Podczas rejsu stwierdzono luzy przy obracaniu koła sterowego. Jakie działania należy podjąć w pierwszej kolejności?",
+    "options": {
+      "A": "Założyć ster awaryjny i sterować przy jego pomocy",
+      "B": "Nie da się nic zrobić, w najbliższym porcie skorzystać z pomocy technicznej",
+      "C": "Sprawdzić czy występują luzy na sterociągach i ewentualnie dociągnąć ściągacze sterociągów."
+    }
+  },
+  {
+    "num": 2,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Co to jest system \"Lazy Jack\" i do czego służy?",
+    "options": {
+      "A": "System linek łączących maszt z bomem, spełnia role topenanty i ułatwia zrzucanie i klarowanie grota, może spełniać też rolę pokrowca",
+      "B": "System linek służących do refowania grota",
+      "C": "Pokrowiec do klarowania grota na bomie"
+    }
+  },
+  {
+    "num": 3,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Czy pompa do wymiany oleju silnika wysokoprężnego jest dodatkowym zalecanym wyposażeniem?",
+    "options": {
+      "A": "Nie, ponieważ wymianę oleju wykonuje się tylko w autoryzowanym serwisie",
+      "B": "Tak, z uwagi na nisko umieszczony silnik i trudności z usuwaniem oleju z miski olejowej i możliwość zanieczyszczenia zęzy",
+      "C": "Tak, ponieważ pompa wymiany oleju jest wyposażeniem obowiązkowym przewidzianym przepisami"
+    }
+  },
+  {
+    "num": 4,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Co zrobić, gdy w trakcie pracy silnika zaburtowego z otworu kontrolnego przestanie lecieć woda?",
+    "options": {
+      "A": "Wyłączyć natychmiast silnik",
+      "B": "Zmniejszyć obroty nie gasząc silnika",
+      "C": "Na małych obrotach zdjąć pokrywę i polewać wodą cylindry silnika"
+    }
+  },
+  {
+    "num": 5,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "W jakim stosunku należy przygotowywać mieszankę oleju i benzyny do zaburtowego silnika dwusuwowego?",
+    "options": {
+      "A": "wg. instrukcji fabrycznej dla danego silnika",
+      "B": "1:80",
+      "C": "Dla takiego silnika nie należy stosować mieszanki"
+    }
+  },
+  {
+    "num": 6,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Jakie parametry pracy silnika wbudowanego powinny być kontrolowane podczas pracy silnika?",
+    "options": {
+      "A": "Tylko ciśnienie oleju",
+      "B": "Wystarczy sprawdzać czy woda chłodząca odpływa prawidłowo za burtę",
+      "C": "Ciśnienie oleju, temperatura cieczy chłodzącej, poziom paliwa w zbiorniku rozchodowym"
+    }
+  },
+  {
+    "num": 7,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Czy śruba napędowa o zmiennym skoku (t.zw. nastawna) pozwala na ruch jachtu wstecz bez przekładni nawrotnej?",
+    "options": {
+      "A": "Nie ponieważ zawsze kręci się prawoskrętnie",
+      "B": "Śruba o zmiennym skoku umożliwia tylko zwiększenie prędkości jachtu bez zwiększenia obrotów śruby",
+      "C": "Tak, ponieważ możliwa jest zmiana kąta łopat śruby"
+    }
+  },
+  {
+    "num": 10,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "O sprawności układu chłodzenia w silniku zaburtowym świadczy:",
+    "options": {
+      "A": "Łatwość uruchamiania zimnego silnika",
+      "B": "Wypływająca z otworu kontrolnego pod silnikiem struga wody",
+      "C": "Czyste spaliny (brak dymu w spalinach)"
+    }
+  },
+  {
+    "num": 11,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Jacht L=15 m, wyporność ok. 20 ton. Przy przekazaniu jachtu stwierdzono, że długość łańcucha kotwicznego wynosi 25 m. Czy można uznać, że jest to długość wystarczająca dla takiego jachtu?",
+    "options": {
+      "A": "Zdecydowanie tak",
+      "B": "Zdecydowanie nie",
+      "C": "Trudno określić, bo należy wziąć pod uwage kaliber łańcucha"
+    }
+  },
+  {
+    "num": 12,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Jak na jachcie powinna być umieszczona butla gazowa?",
+    "options": {
+      "A": "W oddzielnym pomieszczeniu dostępnym z zewnątrz i otworami wentylacyjnymi",
+      "B": "Wewnątrz jachtu z dala od źródeł ciepła",
+      "C": "W szafce w pobliżu kuchenki"
+    }
+  },
+  {
+    "num": 13,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Jak powinno być prawidłowo rozwiązane odprowadzenie ścieków z WC na jachcie (ochrona środowiska)?",
+    "options": {
+      "A": "Bezpośrednio za burtę z zaworem odcinającym",
+      "B": "Do zbiornika z możliwością wypompowania za burtę",
+      "C": "Za burtę i do zbiornika za pomocą zaworu trójdrożnego lub innego układu zaworów. Zbiornik z odbiorem na ląd"
+    }
+  },
+  {
+    "num": 14,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Jakie paliwo powinno być stosowane do zaburtowych silników dwusuwowych?",
+    "options": {
+      "A": "Czysta benzyna",
+      "B": "Czysta benzyna z dodatkiem oleju smarnego wg instrukcji obsługi",
+      "C": "Tylko czysta benzyna wysokooktanowa"
+    }
+  },
+  {
+    "num": 15,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Czy butle gazowe stosowane na jachtach w różnych krajach sa zunifikowane?",
+    "options": {
+      "A": "Nie, każdy kraj ma inny typ butli i przyłączeń",
+      "B": "W części krajów Europy stosowane są te same typy butli i przyłączeń",
+      "C": "Tak, są zunifikowane"
+    }
+  },
+  {
+    "num": 16,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "W czasie pracy silnika wbudowanego na jachcie zaobserwowano zbyt wysoką temperaturę silnika. Poziom płynu chłodzącego prawidłowy, pasek klinowy nieuszkodzony, prawidłowo napięty, tylko niewielki odpływ wody za burtę.. Jaka jest prawdopodobna przyczyna?",
+    "options": {
+      "A": "Zatkany filtr wody chłodzącej i/lub uszkodzenie wirnika pompy",
+      "B": "Zapowietrzenie wewnętrznego obiegu chłodzenia",
+      "C": "Uszkodzenie lub nawinięcie czegoś na śrubę ( liny lub tp.) moc ok. 0,48 kW ?"
+    }
+  },
+  {
+    "num": 18,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Na silniku zamocowano dodatkowy alternator do ładowania akumulatorów nawigacyjnych i oświetleniowych, czy można przełączać ładowanie tych baterii bez uszkodzenia układu prostującego?",
+    "options": {
+      "A": "Tak, ponieważ alternator jest odporny na brak obciążenia",
+      "B": "Nie, ponieważ alternator nie jest odporny na brak obciążenia",
+      "C": "Tak, ponieważ układ prostujący jest odporny na brak obciążenia"
+    }
+  },
+  {
+    "num": 19,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Na jachcie zainstalowane są akumulatory kwasowe obsługowe. Jakie podstawowe czynności konserwacyjne należy wykonywać?",
+    "options": {
+      "A": "Wystarczy sprawdzać czy nie ma luzów na klemach",
+      "B": "Okresowo sprawdzać poziom kwasu i dolewać wody destylowanej",
+      "C": "Okresowo sprawdzać poziom kwasu i dolewać 50% roztwór kwasu siarkowego"
+    }
+  },
+  {
+    "num": 20,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Przy próbie uruchomienia silnik nie obraca się i nie startuje. Sprawdzono napięcie akumulatorów, wynosi 12,8 V. Jakie czynności wykonać w pierwszej kolejności?",
+    "options": {
+      "A": "Sprawdzic poziom paliwa w zbiorniku",
+      "B": "Naładować akumulatory do napięcia min. 13 V i ponowić próbę",
+      "C": "Sprawdzic czy nie są obluzowane przewody od akumulatora i/lub rozrusznika"
+    }
+  },
+  {
+    "num": 21,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Przy próbie uruchomienia silnik nie startuje. Sprawdzono napięcie akumulatorów, wynosi 10,5 V. Jak dalej postępować?",
+    "options": {
+      "A": "Zdemontowac rozrusznik i oddać go do przeglądu",
+      "B": "Naładować akumulatory do napięcia min. 12,5 V i ponowić próbę",
+      "C": "Zdemontować mechanizm sprzegajacy rozrusznika (Bendix) i sprawdzić go"
+    }
+  },
+  {
+    "num": 22,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Po przejęciu jachtu chcemy sprawdzić silnik. Jakie PODSTAWOWE czynności wykonać przed uruchomieniem ?",
+    "options": {
+      "A": "Sprawdzić stan rurociąów wydechu, poziom paliwa w zbiorniku",
+      "B": "Sprawdzić stan zawieszenia silnika, stan sprzęgła silnik- wał śruby",
+      "C": "Sprawdzić poziom oleju, poziom płynu chłodzącego, otwarcie zaworu wody zaburtowej"
+    }
+  },
+  {
+    "num": 23,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Czy jacht o długości powyżej 7 m powinien posiadać znaki dzienne (kule, stożki itp.) zgodnie z MPZZM?",
+    "options": {
+      "A": "Tak, trzy kule i stożek....",
+      "B": "Tylko jedną kulę i stożek",
+      "C": "Jachty nie muszą pokazywać tych sygnałów bandera polska)?"
+    }
+  },
+  {
+    "num": 24,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Jacht posiada 3 przedziały mieszkalne, w środkowym jest kambuz i klapa do komory silnika. Ile gaśnic powinno być zainstalowanych na tym jachcie(",
+    "options": {
+      "A": "Cztery",
+      "B": "Trzy",
+      "C": "Sześć"
+    }
+  },
+  {
+    "num": 25,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Planowany jest dłuższy rejs ( ok. 1 miesiąc), silnik jest w dobrym stanie. Jakie minimum istotnych materiałów eksploatacyjnch do silnika wysokoprężnego powinno być zabrane na rejs?",
+    "options": {
+      "A": "Olej do wymiany, filtry oleju, paski klinowe, wirnik pompy chłodzącej",
+      "B": "Płyn chłodzący, zapasowe wtryskiwacze, zapasowy alternator",
+      "C": "Zapasowa pompa wtryskowa, zapasowy rozrusznik, końcówki wtryskiwaczy"
+    }
+  },
+  {
+    "num": 26,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Które z wymienionych elementów wyposażenia jachtu nie muszą posiadać atestu, ale powinny odpowiadać normom (bandera polska)?",
+    "options": {
+      "A": "Pasy ratunkowe, pasy bezpieczeństwa",
+      "B": "Tratwy ratunkowe, reflektor radarowy",
+      "C": "Kompas, rakiety"
+    }
+  },
+  {
+    "num": 27,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Jak powinna być zamocowana pneumatyczna tratwa ratunkowa na pokładzie?",
+    "options": {
+      "A": "Pasami lub linkami ze zwalniakiem hydrostatycznym",
+      "B": "Pasami lub linkami z hakiem odrzutnym zwalnianym ręcznie",
+      "C": "Pasami lub linkami z hakiem odrzutnym zwalnianym ręcznie i zwalniakiem hydrostatycznym"
+    }
+  },
+  {
+    "num": 28,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Tratwa pneumatyczna zamocowana jest pasami z hakiem odrzutnym i zwalniakiem hydrostatycznym Które z tych urządzeń musza być atestowane i/lub posiadać aktualną date ważności?",
+    "options": {
+      "A": "Tylko tratwa musi posiadać atest",
+      "B": "Tratwa - atest, zwalniak hydrostatyczny - aktualną datę ważności",
+      "C": "Tratwa - atest, hak odrzutny atest przepisami (bandera polska)? polska)?"
+    }
+  },
+  {
+    "num": 29,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Przy odbiorze pirotechniki ( na rejs pełnomorski) przekazano 8 rakiet czerwonych i pławkę \"pomarańczowy dym\". Czy jest to stan zgodny z",
+    "options": {
+      "A": "Tak",
+      "B": "Nie",
+      "C": "Tak, o ile posiadają aktualną datę ważności"
+    }
+  },
+  {
+    "num": 30,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Przy odbiorze jachtu (na rejs pełnomorski) przekazano jedno koło ratunkowe z pławką świetlną. Czy jest to stan zgodny z przepisami (bandera",
+    "options": {
+      "A": "Tak",
+      "B": "Nie",
+      "C": "Tak, o ile posiadają ważny atest"
+    }
+  },
+  {
+    "num": 31,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Jakie przepisy określają obowiązkowe wyposażenie jachtu morskiego polskiej bandery?",
+    "options": {
+      "A": "Wszystko jest zawarte w Karcie Bezpieczeństwa jachtu",
+      "B": "Załącznik nr 1 do Rozporzadzenia Ministra T.B. i Gosp. Morskiej z 28.02.2012",
+      "C": "Kodeks Morski"
+    }
+  },
+  {
+    "num": 32,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Jacht posiada silnik z wydechem \"mokrym\". Jaka podstawową czynność kontrolną należy wykonać po uruchomieniu silnika.",
+    "options": {
+      "A": "Natychmiast sprawdzić temperaturę płynu chłodzacego",
+      "B": "Obserwować barwę spalin",
+      "C": "Sprawdzić czy odpływa woda chłodzaca zewnetrznego obiegu chłodzącego"
+    }
+  },
+  {
+    "num": 33,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Jacht niesie spinaker. Przy zmianie kursu na pełniejszy należy:",
+    "options": {
+      "A": "Luzować bras, wybierac szot, wybierać kontrabras",
+      "B": "Luzować bras, luzować szot, wybierać kontrabras",
+      "C": "Wybierać bras, luzować szot, luzować kontrabras"
+    }
+  },
+  {
+    "num": 34,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Jacht posiada hydrauliczne napinanie achtersztagu. W czasie postoju w porcie wskazane jest:",
+    "options": {
+      "A": "Zmniejszyć cisnienie i nieco zluzować achtersztag",
+      "B": "Pozostawić takie napięcie achtersztagu jakie było podczas żeglugi",
+      "C": "Zwiększyc cisnienie i mocniej napiąć achtersztag, bo na postoju nie pracuje fokżagiel"
+    }
+  },
+  {
+    "num": 35,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Dla prawidłowego ustawienia SPINAKERBOMU potrzebne są liny:",
+    "options": {
+      "A": "Bras, kontrabras, topenenta",
+      "B": "Bras , szot spinakera, topenanta",
+      "C": "Bras, kontrabras, fał spinakera"
+    }
+  },
+  {
+    "num": 36,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Lina podtrzymująca bom, zazwyczaj zamocowana do jego noku to:",
+    "options": {
+      "A": "Topenanta",
+      "B": "Bras",
+      "C": "Obciagacz"
+    }
+  },
+  {
+    "num": 37,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Pokazany na rysunku typ osprzetu żaglowego to:",
+    "options": {
+      "A": "Osprzęt typu kuter",
+      "B": "Osprzet typu szkuner",
+      "C": "Osprzęt typu kecz"
+    }
+  },
+  {
+    "num": 38,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Przy przeglądzie takielunku stałego jachtu morskiego SZCZEGÓLNĄ uwagę należy zwrócić na:",
+    "options": {
+      "A": "Tylko na rodzaj stali użytej do produkcji lin, stan lin stalowych (brak pęknietych drutów i korozji).",
+      "B": "Zabezpieczenia ściągaczy przed rozkręceniem, stan lin stalowych (brak pękniętych drutów i korozji), stan zawleczek na sworzniach, napięcie lin.",
+      "C": "Tylko stan lin stalowych (brak pęknietych drutów i korozji) i rodzaj końcowek lin do połączenia z okuciami."
+    }
+  },
+  {
+    "num": 39,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Wypożyczając jacht na tabliczce znamionowej producenta odczytano n/w informacje: CE, kategoria C, max. obciązenie 1000 kg, max. liczba osób 8. Czy takim jachtem (bandera polska) kapitan ze stopniem J.ST.M.może pływać w Chorwacji i na morzu Adriatyckim przy każdej pogodzie zgodnie z przepisami?",
+    "options": {
+      "A": "Tak, jeżeli załoga nie przekroczy 8 osób",
+      "B": "Tak, jeżeli załoga nie przekracza 8 osób, a jacht jest krótszy niż 18 m, przy wietrze do 80 Beauforta",
+      "C": "Tak, o ile jacht jest krótszy niż 18 m, załoga nie przekracza 8 osób, przy wietrze do 60 Beauforta po wodach przybrzeżnych."
+    }
+  },
+  {
+    "num": 40,
+    "scope": "Jachty żaglowe morskie",
+    "scopeRaw": "JACHTY ŻAGLOWE MORSKIE",
+    "question": "Jacht jest wyposażony w \"Autopilota\" i przy dużej fali od rufy autopilot sygnalizuje alarm i nie trzyma kursu. Co należy zrobić?",
+    "options": {
+      "A": "Odczekać pewien czas, Autopilot wróci na kurs",
+      "B": "Przełączyć Autopilot w tryb STAND BY i przejść na sterowanie ręczne",
+      "C": "Natychmiast chwycić koło sterowe i sterować ręcznie"
+    }
+  },
+  {
+    "num": 41,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Na fragmencie mapy pokazanej na rysunku pokazana jest pława No2. Jaka jest charakterystyka światła tej pławy?",
+    "options": {
+      "A": "Białe, przerywane",
+      "B": "Czerwone migawkowe",
+      "C": "Czerwone błyskowe"
+    }
+  },
+  {
+    "num": 42,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Zamierzamy zakotwiczyć. Na polskiej mapie w wybranym miejscu są naniesione skróty jak na rysunku. Czy jest to dobre miejsce do zakotwiczenia?",
+    "options": {
+      "A": "Tak",
+      "B": "Nie",
+      "C": "Tak, o ile mamy przynajmniej 30 m łańcucha"
+    }
+  },
+  {
+    "num": 43,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Na fragmencie mapy pokazanej na rysunku znajduje się oznaczenie 74. Co ono oznacza?",
+    "options": {
+      "A": "Głębokość przy wysokiej wodzie",
+      "B": "Wysokość pokazanej obok wysepki",
+      "C": "Osuch 7,4 m ponad zero mapy przy niskiej wodzie"
+    }
+  },
+  {
+    "num": 44,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "W jaki sposób na mapach morskich oznaczana jest charakterystyka dna morskiego?",
+    "options": {
+      "A": "Odpowiednimi kolorami",
+      "B": "Nie podaje się takich informacji",
+      "C": "Skrótami literowymi"
+    }
+  },
+  {
+    "num": 45,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "W jakich pomocach nawigacyjnych (wydawnictwach) znajdziemy PEŁNĄ informację o światłach nawigacyjnych i ich charakterystyce?",
+    "options": {
+      "A": "W locjach i przewodnikach żeglarskich",
+      "B": "Na mapach i planach portów",
+      "C": "W spisach świateł i sygnałów nawigacyjnych"
+    }
+  },
+  {
+    "num": 46,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Planując wejście do portu na wodach pływowych NAJWAŻNIEJSZE będzie sprawdzenie:",
+    "options": {
+      "A": "Głębokości na podejściu do portu i czy możliwe jest wejście do portu przy każdym stanie pływu.",
+      "B": "Jak oznakowane jest wejście i podejście do portu",
+      "C": "Jakie są zalecane sposoby cumowania w tym porcie z uwagi na możliwe zmiany poziomu wody spowodowane pływami."
+    }
+  },
+  {
+    "num": 47,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "W jakim wydawnictwie znajdziemy instrukcję nawigacyjną dotyczącą wejścia do danego portu?",
+    "options": {
+      "A": "W spisie świateł i sygnałów nawigacyjnych",
+      "B": "W locji danego akwenu",
+      "C": "W Spisie Radiostacji Nautycznych (ALRS) cz. dot. operacji portowych i pilotażu"
+    }
+  },
+  {
+    "num": 48,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Jakie minimum pomocy nawigacyjnych należy zaplanować na rejs po wodach duńskich i szwedzkich (Bałtyk - wody bez pływów).",
+    "options": {
+      "A": "Mapa elektroniczna do plotera,",
+      "B": "Mapy na rejon żeglugi (poprawione), locje (z planami portów - marin), spis świateł",
+      "C": "Mapy na rejon żeglugi, Tablice pływów tom 2 (wody europejskie)"
+    }
+  },
+  {
+    "num": 49,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "W tablicach pływów podawana jest strefa czasu dla danego portu (Standart Port). Dla interesujacego nas portu podano Time Zone - 0200, a z tablic odczytano moment wysokiej wody 1320. O której godzinie czasu okrętowego wystąpi ta wysoka woda jeżeli czas okrętowy jest o 1 godzinę późniejszy od UTC (GMT)?",
+    "options": {
+      "A": "11.20",
+      "B": "12.20",
+      "C": "13.20"
+    }
+  },
+  {
+    "num": 50,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Znajdujemy się na akwenie, gdzie wystepują prądy pływowe. Posługując się GPS/ploterem określono KD, ustawiono jacht w tym kierunku i odczytano na kompasie KK prowadzący do portu odległego o kilka godzin drogi. Czy utrzymywanie",
+    "options": {
+      "A": "Tak",
+      "B": "Nie",
+      "C": "Tak, o ile na całej tej trasie deklinacja magnetyczna będzie taka sama tego KK przez cały czas żeglugi gwarantuje nam osiągnięcie tego portu bez ewentualnych korekt kursu?"
+    }
+  },
+  {
+    "num": 51,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Na rysunku pokazano fragment atlasu prądów pływowych. Jakie informacje można z niego odczytać?",
+    "options": {
+      "A": "Tylko, że pokazany prąd płynie na NE",
+      "B": "Sytuacja odnośi się do 6 godziny po HW w Dover, a prąd ma szybkość 13,26 m/ min. i płynie na NE",
+      "C": "Sytuacja odnosi się do ok. 6 godziny po HW w Dover, prąd płynie na NE, szybkość prądu przy pływie kwadraturowym wynosi 1,3 węzła i 2,6 węzła przy pływie syzygijnym."
+    }
+  },
+  {
+    "num": 52,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Dysponujemy TYLKO atlasem pływów i mapą danego akwenu. Czy jesteśmy w stanie ustalić kierunek i szybkość prądu dla danego momentu żeglugi?",
+    "options": {
+      "A": "Tak, w atlasie podane są kierunki i szybkości prądu",
+      "B": "Tak, na mapie są podane punkty (romby z literą) pozwalajace na znalezienie w tabeli kierunku i szybkości prądu.",
+      "C": "Nie"
+    }
+  },
+  {
+    "num": 53,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Gdzie można znaleźć informacje o prądach pływowych?",
+    "options": {
+      "A": "Tylko w Locjach danego akwenu",
+      "B": "W Tablicach Pływów",
+      "C": "W atlasach prądów pływowych, mapach morskich, na mapach wektorowych z funkcją prądy pływowe"
+    }
+  },
+  {
+    "num": 54,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Z jakich źródeł można uzyskać dane dotyczące pływów dla danego portu?",
+    "options": {
+      "A": "Tylko z Admiralty Tide Tables",
+      "B": "Tylko z tablic pływów publikowanych w różnych wydawnictwach (np. REED`S Almanac, Admiralty Tide Tables itp.",
+      "C": "Z rozmaitych Tablic Pływów, z Portali internetowych, z programów komputerowych i z map wektorowych z funkcją pływy."
+    }
+  },
+  {
+    "num": 55,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Jakie istotne dane podawane są w Tablicach Pływów dla danego portu głównego (Standard Port)?",
+    "options": {
+      "A": "Tylko momenty i wysokości pływu na każdy dzień.",
+      "B": "Tylko momenty i wysokości pływu oraz informacje o fazach księżyca",
+      "C": "Momenty i wysokości pływu, krzywa pływu, skok pływu syzygijnego i kwadraturowego"
+    }
+  },
+  {
+    "num": 56,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Sektor latarni opisany w Spisie Latarń jako 180° - 270° (90°) to sektor pokazany na szkicu jako?",
+    "options": {
+      "A": "Sektor A",
+      "B": "Sektor B",
+      "C": "Sektor C"
+    }
+  },
+  {
+    "num": 57,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Poniżej fragment informacji z Admiralty List of Lights. Jaka jest dokładna charakterystyka tej latarni ?",
+    "options": {
+      "A": "Światło błyskowe, zasięg 82 Mm, okres 5 sek, wysokość latarni 28 m, latarnia czarna.",
+      "B": "Światło błyskowe białe, okres 5 sek. błysk 0,1 sek. zasięg 28 Mm, brązowa wieża wys. 34 m.",
+      "C": "Światło błyskowe, zasięg świecenia 82 - 28 Mm, czarna latarnia, błysk 0,1 sek."
+    }
+  },
+  {
+    "num": 58,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "W Tablicach pływów dla portów głównych (Standard Port) podane są kolejne momenty i wysokości wód wysokich i niskich. Jak podawane są te dane dla portów dołączonych (Secondary Port)?",
+    "options": {
+      "A": "W taki sam sposób, tylko w odrębnej części tablic",
+      "B": "Tylko w postaci różnic czasu występowania wód wysokich i niskich",
+      "C": "W postaci różnic czasu i wysokości wód wysokich i niskich z uwzględnieniem skoku pływu."
+    }
+  },
+  {
+    "num": 59,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Na polskiej mapie morskiej naniesione są oznaczenia jak na rysunku obok. Co one oznaczają?",
+    "options": {
+      "A": "Głębokości odpowiednio 25m i 34 m",
+      "B": "Głębokości odpowiednio 2,5m i 3,4 m",
+      "C": "Głębokości odpowiednio 2 sążnie i 5 stóp, 3 sążnie 4 stopy"
+    }
+  },
+  {
+    "num": 60,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Na kursie jachtu zaobserwowano cztery pławy jak na rysunku ustawione w czworokąt.Jak postąpić i co one oznaczają?",
+    "options": {
+      "A": "Zalecane kotwicowisko dla jachtów. Można wpłynąć.",
+      "B": "Sprawdzić na mapie jaki obszar oznaczają. Jeżeli zakazany nie wpływać.",
+      "C": "Sieci rybackie, ominąć."
+    }
+  },
+  {
+    "num": 61,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Na kursie zaobserwowano znak jak na rysunku. Jak go mijać i co oznacza ?",
+    "options": {
+      "A": "Oś toru wodnego, mijać lewą burtą",
+      "B": "Takie znaki oznaczają rezerwaty przyrody, nie wpływać dalej.",
+      "C": "Minąć nie za blisko, znak to tymczasowa pława wrakowa"
+    }
+  },
+  {
+    "num": 62,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Jaką charakterystykę światła mają pławy oznaczające rozgałęzienia toru wodnego?",
+    "options": {
+      "A": "Dowolną, światło czerwone lub zielone",
+      "B": "Zawsze światło migawkowe czerwone lub zielone",
+      "C": "Światlo błyskowe grupowe ( 2 + 1 ) czerwone lub zielone"
+    }
+  },
+  {
+    "num": 63,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Czy oznakowanie IALA (kardynalne i boczne) jest inne w regionie \"A\", a inne regionie \"B\"?",
+    "options": {
+      "A": "Nie, jest takie same.",
+      "B": "Oznakowanie kardynalne jest takie same, a boczne jest inne",
+      "C": "Zarówno kardynalne jak i boczne jest inne"
+    }
+  },
+  {
+    "num": 64,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Jedna kratka na rysunku ( między strzałkami) odpowiada 0,5 sek. (kolor żółty- światło, kolor czarny-przerwa) Określić rodaj i okres tego światła?",
+    "options": {
+      "A": "Błyskowe, okres 2 sek. (Fl)",
+      "B": "Migające (Q)",
+      "C": "Blaskowe okres 1 sek (LFl)"
+    }
+  },
+  {
+    "num": 65,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "W Tablicach Pływów znaleziono dane pływu na dzień 23.10?. dla portu Cuxhaven jak na rysunku. Jaki jest skok pływu w tym dniu przed południem?",
+    "options": {
+      "A": "4,3 m",
+      "B": "3,4 m",
+      "C": "4,2 m stawa górna z trójkątem. Zaobserwowano nabieżnik jak na rysunku. Jak zmienić kurs aby wejść w linię nabieżnika?"
+    }
+  },
+  {
+    "num": 66,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Żeglujemy na Zalewie Szczecińskim.W locji znaleźlismy informację, że do portu Stepnica należy wchodzić w nabieżniku, stawa dolna z rombem,",
+    "options": {
+      "A": "W prawo",
+      "B": "Nie należy zmieniać kursu",
+      "C": "W lewo"
+    }
+  },
+  {
+    "num": 67,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Co oznacza pokazany na rysunku znak na mapie?",
+    "options": {
+      "A": "Zalecany kierunek ruchu statków",
+      "B": "Nakaz żeglugi we wskazanym kierunku",
+      "C": "Kierunek oznakowania toru wodnego"
+    }
+  },
+  {
+    "num": 68,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Jacht idzie kursem 270°, na kursie zaobserwowano migające + długi blask. Co to światło może oznaczać i jak postepować?",
+    "options": {
+      "A": "Północny znak kardynalny, minąć prawą burtą",
+      "B": "Południowy znak kardynalny minąć prawą burtą po sprawdzeniu sytuacji na mapie",
+      "C": "Wschodni znak kardynalny, sprawdzić położenie na mapie i odpowiednio zmienić kurs"
+    }
+  },
+  {
+    "num": 69,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Jacht wchodzący do portu na Bałtyku zaobserwował blisko wejścia pławę jak na rysunku. Jak ja mimąć?",
+    "options": {
+      "A": "Prawą burtą",
+      "B": "Lewą burtą",
+      "C": "Można minąć z obu stron, oznacza os toru wodnego"
+    }
+  },
+  {
+    "num": 70,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Jacht wychodzacy z portu ma przed dziobem plawę jak na rysunku. Jak ja minąć?",
+    "options": {
+      "A": "Prawa burtą",
+      "B": "Lewą burtą",
+      "C": "Można mijać z obu stron"
+    }
+  },
+  {
+    "num": 71,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Jacht wchodzacy do portu ma przed dziobem pławę jak na rysunku. Zamierza płynąc głównym torem do portu. Jak ja minąć?",
+    "options": {
+      "A": "Prawa burtą",
+      "B": "Lewą burtą",
+      "C": "Można mijać z obu stron"
+    }
+  },
+  {
+    "num": 72,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Na Zatoce Gdańskiej zaobserwowano jeden ze znaków jak na rysunku. Co oznacza i jak postąpić?",
+    "options": {
+      "A": "Akwen zakazany, nie wpływać poza znak",
+      "B": "Rezerwat przyrodniczy, nie wolno kotwiczyć",
+      "C": "Oś lub poczatek toru wodnego (t.zw. znak bezpiecznej wody). Obserwować dalsze znaki toru wodnego i płynąć wg. nich."
+    }
+  },
+  {
+    "num": 73,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Na kursie jachtu zaobserwowano jeden z pokazanych znaków. Jak go można minąć?",
+    "options": {
+      "A": "Tylko lewą burtą",
+      "B": "Tylko prawą burtą",
+      "C": "W dowolny sposób prawą lub lewą burtą"
+    }
+  },
+  {
+    "num": 74,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Po której stronie należy mijać taką pławę (system kardynalny)?",
+    "options": {
+      "A": "Po jej stronie północnej",
+      "B": "Po jej stronie zachodniej",
+      "C": "Po jej stronie południowej"
+    }
+  },
+  {
+    "num": 75,
+    "scope": "Locja",
+    "scopeRaw": "LOCJA",
+    "question": "Jacht płynący kursem 170° zaobserwował na kursie pławy jak na rysunku, najpierw pierwszę a dalej w prawo od kursu kolejną.. Jak płynąć aby ominąć niebezpieczeństwo?",
+    "options": {
+      "A": "Zmienić kurs w lewo i minąć obie pławy prawą burtą",
+      "B": "Zmienić kurs w lewo i ominąć pierwszą pławę prawą burtą, a drugą pławę lewą burtą",
+      "C": "Sprawdzić na mapie położenie niebezpieczeństwa. Po upewnieniu się zmienić kurs w prawo i minąć obie pławy lewą burtą."
+    }
+  },
+  {
+    "num": 76,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Istnieje możliwość pobrania map różnych parametrów pogody (system GRIB) na kilka dni naprzód i korzystania z nich na morzu. Jakie wyposażenie jest potrzebne, aby z tego korzystać na jachcie.",
+    "options": {
+      "A": "Specjalny odbiornik do pobierania tych danych",
+      "B": "Radioodbiornik z odpowiednim zakresem częstotliwości i komputer",
+      "C": "Tylko dostęp do internetu i komputer"
+    }
+  },
+  {
+    "num": 77,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Czy skala Petersena powiązana jest ze skalą Beauforta?",
+    "options": {
+      "A": "Nie, są to całkowicie rózne skale",
+      "B": "Są wzajemine zależne i ściśle powiązane",
+      "C": "Obie skale sa równoważne, określaja te same parametry, różnią się tylko nazwą"
+    }
+  },
+  {
+    "num": 78,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Z jakich źródeł można uzyskać mapy synoptyczne podczas postoju w porcie?",
+    "options": {
+      "A": "Jedynie w kapitanatach portów",
+      "B": "Jedynie z internetu",
+      "C": "W kapitanatach portów oraz z urządzeń zainstalowanych na jachcie jak faksy pogodowe lub z Internetu"
+    }
+  },
+  {
+    "num": 79,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Jakie dane zawsze zawarte są w morskim komunikacie pogodowym?",
+    "options": {
+      "A": "Tylko prognoza siły i kierunku wiatru",
+      "B": "Ostrzeżenia, sytuacja baryczna, prognoza siły i kierunku wiatru, widzialność, stan morza, opady",
+      "C": "Prognoza siły i kierunku wiatru, prognoza orientacyjna na nastepny okres"
+    }
+  },
+  {
+    "num": 80,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Jakie dane będą nam potrzebne do odbioru komunikatów pogodowych przez radiostację UKF?",
+    "options": {
+      "A": "Tylko moment (czas) nadawania i nazwa stacji nadającej",
+      "B": "Nazwa stacji i jej położenie oraz moment (czas) nadawania i kanał roboczy na którym pracuje stacja nadająca",
+      "C": "Tylko moment (czas) nadawania, bo prognozy podawane są wyłącznie na kanale 16"
+    }
+  },
+  {
+    "num": 81,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "W jakich źródłach możemy znaleźć informacje potrzebne do odbioru morskich radiowych komunikatów pogodowych?",
+    "options": {
+      "A": "W locjach danego akwenu",
+      "B": "W biuletynach Morskich Biur Pogody",
+      "C": "W Spisach Radiostacji Nautycznych (Admiralty List of Radio Signals) i/lub innych wydawnictwach (almanachach) dla żeglarzy podajacych te informacje."
+    }
+  },
+  {
+    "num": 82,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Na ekranie odbiornika NAVTEX odczytano komunikat jak na rysunku. Jaka jest prognoza, na jaki okres?",
+    "options": {
+      "A": "prognoza na 12 godzin, wiatr SW 5 do 6, region Fisher",
+      "B": "Prognoza na 12 godzin, wiatr SW 5 potem 6, stan morza umiarkowany, region German Bight",
+      "C": "Prognoza na 12 godzin, wiatr SW 5 do 6, widzialność umiarkowana, stan morza 5 - 6"
+    }
+  },
+  {
+    "num": 83,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Jakie dane dotyczace ustawień należy wprowadzić do odbiornika NAVTEX aby odbierać komunikaty pogodowe?",
+    "options": {
+      "A": "Symbol typu wiadomości i symbol stacji z której chcemy odbierać komunikaty",
+      "B": "Nic nie trzeba wprowadzać urządzenie działa automatycznie",
+      "C": "Wystarczy symbol stacji, komunikaty pogodowe są zawsze odbierane"
+    }
+  },
+  {
+    "num": 84,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "W prognozie pogody sformułowanie \"wiatr SW 3 - 4\" oznacza:",
+    "options": {
+      "A": "Wiatr południowo-wschodni, umiarkowany",
+      "B": "Wiatr południowo-zachodni, słaby, 3-4 węzłów",
+      "C": "Wiatr południowo-zachodni, umiarkowany, 3-4 stopni Beauforta"
+    }
+  },
+  {
+    "num": 85,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "W komunikacie meteorologicznym wywieszonym w kapitanacie portu podano: niż nad Bałtykiem 990, przesuwa się na wschód. W jakich jednostkach podane jest ciśnienie i czy jest ono wyższe czy niższe od średniego cisnienia na poziomie morza?",
+    "options": {
+      "A": "W barach i jest niższe od średniego",
+      "B": "W hektopascalach ( HPa) i jest niższe od średniego",
+      "C": "W hektopascalach ( HPa) i jest wyższe od średniego"
+    }
+  },
+  {
+    "num": 86,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Na polskiej mapie synoptycznej poszczególne skróty \" N, W\" oznaczają kolejno :",
+    "options": {
+      "A": "Wiatry północne (North), wiatry zachodnie (West)",
+      "B": "Centrum niżu, centrum wyżu",
+      "C": "Chmury niskie, chmury wysokie"
+    }
+  },
+  {
+    "num": 87,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Na rysunku pokazano fragment mapy synoptycznej. Jakiej pogody możemy spodziewać się w Polsce?",
+    "options": {
+      "A": "Opady, sine wiatry z N - NE",
+      "B": "Duże zachmurzenie, wiatr SW - W",
+      "C": "Brak lub małr zachmurzenie, wiatr SE - S"
+    }
+  },
+  {
+    "num": 88,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Na rysunku pokazano diagram kierunku i prędkości wiatru dla jednej doby ( godziny od 08.00 do 08.00). Prognoza ICM. Jak zmieni się kierunek wiatru w ciągu tej doby?\"",
+    "options": {
+      "A": "na początku okresu SE 30B na końcu S-SW 2°B",
+      "B": "na początku okresu SW 20B na końcu S-SW 3°B",
+      "C": "na początku okresu NW 30B na końcu SE 2°B"
+    }
+  },
+  {
+    "num": 89,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Jeżeli w prognozie radiowej słyszymy \"niż z nad Danii pogłębia się i przesuwa szybko na wschód\", to w ciągu najbliższej doby Zatoce Gdańskiej spodziewamy się :",
+    "options": {
+      "A": "Słabnących wiatrów z kierunków wschodnich",
+      "B": "Rosnącej siły wiatru z kierunków zachodnich",
+      "C": "Słabych wiatrów północnych"
+    }
+  },
+  {
+    "num": 90,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Izobary kreślone na mapach pogody są to :",
+    "options": {
+      "A": "Linie łączące punkty o jednakowej temperaturze",
+      "B": "Linie łączące punkty o jednakowej wilgotności powietrza",
+      "C": "Linie łączące punkty o jednakowej wartości ciśnienia"
+    }
+  },
+  {
+    "num": 91,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Gdzie na jachcie powinien być umieszczony termometr?",
+    "options": {
+      "A": "Jest to obojętne byle był zabezpieczony przed uszkodzeniem",
+      "B": "W miejscu dogodnym do odczytu",
+      "C": "W miejscu zacienionym, z dala od źródeł ciepła chłodne to:"
+    }
+  },
+  {
+    "num": 92,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Powierzchnia (warstwa) rozdzielająca masę powietrza ciepłego od masy powietrza chłodnego w przypadku kiedy powietrze ciepłe napływa na",
+    "options": {
+      "A": "Front chłodny,",
+      "B": "Front ciepły,",
+      "C": "Front zokludowany"
+    }
+  },
+  {
+    "num": 93,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "W ciągu dnia obserwowano chmury jak na rysunku. Po południu wiatr osłabł, a chmury powoli zanikają, ciśnienie nie zmieniało się. Jakiej pogody można się spodziewać?",
+    "options": {
+      "A": "Podobnej pogody bez opadów i niewielkim zachmurzeniu",
+      "B": "Wzrostu zachmurzenia, przelotnych opadów",
+      "C": "Bardzo silnego wiatru przy niewielkim zachmurzeniu"
+    }
+  },
+  {
+    "num": 94,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Wiatromierz pokazuje szybkość wiatru w węzłach. Jak przeliczyć w przybliżeniu tą szybkość na stopnie skali Beauforta ?",
+    "options": {
+      "A": "Nie da się. Jedyna możliwość to skorzystać z tablic nawigacyjnych",
+      "B": "Skorzystać z przybliżonego wzoru °B = (węzły + 5)/5",
+      "C": "Trzeba przeliczyć węzły na m/sek. 3m/sek. = 1°B; 6m/sek. = 2°B; 9m/sek.= 3°B itd."
+    }
+  },
+  {
+    "num": 95,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "W jakich jednostkach podaje się szybkość wiatru w komunikatach meteorologicznych?",
+    "options": {
+      "A": "Zawsze tylko w stopniach skali Beauforta",
+      "B": "Zawsze tylko w km/godz",
+      "C": "To zależy od przyjętego systemu w danym kraju ( najczęściej m/sek lub 0B)"
+    }
+  },
+  {
+    "num": 96,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Wiatromierz na statku pokazuje tylko parametry wiatru pozornego, czy można na tej podstawie określić parametry wiatru rzeczywistego",
+    "options": {
+      "A": "Tak jeżeli dysponujemy przyrządem mierzącym szybkość jachtu",
+      "B": "Tak, wystarczą tylko odpowiednie tablice, czy diagramy",
+      "C": "Nie jest to możliwe"
+    }
+  },
+  {
+    "num": 97,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "W trakcie rejsu na jachcie zaobserwowano nagły spadek ciśnienia w wysokości 3 hPa w ciągu godziny. Sytuacja taka świadczy o:",
+    "options": {
+      "A": "Świadczy o nadejściu wyżu i stabilizacji pogody",
+      "B": "Świadczy o nadejściu niżu i nadejściu silnego wiatru",
+      "C": "Świadczy o opadach przy słabym wietrze"
+    }
+  },
+  {
+    "num": 98,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "W komunikatach pogody nadawanych przez radio podawane są przede wszystkim poniższe informacje:",
+    "options": {
+      "A": "Wilgotność względna",
+      "B": "Kierunek i siła wiatru, temperatura, opad",
+      "C": "Rodzaje występujących chmur"
+    }
+  },
+  {
+    "num": 99,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Jaka jest zależność pomiędzy wilgotnością względną, a temperaturą punktu rosy?",
+    "options": {
+      "A": "Przy temperaturze punktu rosy wilgotność względna wynosi 100%",
+      "B": "Przy temperaturze punktu rosy wilgotność względna wynosi 0%",
+      "C": "Nie ma zależności pomiędzy temperaturą punktu rosy, a wilgotnością względną"
+    }
+  },
+  {
+    "num": 100,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Jeżeli jacht żeglujący na obszarze niżowym płynie kursem fordewind to centrum niżu będzie znajdowało się (półkula północna) : :",
+    "options": {
+      "A": "Ok. 2 rumby przed lewym trawersem jachtu",
+      "B": "Dokładnie przed dziobem jachtu",
+      "C": "Po prawej ręce sternika"
+    }
+  },
+  {
+    "num": 101,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Radiowy morski komunikat meteorologiczny posiada następujący schemat:",
+    "options": {
+      "A": "Prognoza na następne 24 godziny",
+      "B": "Ostrzeżenia, sytuacja baryczna, prognoza na 12 godzin, orientacyjna prognoza na następne 12 godzin",
+      "C": "Omówienie sytuacji barycznej, prognoza na 12 godzin"
+    }
+  },
+  {
+    "num": 102,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Czy znajomość aktualnej wilgotności względnej powietrza może być przydatna dla prognozowania mgły?",
+    "options": {
+      "A": "Nie, bo wilgotność względna nie wpływa na możliwość tworzenia się mgły",
+      "B": "Tak, szczególnie przy znajomości tendencji zmian temperatury",
+      "C": "Tak, ale tylko jeżeli wilgotność względna jest niższa niż 20%"
+    }
+  },
+  {
+    "num": 103,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Bryza dzienna to wiatr wiejący:",
+    "options": {
+      "A": "W nocy od morza do lądu",
+      "B": "W dzień od morza do lądu",
+      "C": "W dzień od lądu do morza"
+    }
+  },
+  {
+    "num": 104,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Na mapie synoptycznej taki symbol oznacza:",
+    "options": {
+      "A": "Front ciepły",
+      "B": "Front zokludowany",
+      "C": "Front chłodny"
+    }
+  },
+  {
+    "num": 105,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Wiatr przyziemny w niżu wieje (półkula północna):",
+    "options": {
+      "A": "Prostopadle do izobar do centrum niżu",
+      "B": "Od centrum niżu na zewnątrz odchylony przeciwnie do ruchu wskazówek zegara o kąt 20-40° do izobary",
+      "C": "Do środka niżu, przeciwnie do ruchu wskazówek zegara, odchylony o kąt 20 - 40° do izobary wynosi 10 g?"
+    }
+  },
+  {
+    "num": 106,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Ile wynosi wilgotność względna powietrza zawierającego 5 g pary wodnej/m3 jeżeli w danej temperaturze ilość pary nasycającej 1 m3 powietrza",
+    "options": {
+      "A": "20%",
+      "B": "80%",
+      "C": "50%"
+    }
+  },
+  {
+    "num": 107,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "W jakich jednostkach podawane jest ciśnienie w komunikatach meteo w żegludze morskiej?",
+    "options": {
+      "A": "W barach",
+      "B": "W mm słupa rtęci",
+      "C": "W hektopaskalach (hPA) można się spodziewać na północ od Rozewia?"
+    }
+  },
+  {
+    "num": 108,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "W komunikacie meteorologicznym podano, że nad środkowym Bałtykiem będzie przemieszczał się front chłodny z zachodu na wschód. Jakiej pogody",
+    "options": {
+      "A": "Bez opadów, małe zachmurzenie",
+      "B": "Ciągły opad deszczu słabnący wiatr",
+      "C": "Wzrost zachmurzenia, burze, szkwały"
+    }
+  },
+  {
+    "num": 109,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Jakiej pogody można spodziewać się na obszarze wyżowym?",
+    "options": {
+      "A": "Duże zachmurzenie opady",
+      "B": "Burze, opady przelotne",
+      "C": "Małe zachmurzenie lub bezchmurnie, brak opadów"
+    }
+  },
+  {
+    "num": 110,
+    "scope": "Meteorologia",
+    "scopeRaw": "METEOROLOGIA",
+    "question": "Jakich jednostek i przyrządów używa się do określania wilgotności względnej powietrza?",
+    "options": {
+      "A": "Gramy/ m3, wilgotnościomierzy",
+      "B": "Procenty, higrometry",
+      "C": "Promile, higrografy"
+    }
+  },
+  {
+    "num": 111,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Wody śródlądowe. Mały statek idący pod żaglami powinien ustąpić:",
+    "options": {
+      "A": "Statkowi pasażerskiemu o napędzie mechanicznym,",
+      "B": "Małemu statkowi o napędzie mechanicznym,",
+      "C": "Wodolotowi płynącemu z duża prędkością."
+    }
+  },
+  {
+    "num": 113,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jak jacht powinien przecinać system rozgraniczenia ruchu?",
+    "options": {
+      "A": "Nie wolno go w ogóle przecinać",
+      "B": "W dowolny sposób, ale jak najszybciej",
+      "C": "Możliwie prostopadle do toru nie przeszkadzając statkom korzystającym z systemu"
+    }
+  },
+  {
+    "num": 114,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "W jakim przedziale czasowym powinny być zapalone światła jachtu?",
+    "options": {
+      "A": "Od zmierzchu do świtu",
+      "B": "Od jednej godziny przed zachodem słońca do jednej godziny po zachodzie słońca",
+      "C": "Od zachodu do wschodu słońca"
+    }
+  },
+  {
+    "num": 115,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Na kursie zaobserwowano światła jak na rysunku. Jak należy postapić?",
+    "options": {
+      "A": "Ominąć ten statek w bezpiecznej odległości z dowolnej strony",
+      "B": "Można przejść blisko za rufą",
+      "C": "Sprawdzić położenie na mapie i głębokości. Ominąć biorąc pod uwagę głębokości."
+    }
+  },
+  {
+    "num": 116,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Na kursie zaobserwowano statek jak na rysunku. Światła żółte (gwiazdki) migaja na przemian. Jakie działanie podjąć?",
+    "options": {
+      "A": "Zmienić kurs i przejść za rufą",
+      "B": "Zmienić kurs i przejść w dużej odleglości (około 1 Mm)",
+      "C": "Zatrzymać się i poczekać aż statek odplynie"
+    }
+  },
+  {
+    "num": 117,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Statek żaglowy o długości 8 m, na wodach śródlądowych idący pod żaglami powinien ustąpić",
+    "options": {
+      "A": "Statkowi pasażerskiemu o nap. mech.",
+      "B": "Motorówce o długości ok. 10 m",
+      "C": "Łodzi wiosłowej w ruchu"
+    }
+  },
+  {
+    "num": 118,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Wody śródlądowe. Statek pasażerski nadał serię podwójnych krótkich dźwięków. Co to oznacza?",
+    "options": {
+      "A": "Nie mogę manewrować",
+      "B": "Niebezpieczeństwo zderzenia",
+      "C": "Człowiek za burtą"
+    }
+  },
+  {
+    "num": 119,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Wody śródlądowe. Statek pasażerski o długości mniejszej niż 20 m oznakowany jak na rysunku jest uważany za:",
+    "options": {
+      "A": "Statek",
+      "B": "Mały statek",
+      "C": "Statek motorowy"
+    }
+  },
+  {
+    "num": 120,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht zaobserwował ok. dwa rumby z prawej burty światła jak na rysunku. Odległość ok. 1 Mm. Co należy zrobić ?",
+    "options": {
+      "A": "Zmienić kurs zdecydowanie w prawo i przejść za rufą statku w odległości większej niż 1000 m.",
+      "B": "Zmienić kurs tak aby przejść za rufą statku",
+      "C": "Zmienić kurs o 1800 i oddalić się od tego statku"
+    }
+  },
+  {
+    "num": 122,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Dwa krótkie dźwięki nadane przez statek oznaczają:",
+    "options": {
+      "A": "Zmieniam kurs w prawo,",
+      "B": "Zmieniam kurs w lewo,",
+      "C": "Uwaga. jachtów przecinają się tak, że powoduje to ryzyko zderzenia. Ustąpić powinien?"
+    }
+  },
+  {
+    "num": 123,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht \"A\" pod żaglami płynie lewym halsem, drugi jacht \"B\" idzie pod żaglami prawym halsem, a na sztagu ma wywieszony czarny stożek. Kursy",
+    "options": {
+      "A": "Jacht A,",
+      "B": "Jacht B,",
+      "C": "Ten który ma drugi jacht po lewej ręce."
+    }
+  },
+  {
+    "num": 124,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Na wodach śródlądowych przy spotkaniu statku żeglugi pasażerskiej i małego jachtu żaglowego na kursach kolizyjnych:",
+    "options": {
+      "A": "Statek pasażerski ustępuje pierwszeństwa jachtowi,",
+      "B": "Jacht żaglowy utrzymuje swój kurs,",
+      "C": "Jacht żaglowy ustępuje z drogi statkowi. dwa czarne stożki wierzchołkami do siebie) tak, że powoduje to ryzyko zderzenia. Co powinien zrobić?"
+    }
+  },
+  {
+    "num": 125,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht pod żaglami na zatoce Gdańskiej idzie kursem przecinającym się z kursem niewielkiego statku o napędzie mechanicznym ( który niesie sygnał",
+    "options": {
+      "A": "Utrzymać kurs i szybkość",
+      "B": "Przejść mu blisko za rufą",
+      "C": "Ominąć go z daleka za rufą"
+    }
+  },
+  {
+    "num": 126,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Idąc we mgle usłyszano na jachcie dwa dźwięki długie przed dziobem. Jak należy postąpić?",
+    "options": {
+      "A": "Zmniejszyć szybkość, zmienić kurs w prawo, być w gotowości do manewrów",
+      "B": "Nie zmieniać kursu, nasłuchiwać w którą stronę przemieszcza się statek nadający sygnał",
+      "C": "Najlepiej zatrzymać się i poczekać, aż statek nadający sygnał oddali się"
+    }
+  },
+  {
+    "num": 127,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht idzie kanałem portowym i zbliża się do zakrętu, tor za zakrętem nie jest widoczny z uwagi na budynki na nabrzeżu. Przed dziobem usłyszano jeden dźwięk długi. Co powinien zrobić jacht?",
+    "options": {
+      "A": "Zatrzymać się i oczekiwać na dalsze sygnały.",
+      "B": "Kontynuować swój kurs i nadać sygnał dźwiękowy dwa długie dźwięki",
+      "C": "Trzymać się blisko prawej krawędzi kanału, zmniejszyć szybkość, gotowość do manewrów"
+    }
+  },
+  {
+    "num": 128,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Podczas żeglugi we mgle przed dziobem usłyszano sygnał: dźwięk długi i dwa krótkie dźwięki, wkrótce potem: jeden długi dźwięk i trzy krótkie dźwięki. Co to oznacza i jak postępować.",
+    "options": {
+      "A": "Statek inny niż o napędzie mechanicznym (np. żaglowy, poławiający), drugi sygnał może być nadany pomyłkowo. Zmniejszyć szybkość, być gotowym do manewrów.",
+      "B": "Statek nadał sygnał zamierzam was wyprzedzić. Prowadzić obserwację, być gotowym do manewrów",
+      "C": "Pierwszy sygnał to statek holujący, drugi to holowany. Zmienić zdecydowanie kurs w tą stronę skąd słychać było drugi sygnał. Gotowość do manewrów"
+    }
+  },
+  {
+    "num": 129,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jeśli dwa statki o napędzie mechanicznym płyną kursami przecinającymi się tak, że istnieje ryzyko zderzenia, a nie jest to sytuacja wyprzedzania to:",
+    "options": {
+      "A": "Oba statki mają obowiązek zmienić kurs tak, aby ich kursy się nie przecięły,",
+      "B": "Statek, który ma drugi statek z prawej burty, powinien ustąpić mu drogi,",
+      "C": "Statek nawietrzny ustępuje drogi statkowi zawietrznemu,"
+    }
+  },
+  {
+    "num": 130,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Trzy krótkie dźwięki nadawane przez statek oznaczają:",
+    "options": {
+      "A": "Zmieniam mój kurs w prawo,",
+      "B": "Zmieniam mój kurs w lewo,",
+      "C": "Moje maszyny pracują wstecz."
+    }
+  },
+  {
+    "num": 131,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht żegluje w cieśninach duńskich z lewej burty przed dziobem zaobserwowano statek jak na rysunku. Co powinien zrobić jacht?",
+    "options": {
+      "A": "Utrzymać kurs, widać, że statek przejdzie nam przed dziobem",
+      "B": "To statek ograniczony zanurzeniem, sprawdzić na mapie głębokości i opis toru, nie przeszkadzać w przejściu.",
+      "C": "Statek wiezie niebezpieczny ładunek, dokładnie go obserwować"
+    }
+  },
+  {
+    "num": 132,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht idzie pod żaglami półwiatrem prawego halsu. Nieco w prawo od kursu zaobserwowano statek oznakowany jak na rysunku. Co te znaki oznaczają i co powinien zrobić jacht?",
+    "options": {
+      "A": "Statek poławiajacy. Sieci rozciągnięte ponad 150 m. zdecydowanie odpaść w lewo, mijać z daleka",
+      "B": "Statek pławiający dryfuje, przejść przed dziobem",
+      "C": "Statek poławiający stoi i wybiera sieci, przejść przed dziobem nie za blisko"
+    }
+  },
+  {
+    "num": 133,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht idzie na silniku, z prawej burty dwa rumby od dziobu zaobserwowano światła jak na rysunku (odległość ok. 0,5 Mm). Co powinien zrobić jacht?",
+    "options": {
+      "A": "Utrzymać kurs i prędkość",
+      "B": "Zmienić kurs w lewo i minąć ta jednostkę prawą burtą",
+      "C": "Znacznie zmienić kurs w lewo i minąć ta jednostkę w odległości ponad 2 Mm"
+    }
+  },
+  {
+    "num": 134,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Na torze wodnym zaobserwowano światła jak na rysunku. Co oznaczają i co powinien zrobic jacht?",
+    "options": {
+      "A": "Statek o ograniczonej zdolności manewrowej, minąć dowolnie",
+      "B": "Statek wykonujący prace podwodne, mijać od strony świateł zielonych",
+      "C": "Statek pchajacy barkę, mijać nie za blisko"
+    }
+  },
+  {
+    "num": 135,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht idzie pod żaglami, z lewej burty na trawersie (odległość ok. 2 Mm) zaobserwowano światła jak na rysunku. Co powinien zrobić jacht?",
+    "options": {
+      "A": "Utrzymać kurs i prędkość",
+      "B": "Zmienić kurs w prawo i czekać aż statek wyprzedzi jacht",
+      "C": "Zmienić kurs w lewo i zwiększyć szybkość aby przejść za rufą statku"
+    }
+  },
+  {
+    "num": 136,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "W spotkaniu jachtów żeglujących tym samym halsem z drogi ustępuje jacht:",
+    "options": {
+      "A": "Znajdujący się od strony zawietrznej,",
+      "B": "Znajdujący się od strony nawietrznej,",
+      "C": "Każdy z nich powinien zmienić kurs, aby uniknąć zderzenia."
+    }
+  },
+  {
+    "num": 137,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Wody śródlądowe. Na burcie stojącego statku wywieszono sygnały jak na rysunku. Z której strony należy minąć ten statek?",
+    "options": {
+      "A": "Nie wolno mijać takiego statku,",
+      "B": "Od strony flagi czerwonej",
+      "C": "Od strony flagi czerwono -białej"
+    }
+  },
+  {
+    "num": 138,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht idzie na silniku, z prawej burty przed dziobem zaobserwowano światła jak na rysunku. Co powinien zrobić jacht?",
+    "options": {
+      "A": "Utrzymać kurs i prędkość",
+      "B": "Zmienić kurs w prawo i przejść za rufą tej jednostki",
+      "C": "Zmienić kurs w lewo i zwiększyć szybkość aby przejść przed dziobem statku"
+    }
+  },
+  {
+    "num": 139,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Małemu statkowi idącemu pod żaglami na wodach śródlądowych ustępuje:",
+    "options": {
+      "A": "Statek żaglowy nie będący małym statkiem,",
+      "B": "Statek pasażerski,",
+      "C": "Mały statek o napędzie mechanicznym."
+    }
+  },
+  {
+    "num": 140,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht płynący do portu Świnoujście blisko wejścia wchodzi na tor wodny. Za rufą jachtu na torze znajduje się prom też wchodzący do portu. Jak powinien zachować się jacht?",
+    "options": {
+      "A": "Utrzymywać swój kurs, gdyż jest statkiem wyprzedzanym",
+      "B": "Natychmiast zejść z toru, zatrzymać się i czekać na przejście promu",
+      "C": "Iść prawą strona toru blisko krawędzi, aby nie przeszkadzać wchodzącemu promowi."
+    }
+  },
+  {
+    "num": 141,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Poza torem wodnym na otwartych wodach zatoki gdańskiej jacht pod żaglami idzie kursem przecinającym się z kursem małego statku pasażerskiego tak, że powoduje to ryzyko zderzenia. Co powinien zrobić?",
+    "options": {
+      "A": "Przejść mu za rufą",
+      "B": "Zmniejszyć szybkość i przepuścić go przed dziobem",
+      "C": "Utrzymać kurs i prędkość"
+    }
+  },
+  {
+    "num": 142,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht płynący pod żaglami po otwartych wodach morskich ustępuje:",
+    "options": {
+      "A": "Jachtowi żaglowemu płynącemu na silniku,",
+      "B": "Statkowi o ograniczonej zdolności manewrowej,",
+      "C": "Statkowi o napędzie mechanicznym w drodze."
+    }
+  },
+  {
+    "num": 143,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Statek ma wywieszony sygnał jak na rysunku. Co oznacza i jak postępować?",
+    "options": {
+      "A": "Wzywam pomocy, podejść i nawiązać łączność",
+      "B": "Mam nurka pod wodą, mijać ostrożnie",
+      "C": "Stoję na mieliźnie, mijać daleko"
+    }
+  },
+  {
+    "num": 144,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "W warunkach ograniczonej widzialności należy:",
+    "options": {
+      "A": "Zrzucić żagle i żeglować na silniku",
+      "B": "Stanąć w dryfie",
+      "C": "Zmniejszyć prędkość, wyznaczyć obserwatora i nadawać sygnały dźwiękowe."
+    }
+  },
+  {
+    "num": 145,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Na podejściu do portu Gdańsk jacht zaobserwował statek, który podniósł sygnały jak na rysunku. Jak go wyminąć?",
+    "options": {
+      "A": "Z dowolnej strony",
+      "B": "Od strony wystawionych kul",
+      "C": "Od strony wystawionych rombów"
+    }
+  },
+  {
+    "num": 146,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Na kursie zaobserwowano światła jak na rysunku. Co oznaczają i jak postąpić?",
+    "options": {
+      "A": "Statek poławiający, ominąć daleko",
+      "B": "Statek o ograniczonej zdolności manewrowej, ustąpić z drogi",
+      "C": "Statek pilotowy, utrzymać kurs i szybkość."
+    }
+  },
+  {
+    "num": 147,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "W nocy na kursie zauważono światła jak na rysunku. Co oznaczają i jak postępować?",
+    "options": {
+      "A": "Statek poławiający sieciami dryfującymi ominąć daleko",
+      "B": "Statek holujący i holowany, lewe burty, zdecydowanie zmienić kurs w prawo (zestaw ma ponad 200 m).",
+      "C": "Statek o napędzie mechanicznym, a za nim jacht, utrzymać kurs"
+    }
+  },
+  {
+    "num": 148,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht idzie na silniku, nadeszła mgła. Jaki sygnał należy nadawać?",
+    "options": {
+      "A": "Jeden dźwięk długi co 2 minuty",
+      "B": "Dwa dźwięki długie co 2 minuty",
+      "C": "Jeden dźwięk długi i dwa krótkie co 2 minuty"
+    }
+  },
+  {
+    "num": 149,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "W nocy na kursie zaobserwowano statek niosący światła jak na rysunku. Co to oznacza i jak postępować?",
+    "options": {
+      "A": "Statek nie odpowiada za swoje ruchy. Ominąć go z daleka",
+      "B": "Statek na mieliźnie, sprawdzić położenie na mapie i odpowiednio ominąć.",
+      "C": "Statek wzywa pomocy, nawiązać łączność"
+    }
+  },
+  {
+    "num": 150,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht płynie na silniku, przeciwnym kursem zbliża się jacht pod żaglami niosący sygnał jak na rysunku. Jak należy postąpić?",
+    "options": {
+      "A": "Utrzymać kurs",
+      "B": "Zmienić kurs w prawo",
+      "C": "Zmienić kurs w lewo"
+    }
+  },
+  {
+    "num": 151,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Gdy dwa jachty żeglują pod żaglami różnymi halsami i kursami przecinającymi się tak, że powoduje to ryzyko zderzenia prawo drogi posiada:",
+    "options": {
+      "A": "Idący lewym halsem",
+      "B": "Idący ostrzejszym kursem",
+      "C": "Idący prawym halsem"
+    }
+  },
+  {
+    "num": 152,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht idzie kursem przecinającym kurs małej jednostki oznakowanej jak na rysunku tak, że powoduje to ryzyko zderzenia. Jak należy postąpić?",
+    "options": {
+      "A": "Utrzymać kurs i szybkość",
+      "B": "Przejść mu blisko za rufą",
+      "C": "Ominąć go z daleka"
+    }
+  },
+  {
+    "num": 153,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Na kursie jachtu jest jednostka, która podniosła sygnał jak na rysunku. Jak ją wyminąć?",
+    "options": {
+      "A": "Nie zbliżać się bliżej niż 2 Mm",
+      "B": "Minąć go daleko przed dziobem",
+      "C": "Minąć go z dowolnej strony w bezpiecznej odległości."
+    }
+  },
+  {
+    "num": 154,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht żaglowy płynący na żaglach i na silniku w dzień powinien nosić:",
+    "options": {
+      "A": "Czarną kulę",
+      "B": "Czarny stożek skierowany wierzchołkiem w dół,",
+      "C": "Czerwoną kulę."
+    }
+  },
+  {
+    "num": 155,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht płynący pod żaglami po otwartych wodach morskich idzie kursem przecinającym kurs statku o napędzie mechanicznym oznakowanym jak na rysunku tak, że powoduje to ryzyko zderzenia. Jak należy postąpić?",
+    "options": {
+      "A": "Utrzymać kurs i szybkość",
+      "B": "Ustąpić temu statkowi mijając go w bezpiecznej odległości",
+      "C": "To statek łowiący okrężnicą, ominąć go w znacznej odległości"
+    }
+  },
+  {
+    "num": 157,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Na jachcie mamy ploter z funkcją MOB. Jakie informacje z tego urządzenia będą nam NAJBARDZIEJ przydatne w przypadku manewru \"człowiek za burtą\", po wciśnięciu przycisku MOB.",
+    "options": {
+      "A": "Współrzędne punktu gdzie wypadł człowiek",
+      "B": "Współrzędne jachtu podczas manewru i jego szybkość i kurs",
+      "C": "Namiar i odległość do punktu w którym wypadł człowiek"
+    }
+  },
+  {
+    "num": 158,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Czy mapy w rzucie Merkatora sa wiernoodległościowe?",
+    "options": {
+      "A": "Tak, odległości odmierzane zależą tylko od skali mapy",
+      "B": "Nie, skala odległości zmienia się z szerokością geograficzną",
+      "C": "Tak, ale tylko dla obszarów podbiegunowych poniżej zależności jest prawdziwa"
+    }
+  },
+  {
+    "num": 159,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "W dawnej nawigacji do określania kursów używano skali rumbowej, obecnie uzywa się jej do określania kierunkow wiatru. Która z podanych",
+    "options": {
+      "A": "SE odpowiada 125°",
+      "B": "SW odpowiada 225°",
+      "C": "NNE odpowiada 30°"
+    }
+  },
+  {
+    "num": 160,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jak zamawiać potrzebne na rejs mapy?",
+    "options": {
+      "A": "W katalogu map (np. Admiralicji, czy innych wydawnictw) wybrać numery potrzebnych map i takie zamówić.",
+      "B": "W katalogu map (np. Admiralicji, czy innych wydawnictw) wybrać tytuły map i skalę według tych danych zamówić mapy.",
+      "C": "Zamówić u dystrybutora map wszystkie mapy na dany akwen"
+    }
+  },
+  {
+    "num": 161,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jak należy odmierzać odległości na mapie w rzucie Merkatora?",
+    "options": {
+      "A": "Na bocznej ramce mapy ( 1 Mm = 1` szerokości geograficznej)",
+      "B": "Na dolnej ramce mapy ( 1 Mm = 1` długości geograficznej)",
+      "C": "Przy pomocy skali mapy - odpowiednio obliczjąc przy użyciu tablic nawigacyjnych"
+    }
+  },
+  {
+    "num": 162,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Największy wpływ na dryf jachtu - poprawkę na wiatr mają?",
+    "options": {
+      "A": "Szybkość jachtu i stan morza",
+      "B": "Długość lini wodnej i wyporność",
+      "C": "Typ otaklowania żaglowego jachtu"
+    }
+  },
+  {
+    "num": 163,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jacht z pozycji Ş = 54° 35` N i Š = 24° 10` E przepłynął kursem KDd = 000° na pozycję Ş = 54° 39` N i Š = 24° 10` E. Ile Mm przebył?",
+    "options": {
+      "A": "3 Mm",
+      "B": "4 Mm",
+      "C": "5 Mm"
+    }
+  },
+  {
+    "num": 164,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Zero mapy na wodach gdzie wystepują pływy ustalane jest jako:",
+    "options": {
+      "A": "Średni poziom morza",
+      "B": "Poziom średniej niskiej wody",
+      "C": "Poziom najniższego pływu astronomicznego pływ pośredni. Jaki jest aktualnie kierunek i szybkość prądu pływowego?"
+    }
+  },
+  {
+    "num": 165,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Godzina 15.00, pozycja jachtu na mapie w pobliżu znaku \"A\". W tablicach pływów znaleziono, że wysoka woda w Dover będzie o godzinie 18.04,",
+    "options": {
+      "A": "224°, 1,8 węzła",
+      "B": "224°, 3,2 węzła",
+      "C": "224°, 2,5 węzła"
+    }
+  },
+  {
+    "num": 166,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Czy izobatę można zawsze traktować jako względnie pewną linię pozycyjną?",
+    "options": {
+      "A": "Tak, zawsze",
+      "B": "Nigdy, bo pomiary głębokości obarczone są dużym błędem",
+      "C": "Tak, pod warunkiem, że przebieg izobat jest regularny"
+    }
+  },
+  {
+    "num": 167,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Odległość do obiektu o znanej wysokości h (w metrach) i zmierzonym kącie pionowym ş (w minutach) można ustalić ( D w milach morskich ):",
+    "options": {
+      "A": "z Tablic Nawigacyjnych lub ze wzoru",
+      "B": "ze wzoru",
+      "C": "ze wzoru D = 2h tg ş"
+    }
+  },
+  {
+    "num": 168,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Przy pierwszym włączaniu nowo zainstalowanego GPS trzeba:",
+    "options": {
+      "A": "Włączyć zasilanie. Poza tym nie trzeba nic robić, urządzenie będzie działać",
+      "B": "Włączyć zasilanie, używając instrukcji obsługi ustawić podstawowe parametry",
+      "C": "Powinien to wykonać uprawniony serwis"
+    }
+  },
+  {
+    "num": 169,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Jaka jest różnica pomiędzy mapą rastrową, a papierową ?",
+    "options": {
+      "A": "Mapa rastrowa jest dokładniejsza",
+      "B": "W zastosowaniu do nawigacji nie ma żadnej",
+      "C": "Mapy rastrowe sa mniej dokładne"
+    }
+  },
+  {
+    "num": 171,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Jacht żegluje w nocy na akwenie z dużą ilością niebezpieczeństw, ale dobrze oznakowanym (pławy, latarnie sektorowe nabieżniki itp.). Jaka nawigacja na takim akwenie jest bezpieczniejsza?",
+    "options": {
+      "A": "Wyłącznie w oparciu o ploter i GPS",
+      "B": "Dobrze przygotowana nawigacja pilotowa, ploter jako pomoc",
+      "C": "Typowa nawigacja zliczeniowa"
+    }
+  },
+  {
+    "num": 172,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Kurs jachtu względem wody wynosi 120°, szybkość 5 w, kierunek prądu 300°, szybkość 1 w. Jaka będzie poprawka na prąd i jaki będzie wpływ prądu na szybkość jachtu?",
+    "options": {
+      "A": "Poprawka na prąd = 0°, szybkość jachtu względem dna wzrośnie",
+      "B": "Poprawka na prąd = 300°, szybkość jachtu względem dna wzrośnie",
+      "C": "Poprawka na prąd = 0°, szybkość jachtu względem dna zmaleje"
+    }
+  },
+  {
+    "num": 173,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Przy przeliczaniu namiaru burtowego na namiar kompasowy, (pomiar w systemie okrężnym 0° - 360°) jeśli wynik przekroczy 360°, to:",
+    "options": {
+      "A": "Od sumy kąta kursowego i kursu kompasowego należy odjąć 3600",
+      "B": "Od sumy kąta kursowego i kursu kompasowego należy odjąć 1800",
+      "C": "Do sumy kąta kursowego i kursu kompasowego należy dodać 1800"
+    }
+  },
+  {
+    "num": 174,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Odbiornik nawigacji satelitarnej GPS pokazuje prędkość jachtu (jest tylko jedna opcja). Jaka to prędkość?",
+    "options": {
+      "A": "Względem wody",
+      "B": "Względem dna",
+      "C": "Wypadkowa prędkości względem wody i dna"
+    }
+  },
+  {
+    "num": 175,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Która para lini pozycyjnych da najdokładniejszą pozycję?",
+    "options": {
+      "A": "Dwa namiary na różne obiekty",
+      "B": "Nabieżnik i krąg z kąta poziomego między dwoma obiektami",
+      "C": "Namiar i izobata"
+    }
+  },
+  {
+    "num": 176,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Na horyzoncie własnie ukazało się zidentyfikowane światło latarni. Czy można określić odległość i w jaki sposób?",
+    "options": {
+      "A": "W ogóle jest to niemożliwe",
+      "B": "Tak, trzeba tylko mieć Spis Świateł ( List of Lights)",
+      "C": "Nie, bo nie znamy wysokości latarni"
+    }
+  },
+  {
+    "num": 177,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Wykonany został namiar kompasowy (Nk). Jak go wykreślić na mapie?",
+    "options": {
+      "A": "Przeliczyć na namiar rzeczywisty i wykreślić",
+      "B": "Wykreślić Nk zgodnie z wykonanym namiarem",
+      "C": "Uwzględnić deklinację w danym obszarze żeglugi i wykreślić na mapie namiar"
+    }
+  },
+  {
+    "num": 179,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Wykonujemy namiar na latarnię. Czy dla obliczenia namiaru rzeczywistego potrzebny jest odczyt kursu kompasowego w momencie namiaru?",
+    "options": {
+      "A": "Tak, zawsze",
+      "B": "Nie",
+      "C": "To zależy od typu kompasu i namiernika"
+    }
+  },
+  {
+    "num": 180,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Na jachcie jest echosonda. Co przede wszystkim należy sprawdzić odnośnie wskazań tej sondy?",
+    "options": {
+      "A": "Czy czujnik sondy nie jest zabrudzony",
+      "B": "Czy sonda pokazuje głębokość pod kilem, czy od lini wodnej, czy od czujnika",
+      "C": "Czy sonda posiada opcję alarmu i jak jest ona ustawiona"
+    }
+  },
+  {
+    "num": 181,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Jak prawidłowo powinna być oznakowana sonda ręczna (system przyjety w Polsce)",
+    "options": {
+      "A": "Węzłami co 5 metrów",
+      "B": "Węzłami co 1 m",
+      "C": "Znakami co 1 m i kolorowymi opaskami co 5 m niebieska-czerwona-biała-żólta (niebo-dach-ściana-piach)"
+    }
+  },
+  {
+    "num": 182,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Dla jakich kątów przecięcia lini pozycyjnych pozycję można okreslić jako względnie dokładną?",
+    "options": {
+      "A": "Kąt przecięcia od 300 do 1500",
+      "B": "Tylko dla kąta 900",
+      "C": "Nie ma to znaczenia, ważna jest tylko dokładność wyznaczenia każdej linii pozycyjnej"
+    }
+  },
+  {
+    "num": 183,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Zliczenie graficzne drogi polega na: (Uwaga skróty: Kąd drogi nad dnem - Kd, Kurs rzeczywisty - Kr, Kurs magnetyczny - Km)",
+    "options": {
+      "A": "Wykreślaniu na mapie Kd i odmierzaniu na tym kursie przebytych odległości",
+      "B": "Wykreślaniu na mapie Kk i odmierzaniu na tym kursie przebytych odległości",
+      "C": "Wykreślaniu na mapie Km i odmierzaniu na tym kursie przebytych odległości"
+    }
+  },
+  {
+    "num": 185,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Czy przy braku prądu na akwenie gdzie żegluje jacht, kurs rzeczywisty = kątowi drogi nad dnem?",
+    "options": {
+      "A": "Tak, bo brak jest znoszenia przez prąd",
+      "B": "Nigdy, bo należy zawsze jeszcze uwzględnić dryf jachtu spowodowany wiatrem",
+      "C": "Tak, ale tylko w przypadku gdy jacht żegluje kursami pełnymi (baksztag, fordewind)"
+    }
+  },
+  {
+    "num": 186,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Jakimi sposobami można obliczyć poprawkę na prąd przy czynnym uwzględnianiu prądu?",
+    "options": {
+      "A": "Tylko wykonując obliczenia trygonometryczne",
+      "B": "Wykonując wykres lub z tablic nawigacyjnych",
+      "C": "Analizując już przebytą drogę i dryf jachtu spowodowany wiatrem"
+    }
+  },
+  {
+    "num": 187,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Jak na mapach generalnych dużych obszarów podawana jest deklinacja magnetyczna?",
+    "options": {
+      "A": "W postaci tabliczek z wartością deklinacji",
+      "B": "W postaci informacji zawartych w uwagach przy nagłówku mapy",
+      "C": "W postaci izogon z zaznaczoną zmianą roczną"
+    }
+  },
+  {
+    "num": 188,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Dewiacja magnetyczna to:",
+    "options": {
+      "A": "Odchylenie igły magnetycznej spowodowane polem magnetycznym ziemi",
+      "B": "Odchylenie igły magnetycznej spowodowane polem magnetycznym jachtu",
+      "C": "Odchylenie igły magnetycznej spowodowane miejscowym anomaliami pola magnetycznego ziemi"
+    }
+  },
+  {
+    "num": 189,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Dewiację można obliczyć:",
+    "options": {
+      "A": "Przez porównanie namiaru rzeczywistego i namiaru kompasowego na dany obiekt",
+      "B": "Tylko przy użyciu specjalnych przyrządów do określania dewiacji",
+      "C": "Przez wykonanie pomiarów natężenia pola magnetycznego jachtu"
+    }
+  },
+  {
+    "num": 190,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Czy dewiacja dla danego jachtu jest wielkościa stałą niezaleznie od jego kursu?",
+    "options": {
+      "A": "Tak, jest zależna tylko od natężenia pola magnetycznego jachtu",
+      "B": "Nie, bo zależy od kursu magnetycznego jachtu i zmienia się ze zmianą kursu",
+      "C": "W zasadzie tak, ale zależy od wielkości pola magnetycznego ziemi"
+    }
+  },
+  {
+    "num": 191,
+    "scope": "Nawigacja",
+    "scopeRaw": "NAWIGACJA",
+    "question": "Informacja o wartości deklinacji magnetycznej w danym obszarze podawana jest:",
+    "options": {
+      "A": "W locjach danego akwenu i przewodnikach dla żeglarzy",
+      "B": "Tyko na specjalnych mapach",
+      "C": "Na mapach morskich i na mapach izogon"
+    }
+  },
+  {
+    "num": 192,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Na jachcie (bandera polska) mamy komplet map papierowych i innych pomocy nawigacyjnych na rejon żeglugi, nie ma GPS. Czy jest to wystarczające wg. obowiązujących przepisów?",
+    "options": {
+      "A": "Tak, bo to pozwala na prowadzenie nawigacji",
+      "B": "Nie, bo zawsze wymagany jest GPS",
+      "C": "Tak, o ile będzie to żegluga po wodach osłoniętych"
+    }
+  },
+  {
+    "num": 193,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Czarterujemy w Norwegii jacht z zamiarem rejsu do Szkocji i z powrotem? Na jakie sprawy powinniśmy GŁÓWNIE zwrócić uwagę przy załatwianiu czarteru?",
+    "options": {
+      "A": "Czy jacht jest dopuszczony do takiej żeglugi, czy ma odpowiednie wyposażenie i na jaki akwen ma ubezpieczenie?",
+      "B": "Jakiej mocy ma silnik, jaka jest pojemność zbiorników paliwa",
+      "C": "Pod jaką banderą zarejestrowany jest jacht, jakie ma wyposażenie radiowe"
+    }
+  },
+  {
+    "num": 194,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Jakie PODSTAWOWE materiały naprawcze dot. armatury poniżej linii wodnej powinny znajdować się na jachcie?",
+    "options": {
+      "A": "Zapasowe zawory i przewody wszystkich średnic zastosowanych na jachcie przejść zaburtowych.",
+      "B": "Kołki drewniane i opaski zaciskowe do wszystkich średnic przejść zaburtowych",
+      "C": "Zestawy płótna szklanego i żywic z utwardzaczami do laminowania ewentualnych otworów."
+    }
+  },
+  {
+    "num": 195,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Na jachcie mamy ploter i komplet map wektorowych na rejon żeglugi. Czy jest to wystarczające wg. obowiązujących przepisów?",
+    "options": {
+      "A": "Tak, bo to pozwala na prowadzenie nawigacji",
+      "B": "Nie, bo wymagane są równolegle mapy papierowe",
+      "C": "Tak, o ile mamy dwa odbiorniki GPS"
+    }
+  },
+  {
+    "num": 196,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Jacht posiada Kartę Bezp. (bandera polska) na żeglugę oceaniczną. Czy wychodząc na pływanie na Zalew Szczeciński i niemieckie wody osłonięte musimy mieć na pokładzie pełne wyposażenie?",
+    "options": {
+      "A": "Tak, na jachcie powinno być zawsze wyposażenie odpowiadające max. zakresowi żeglugi",
+      "B": "To zależy od wymagań przepisów obowiązujących w Niemczech",
+      "C": "Nie, wystarczy wyposażenie na żeglugę w rejonie 2 ujęte z zał. nr 1 Rozporządzenia Ministra T. B. i G.M. z 28.02.2012 r."
+    }
+  },
+  {
+    "num": 197,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Czy na jachcie w żegludze pełnomorskiej wymagane jest posiadanie sekstantu i chronometru?",
+    "options": {
+      "A": "Tak jest to wymagane",
+      "B": "Nie, jest to wymagane tylko w żegludze oceanicznej",
+      "C": "Nie, takie wyposażenie nie jest wymagane na jachtach"
+    }
+  },
+  {
+    "num": 198,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Na jachcie mamy zainstalowane urządzenie AIS, ale stwierdzono, że nie działa. Czy możemy wyjść w rejs z nienaprawionym urządzeniem?",
+    "options": {
+      "A": "Nie, to urządzenie musi być sprawne",
+      "B": "Nie, bo bez tego urządzenia nie będzie można prowadzić prawidłowej nawigacji",
+      "C": "Tak, bo na jachtach urządzenie nie jest obowiązkowe tylko zalecane"
+    }
+  },
+  {
+    "num": 199,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Dużej fali przybojowej w wejściu do portu przy wietrze od morza do wejścia można spodziewać się:",
+    "options": {
+      "A": "Podczas przypływu",
+      "B": "Podczas odpływu",
+      "C": "Nie ma to znaczenia decyduje tylko głębokość morza"
+    }
+  },
+  {
+    "num": 200,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Jacht znajduje się w porcie Ronne na Bornholmie. Planowane jest wejście do portu Kołobrzeg i zakończenie rejsu w 2 dni później w Świnoujściu, wiatr NW 7/9 °B, odebrano prognozę na następne 24 godziny NW 6/4 °B. Jaką decyzje powinien podjąć kapitan biorąc pod uwagę bezpieczeństwo żeglugi?",
+    "options": {
+      "A": "Wyjść z portu i kontynuować żeglugę zgodnie z pierwotnym planem",
+      "B": "Wyjść z portu, ale zrezygnować z wejścia do Kołobrzegu",
+      "C": "Pozostać w porcie i po osłabnięciu wiatru kontynuować rejs do Świnoujścia"
+    }
+  },
+  {
+    "num": 201,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Planowany jest rejs z Polski na wody duńskie. Jakie wydawnictwa będą NAJBARDZIEJ przydatne w takim rejsie?",
+    "options": {
+      "A": "Publikacje Admiralicji ( Pilots, List of Lights, Charts)",
+      "B": "Przewodniki z planami portów jachtowych, żeglarskie mapy akwenu",
+      "C": "Polskie wydawnictwa Biura Hydrograficznego Marynarki Wojennej"
+    }
+  },
+  {
+    "num": 202,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "W jakim wydawnictwie można znaleźć pełną informację o ratownictwie na wodach całego świata?",
+    "options": {
+      "A": "Admiralty List of Radio Signals vol 5.",
+      "B": "Admiralty Sailing Directions",
+      "C": "Nie ma takiego wydawnictwa, są tylko wydawnictwa poszczególnych krajów"
+    }
+  },
+  {
+    "num": 203,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Sprawdzenie prawidłowości pracy silnika powinno polegać na:",
+    "options": {
+      "A": "Sprawdzeniu poziomu oleju i kilkakrotnym uruchomienie silnika na krótki czas.",
+      "B": "Sprawdzeniu poziomu płynu chłodzącego, oleju, stanu paliwa w zbiorniku i uruchomienie silnika na 2 - 3 minuty.",
+      "C": "Sprawdzeniu poziomu oleju, płynu chłodzącego i uruchomieniu silnika na czas pozwalający określić prawidłowość chłodzenia, ciśnienia oleju i utrzymania właściwej temperatury."
+    }
+  },
+  {
+    "num": 204,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Planując wejście do portu pływowego (postój za śluzą) najkorzystniej będzie planować podejście:",
+    "options": {
+      "A": "Ok. 1 godziny przed wysoką wodą w tym porcie",
+      "B": "Ok. 1 godziny po wysokiej wodzie w tym porcie",
+      "C": "Blisko momentu niskiej wody w tym porcie najbezpieczniejsze? nastepne 24 godziny WNW 4-5. Jak będzie najkorzystniej zaplanować wyjscie?"
+    }
+  },
+  {
+    "num": 205,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Wejście do portu pływowego ma szerokość 30m, silny prąd pływowy jest równoległy do brzegu. Dane pływów na rysunku. O której godzinie wejście będzie",
+    "options": {
+      "A": "Między 12.00, a 13.00",
+      "B": "Między 09.00 a 10.00",
+      "C": "Miedzy 15.00 a 16.00"
+    }
+  },
+  {
+    "num": 206,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Planowane jest przejście Świnoujście - Karlskrona pod żaglami - w miarę możliwości bez silnika (odl. 130 Mm, KD=30°). Prognoza; wiatr N 6-7, prognoza na",
+    "options": {
+      "A": "Wychodzić jak najszybciej",
+      "B": "Odczekać z wyjściem kilkanaście godzin",
+      "C": "Odczekać conajmniej 48 godzin"
+    }
+  },
+  {
+    "num": 207,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Jaką dlugość łańcucha wydać przy kotwiczeniu na głębokości 8 m, (wg. mapy dno jest muliste) ?",
+    "options": {
+      "A": "15 m",
+      "B": "20 m",
+      "C": "35 m"
+    }
+  },
+  {
+    "num": 208,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Przy dobijaniu do nabrzeża uszkodzono poważnie kosz dziobowy. Jak dalej postępować?",
+    "options": {
+      "A": "Sporządzić wpis do dziennika, wykonać zdjęcia, porozumieć się z ubezpieczycielem co do zorganizowania naprawy.A.",
+      "B": "Sporządzić protokół awaryjny i wpis do dziennika, wykonać zdjęcia, wysłać protokół do ubezpieczyciela i armatora. Porozumieć się z ubezpieczycielem co do organizacji naprawy.",
+      "C": "Sporządzić wpis do dziennika i powiadomić armatora, zorganizować naprawę."
+    }
+  },
+  {
+    "num": 209,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Po zaokrętowaniu załogi przed wyjściem w rejs kapitan powinien w PIERWSZEJ KOLEJNOŚCI:",
+    "options": {
+      "A": "Zapoznać załogę z obsługą urządzeń do stawiania żagli, pracą odbijaczami i cumami, komendami stosowanymi przy manewrach",
+      "B": "Zapoznać załogę z rolami alarmowymi, rozmieszczeniem sprzętu ratunkowego i sygnalizacyjnego oraz zasadami bezpiecznej pracy na jachcie.",
+      "C": "Zapoznać załogę z obsługą windy kotwicznej, zasadami bezpiecznej pracy cumami, komendami stosowanymi przy manewrach i rozdzielić stanowiska przy manewrach portowych"
+    }
+  },
+  {
+    "num": 210,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Planowana żegluga ok. 2 doby bez zachodzenia do portu. Jacht odpowiednio wyposażony. Przed wyjściem w rejs NAJWAŻNIEJSZE będzie sprawdzenie:",
+    "options": {
+      "A": "Stanu zapasów: wody, paliwa, stanu akumulatorów oraz wyposażenia ratunkowego, stanu urządzeń kotwicznych, sprzętu pirotechnicznego, sprawności urządzeń łączności",
+      "B": "Stanu zapasów: żywności, sprzętu bosmańskiego, paliwa, oleju do silnika oraz stanu odbijaczy i zapasowych cum",
+      "C": "Stanu zapasów: części zapasowych do silnika, wody oraz działania kabestanów i steru strumieniowego"
+    }
+  },
+  {
+    "num": 211,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Z jakim średnim wydłużeniem drogi jachtu powinniśmy się liczyć przy konieczności halsowania dokładnie pod wiatr (kąt martwy jachtu ok. 120°)?",
+    "options": {
+      "A": "ok. 60% drogi",
+      "B": "ok. 100% drogi",
+      "C": "ok. 40 % drogi"
+    }
+  },
+  {
+    "num": 212,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Jacht jednokadłubowy ma długość ok. 12 m. Jaki średni przebieg dobowy można przyjąć dla tego jachtu przy planowaniu rejsu?",
+    "options": {
+      "A": "ok. 120 Mm",
+      "B": "ok. 65 Mm",
+      "C": "ok. 200 Mm"
+    }
+  },
+  {
+    "num": 213,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Planujemy dłuższy przelot oceaniczny ok. 1 tygodnia (np. Dania - Islandia). Na jachcie nie ma urządzeń do odbioru bieżących prognoz czy map pogody. Jakie źródła informacji meteorologicznych zapewnią najpełniejsze zabezpieczenie rejsu?",
+    "options": {
+      "A": "Bieżąca mapa pogody uzyskana w porcie wyjścia",
+      "B": "Miesięczna mapy pogody dla tego akwenu",
+      "C": "Dane z systemu GRIB, pobranie prognostycznych map pogody na 7 dni (wydrukowanie ich lub zachowanie w pamięci komputera)"
+    }
+  },
+  {
+    "num": 214,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Przed wyjściem w morze poza szkoleniem alarmowym NAJWAŻNIEJSZE będzie zapoznanie załogi:",
+    "options": {
+      "A": "Z systemem stawiania, zrzucania i refowania żagli, obsługą urządzeń kotwicznych, uruchamianiem silnika",
+      "B": "Z obsługą radiotelefonu, plotera, silnika zaburtowego pontonu, sposobami cumowania",
+      "C": "Z funkcjami i obsługą autopilota i radaru oraz odsalacza wody morskiej"
+    }
+  },
+  {
+    "num": 215,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Jak należy zaplanować wyposażenie apteczki jachtowej na dłuższy rejs ( ok. 1 miesiąca)",
+    "options": {
+      "A": "Nie ma przepisów w tym zakresie, są tylko zalecenia, najlepiej skonsultować to z lekarzem",
+      "B": "Zakupić typową apteczkę (t.zw. pierwszej pomocy)",
+      "C": "Wystarczy typowa apteczka samochodowa"
+    }
+  },
+  {
+    "num": 216,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Czy na jachcie o długości 14 m powinny być nożyce do cięcia olinowania (bandera polska)?",
+    "options": {
+      "A": "Tak",
+      "B": "Nie",
+      "C": "Zależy to od średnicy lin olinowania stałego"
+    }
+  },
+  {
+    "num": 217,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Czy jachty w żegludze pełnomorskiej muszą być wyposażone w radar (bandera polska)?",
+    "options": {
+      "A": "Tak, wszystkie jachty",
+      "B": "Nie, jachty nie muszą mieć radaru",
+      "C": "Tak, ale tylko jachty o LOA większej niż 20 m"
+    }
+  },
+  {
+    "num": 218,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Kompletujemy załogę na rejs pełnomorski. Czy w składzie załogi musi być osoba posiadająca świadectwo radiooperatora?",
+    "options": {
+      "A": "Tak, bo na jachcie musi być radiotelefon UKF",
+      "B": "Tylko w przypadku kiedy jacht jest wyposażony w radiotelefon UKF",
+      "C": "Nie, bo do obsługi radiotelefonu UKF nie potrzebne są żadne uprawnienia"
+    }
+  },
+  {
+    "num": 219,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Planujemy rejs po południowym Bałtyku. Czy porty: Władysławowo, Łeba, Darłowo możemy traktować jako porty schronienia w przypadku ciężkich warunków meteorologicznych?",
+    "options": {
+      "A": "Tak, w każdych warunkach",
+      "B": "Nie, niezależnie od kierunku wiatru",
+      "C": "Zależy to od kierunku i siły wiatru, przy wietrze z sektorów N - nie, wchodzenie jest niebezpieczne, przy wietrze z sektorów S - tak"
+    }
+  },
+  {
+    "num": 220,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Czy wychodząc w rejs powinniśmy na jachcie mieć długą linę holowniczą?",
+    "options": {
+      "A": "Tak, wymagają tego przepisy",
+      "B": "Nie, bo przepisy tego nie wymagają",
+      "C": "Tak, bo dobra praktyka morska tego wymaga niezależnie od przepisów"
+    }
+  },
+  {
+    "num": 221,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Planując możliwość skorzystania z portów schronienia na trasie naszego rejsu należy JAKO DECYDUJACE WARUNKI brać pod uwagę:",
+    "options": {
+      "A": "Szerokość i głębokość wejścia, możliwości manewrowe w porcie w trudnych warunkach",
+      "B": "Czy port zapewnia odpowiednie usługi, tankowanie paliwa i wody np.",
+      "C": "Czy w porcie jest możliwość wykonania napraw żagli, silnika np."
+    }
+  },
+  {
+    "num": 222,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Przygotowując się do rejsu okazało się, że mapy (angielskie) nie są poprawione. Do planowanego wyjścia w morze jest niewiele czasu. Jak najszybciej można dokonać korekty?",
+    "options": {
+      "A": "Jedyna możliwość to jak najszybciej oddać je do korekty w firmie prowadzącej takie usługi",
+      "B": "Postarać się wypożyczyć ostatnie numery Notices to Mariners i wykonać korektę",
+      "C": "W Internecie wejść na stronę Searchable Notices to Mariners wydrukować poprawki i nanieść je na mapę"
+    }
+  },
+  {
+    "num": 223,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Do planowania dłuższego rejsu, porty, czasy przelotów (np. Gdynia - Dublin) najprościej posłużyć się:",
+    "options": {
+      "A": "Kompletem map drogowych i planów portów",
+      "B": "Atlasem map",
+      "C": "Mapami generalnymi"
+    }
+  },
+  {
+    "num": 224,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Czy spisy świateł (List of Lights) przed rejsem muszą być bieżąco poprawiane?",
+    "options": {
+      "A": "Nie, trzeba się posługiwać aktualnymi corocznymi wydaniami",
+      "B": "Tak, poprawki wydawane są co tydzień",
+      "C": "Tak, poprawki wydawane są co miesiąc"
+    }
+  },
+  {
+    "num": 225,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Czy locje powinny być przed rejsem poprawiane?",
+    "options": {
+      "A": "Nie, trzeba się posługiwać aktualnymi wydaniami",
+      "B": "Nie, należy tylko sprawdzać czy wydano nowe suplementy",
+      "C": "Tak, poprawki wydawane są co tydzień (np. dla angielskich w Notices to Mariners cz. IV do pobrania w Internecie)"
+    }
+  },
+  {
+    "num": 226,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Przed rejsem sprawdzamy sprzęt ratunkowy. Na co w pierwszym rzędzie należy zwrócić uwagę sprawdzając tratwę ratunkową?",
+    "options": {
+      "A": "Łoże tratwy, liny lub pasy mocujące",
+      "B": "Stan opakowania tratwy, oznakowanie, zamocowanie linki operacyjnej",
+      "C": "Czy atest tratwy jest ważny, czy zwalniak jest prawidłowo zamocowany i ma ważny atest"
+    }
+  },
+  {
+    "num": 227,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Jakie dodatkowe wyposażenie powinny mieć pasy ratunkowe (rejs pełnomorski)?",
+    "options": {
+      "A": "Wodoodporną instrukcję użytkowania",
+      "B": "Działającą lampkę zgodną z wymaganiami konwencji SOLAS",
+      "C": "Osłonę przeciw bryzgową na głowę i twarz"
+    }
+  },
+  {
+    "num": 228,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Jakie dokumenty powinny być na jachcie wyposażonym w radiotelefon UKF?",
+    "options": {
+      "A": "Tylko jedna osoba powinna mieć świadectwo radio-telefonisty",
+      "B": "Jeżeli jest to radiotelefon przenośny nie potrzebne są żadne dokumenty",
+      "C": "Licencja na radiostację i co najmniej jedna osoba powinna mieć świadectwo radio-telefonisty"
+    }
+  },
+  {
+    "num": 229,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Sprawdzamy wyposażenie jachtu (długość 15 m) przed rejsem pełnomorskim. Jakie wyposażenie do sygnalizacji dźwiękowej powinno być na jachcie?",
+    "options": {
+      "A": "Nie ma specjalnych wymagań jakiekolwiek urządzenie dające donośny sygnał",
+      "B": "Gwizdek ( słyszalność przynajmniej 0,5 Mm) i dzwon",
+      "C": "Jachty nie muszą mieć takiego wyposażenia"
+    }
+  },
+  {
+    "num": 231,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Dla bezpiecznego planowania dłuższych przelotów jachtu istotniejsze będą informacje o:",
+    "options": {
+      "A": "Szybkości jachtu pod żaglami, prądach stałych wystepujących na tym akwenie, długoterminowych danych meteorologicznych",
+      "B": "Prądach pływowych i skoku pływu, występujących na tym akwenie",
+      "C": "Portach i możliwościach napraw w tych portach"
+    }
+  },
+  {
+    "num": 232,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Planując trasę rejsu należy brać pod uwagę istnienie akwenów stale lub okresowo zamknietych dla żeglugi. Gdzie można znaleźć informacje na ten temat.",
+    "options": {
+      "A": "Akweny sa zaznaczane na mapach, okresy zamknięcia podawane w ostrzeżeniach nawigacyjnych",
+      "B": "Informacje podawane są tylko ze statków zabezpieczjacych takie akweny",
+      "C": "Takie akweny są oznakowane pławami"
+    }
+  },
+  {
+    "num": 233,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Na trasie planowanego rejsu są systemy rozgraniczenia ruchu, czy jachty mogą korzystać z toru w takim systemie zgodnie z Międznarodowymi Przepisami o Zapobieganiu Zderzeniom.......",
+    "options": {
+      "A": "Nie, jest to zakazane",
+      "B": "Tak, ale statki o mniejszej długości niż 20m nie powinny przeszkadzać statkom korzystajacym z toru.",
+      "C": "Tak, bez żadnych ograniczeń"
+    }
+  },
+  {
+    "num": 234,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Planujemy rejs na wody Szkocji. Jakie wydawnictwo poza Tablicami Pływów będzie najbardziej przydatne w takim rejsie?",
+    "options": {
+      "A": "Atlas prądów pływowych dla tego akwenu",
+      "B": "Przewodnik turystyczny głównych portów",
+      "C": "Poradnik dot. warunków meteorologicznych na tym akwenie"
+    }
+  },
+  {
+    "num": 235,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Który ze sposobów pokonywania fali przy sztormowaniu będzie najbezpieczniejszy?",
+    "options": {
+      "A": "Odpadanie przed nadejściem wierzchołka fali i ostrzenie po jego przejściu.",
+      "B": "Utrzymywanie jachtu pod stałym kątem do nadchodzacej fali ok. 70°",
+      "C": "Ostrzenie przed nadejściem wierzchołka fali i odpadanie po jego przejściu"
+    }
+  },
+  {
+    "num": 236,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Przy planowaniu dalszych przelotów oceanicznych NAJDOKŁADNIEJSZĄ pomocą nawigacyjną będą:",
+    "options": {
+      "A": "Mapy miesięczne warunków meteorologicznych (Routeing Charts)",
+      "B": "Locje akwenów, gdzie planowana jest żegluga",
+      "C": "Dane z podręczników meteorologii (dział dot. układu wiatrów na kuli ziemskiej)"
+    }
+  },
+  {
+    "num": 237,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Przy sprawdzaniu przed rejsem rodzaju i ilości wyposażenia jachtu w środki pirotechniczne należy kierować się:",
+    "options": {
+      "A": "Kartą bezpieczeństwa jachtu",
+      "B": "Świadectwem klasy jachtu",
+      "C": "Załącznikiem nr 1 do Rozporzadzenia MTBiGM z 28.02.2008 r."
+    }
+  },
+  {
+    "num": 238,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Czy na jachtach morskich (bandera polska) muszą być opracowane rozklady alarmowe (na piśmie)?",
+    "options": {
+      "A": "Tak, na wszystkich",
+      "B": "Nie, na jachtach takie rozkłady nie są obowiązkowe",
+      "C": "Tak, ale tylko na jachtach o długości wiekszej niż 15 m i załodze powyżej 5 osób"
+    }
+  },
+  {
+    "num": 239,
+    "scope": "Planowanie rejsów",
+    "scopeRaw": "PLANOWANIE REJSÓW",
+    "question": "Czy na jachtach dopuszcza się brak map papierowych ?",
+    "options": {
+      "A": "Tak, mapy wektorowe wystarczą",
+      "B": "Nie, w żadnym wypadku",
+      "C": "Tak o ile system obsługujacy mapy wektorowe będzie zdublowany."
+    }
+  },
+  {
+    "num": 240,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Hipotermia jest to stan organizmu z obniżoną temperaturą wewnętrzną spowodowany czynnikami zewnętrznymi jak np. woda, wiatr itp. Jak postępować z taką osobą?",
+    "options": {
+      "A": "Zabezpieczyć przed dalszą utratą ciepła np. folia NRC, koc, śpiwór. Poszkodowanemu można podać alkohol. Jak najszybciej zapewnić opiekę lekarską",
+      "B": "Zabezpieczyć przed dalszą utratą ciepła np. folia NRC, koc, śpiwór. Poszkodowanemu podać ciepłe osłodzone płyny. Jak najszybciej zapewnić opiekę lekarską",
+      "C": "Zabezpieczyć przed dalszą utratą ciepła np. folia NRC, koc, śpiwór. Nie podawać nic do picia. Jak najszybciej zapewnić opiekę lekarską"
+    }
+  },
+  {
+    "num": 241,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Prowadząc sztuczne oddychanie i pośredni masaż serca wykonujemy:",
+    "options": {
+      "A": "15 uciśnięć mostka i 2 wdmuchnięcia powietrza,",
+      "B": "5 uciśnięć mostka i 1 wdmuchnięcie powietrza,",
+      "C": "30 uciśnięć mostka i 2 wdmuchnięcia powietrza"
+    }
+  },
+  {
+    "num": 242,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Po podjęciu nieprzytomnego człowieka z wody należy w PIERWSZEJ KOLEJNOŚCI sprawdzić:",
+    "options": {
+      "A": "Oddech i tętno",
+      "B": "Czy nie jest zraniony",
+      "C": "Reakcję źrenic na światło"
+    }
+  },
+  {
+    "num": 243,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Na jachcie czuć zapach tlącej się izolacji. Co zrobić w pierwszej kolejności?",
+    "options": {
+      "A": "Jak najszybciej zlokalizować miejsce uszkodzenia",
+      "B": "Przygotować gaśnicę i czekać gdzie pojawi się dym",
+      "C": "Wyłączyć główny wyłącznik akumulatorów lub zdjąć klemy z akumulatora"
+    }
+  },
+  {
+    "num": 244,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "W celu ugaszenia gaśnicą pożaru w komorze silnika należy:",
+    "options": {
+      "A": "Wyłączyć silnik, lekko uchylić pokrywę/wejście do komory i natychmiast użyć gaśnicy",
+      "B": "Otworzyć szeroko pokrywę/wejście do komory, sprawdzić co się pali i dopiero użyć gaśnicy",
+      "C": "Otworzyć szeroko pokrywę/wejście do komory i gasić ogień wodą podawaną z za burty"
+    }
+  },
+  {
+    "num": 245,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Oparzenia zaopatrujemy poprzez:",
+    "options": {
+      "A": "Szybkie ochłodzenie oparzonego miejsca przez polewanie zimną wodą i nałożenie jałowego opatrunku.",
+      "B": "Nałożenie tłustego kremu lub oliwy i jałowego opatrunku",
+      "C": "Przemycie alkoholem i nałożenie opatrunku"
+    }
+  },
+  {
+    "num": 246,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Przed rozpoczęciem sztucznego oddychania u osoby nieprzytomnej należy:",
+    "options": {
+      "A": "Udrożnić drogi oddechowe i prowadzić akcję sztucznego oddychania",
+      "B": "Zabezpieczyć poszkodowaną osobę przed utratą ciepła i prowadzić akcję",
+      "C": "Przenieść osobę poszkodowaną na miękkie podłoże i rozpocząć akcję"
+    }
+  },
+  {
+    "num": 247,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Radiopława EPIRB to urządzenie służące do:",
+    "options": {
+      "A": "Lokalizacji rozbitków przy użyciu radaru statkowego",
+      "B": "Alarmowania w niebezpieczeństwie na częstotliwościach UKF",
+      "C": "Alarmowania i lokalizacji obiektu będącego w niebezpieczeństwie"
+    }
+  },
+  {
+    "num": 248,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Transponder radarowy to urządzenie do:",
+    "options": {
+      "A": "Lokalizacji rozbitków przy użyciu radaru innego statku",
+      "B": "Wykrywania pław wyposażonych w urządzenie \"RACON\"",
+      "C": "Emisji sygnałów radarowych umożliwiających identyfikację naszego statku"
+    }
+  },
+  {
+    "num": 249,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Jacht znajduje się na morzu z dala od lądu. Czy uruchomienie pławy EPIRB zapewni odebranie alarmu w niebezpieczeństwie?",
+    "options": {
+      "A": "Nie jest to pewne bo zależy to od typu radiopławy i jej zasięgu",
+      "B": "Tak, bo zasięg radiopławy jest globalny",
+      "C": "Nie, bo radiopława ma zasięg analogiczny do radiotelefonu UKF"
+    }
+  },
+  {
+    "num": 250,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "W jakim obszarze działa polska Morska Służba Poszukiwania i Ratownictwa (SAR)?",
+    "options": {
+      "A": "Całe morze Bałtyckie",
+      "B": "Bałtyk południowy i wybrzeże polskie ( bez Bornholmu)",
+      "C": "Tylko strefa polskich wód terytorialnych"
+    }
+  },
+  {
+    "num": 251,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "W polskiej strefie Morskiej Służby Poszukiwania i Ratownictwa (SAR) łączność radiową w niebezpieczeństwie zapewniają:",
+    "options": {
+      "A": "Kapitanaty portów polskich",
+      "B": "Radiostacja \"Witowo Radio\" i jej ekspozytury",
+      "C": "Specjalne radiostacje SAR"
+    }
+  },
+  {
+    "num": 252,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Jaki jest tok postępowania po odbiorze alarmu w niebezpieczeństwie przez stację brzegową?",
+    "options": {
+      "A": "Stacja alarmuje Morskie Ratownicze Centrum Koordynacyjne danego obszaru, a MRCC organizuje akcje ratowniczą. Łączność utrzymuje stacja i/lub jednostki ratownicze.",
+      "B": "Stacja nawiązuje łączność z wzywającym pomocy i współpracuje z najbliższą stacją ratowniczą.",
+      "C": "Stacja po przekazaniu alarmu do MRCC nie uczestniczy dalej w prowadzonej akcji."
+    }
+  },
+  {
+    "num": 253,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Jakich częstotliwości UKF używa się dla łączności w niebezpieczeństwie i współpracy z SAR?",
+    "options": {
+      "A": "Alarmowanie cyfrowe Ch 70, łączność na fonii Ch 16",
+      "B": "Alarmowanie cyfrowe Ch 70, łączność na fonii Ch 16 lub inne uzgodnione kanały",
+      "C": "Wyłącznie kanału 16"
+    }
+  },
+  {
+    "num": 254,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Na jachcie zauważono pęknięcie okucia mocującego sztag. Jakie działania należy podjąć?",
+    "options": {
+      "A": "Zrzucić przednie żagle, zainstalować zastępcze sztagi ( z fałów itp.), rozeznać możliwość wpięcia sztagu do innego okucia, kierować się do najbliższego portu.",
+      "B": "Zainstalować zastępcze sztagi, zrzucić wszystkie żagle, kontynuować żeglugę na silniku",
+      "C": "Zmienić kurs na pełny baksztag lub fordewind, zrzucić przednie żagle, zainstalować zastępcze sztagi i napiąć je, rozeznać możliwość wpięcia sztagu do innego okucia. Podjąć decyzję co do dalszej żeglugi stosownie do okoliczności."
+    }
+  },
+  {
+    "num": 255,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Na jachcie zauważono pęknięcia drutów jednej z nawietrznych want. Jakie działania należy podjąć?",
+    "options": {
+      "A": "Natychmiast wykonać zwrot przez sztag, zrzucić żagle, zainstalować prowizoryczną wantę, po rozpatrzeniu sytuacji kontynuować żeglugę na silniku.",
+      "B": "Natychmiast zrzucić żagle, zainstalować prowizoryczną wantę, żeglować na zredukowanych żaglach do najbliższego portu.",
+      "C": "Natychmiast zrzucić żagle, dokonać oględzin wanty, jeżeli uszkodzone jest mniej niż 50% drutów, płynąć na silniku do najbliższego portu"
+    }
+  },
+  {
+    "num": 256,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Kto ogłasza alarm \"Człowiek za burtą\" ( MOB) ?",
+    "options": {
+      "A": "Kapitan, po wywołaniu go na pokład;",
+      "B": "Kapitan, po wywołaniu załogi na pokład;",
+      "C": "Osoba, która pierwsza zauważyła wypadnięcie człowieka"
+    }
+  },
+  {
+    "num": 257,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Po wyłowieniu człowieka, który wypadł za burtę stwierdzono, że jest nieprzytomny ale oddycha. Co robić ?",
+    "options": {
+      "A": "Natychmiast rozpocząć akcję resuscytacyjną i wezwać pomoc.",
+      "B": "Jak najszybciej płynąć do portu i tam zapewnić mu pomoc lekarską.",
+      "C": "Ułożyć człowieka w pozycji bezpiecznej i zabezpieczyć przed utratą ciepła. Wezwać pomoc"
+    }
+  },
+  {
+    "num": 258,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Jakie środki bezpieczeństwa osobistego i w jakiej ilości powinny być na jachcie (bandera polska)?",
+    "options": {
+      "A": "Pasy ratunkowe dla całej załogi, Pasy bezpieczeństwa dla całej załogi",
+      "B": "Pasy ratunkowe dla całej załogi, pasy bezpieczeństwa dla jednej wachty",
+      "C": "Pasy ratunkowe dla całej załogi + 1, pasy bezpieczeństwa co najmniej dla połowy załogi"
+    }
+  },
+  {
+    "num": 259,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Jacht nabiera wody, kapitan zarządził zwodowanie zamocowanej na pokładzie tratwy ratunkowej. Jak to przeprowadzić?",
+    "options": {
+      "A": "Odpiąć tratwę z łoża, wyrzucić za burtę. Tratwa sama się rozwinie.",
+      "B": "Sprawdzić czy linka operacyjna jest zamocowana. Odpiąć tratwę z łoża, wyrzucić tratwę za burtę. Wybierać linkę operacyjną do oporu, po rozwinięciu dociągnąć tratwę do burty",
+      "C": "Odpiąć tratwę z łoża, sprawdzić czy linka operacyjna jest zamocowana, wywlec linkę operacyjną do oporu. Po rozwinięciu tratwy zwodować ją."
+    }
+  },
+  {
+    "num": 260,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Przy odbiorze jachtu (rejs pełnomorski, 5 osób załogi) stwierdzono, że na jachcie jest tylko 6 pneumatycznych pasów ratunkowych z uprzężą i linkami z karabińczykami. Czy jest to wyposażenie spełniające polskie przepisy?",
+    "options": {
+      "A": "Tak, całkowicie",
+      "B": "Nie",
+      "C": "Tak pod warunkiem, że pasy posiadają lampki zgodne z warunkami konwencji"
+    }
+  },
+  {
+    "num": 261,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Kapitan zadecydował o wezwaniu pomocy przy pomocy pławki \"pomarańczowy dym\". Jak ją uruchomić?",
+    "options": {
+      "A": "Zdjąć korek zabezpieczający, zapalić ładunek przy pomocy zapałek lub zapalniczki, postawić pławkę na pokładzie.",
+      "B": "Zdjąć korek zabezpieczający, wcisnąć przycisk zapalający, postawić pławkę na pokładzie.",
+      "C": "Zdjąć korek zabezpieczający, pociągnąć za linkę zapalnika, wrzucić pławkę do wody."
+    }
+  },
+  {
+    "num": 262,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Po znalezieniu się w wodzie stwierdzamy, że pneumatyczna kamizelka ratunkowa nie wypełniła się gazem. Co należy zrobić?",
+    "options": {
+      "A": "Nic się nie da zrobić, można tylko zmienić kamizelkę na inną.",
+      "B": "Rozsunąć zamek błyskawiczny kamizelki i znaleźć rurkę do jej napełniania. Napełnić ustami kamizelkę .",
+      "C": "Założyć zapasowy nabój do napełniania i napełnić kamizelkę."
+    }
+  },
+  {
+    "num": 263,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Jacht na pełnym morzu. Prognoza na najbliższy czas 8 - 9°B. Jak przygotować jacht?",
+    "options": {
+      "A": "Sprzątnąć z pokładu żagle, które nie będą używane, sklarować sprzęt pod pokładem, zarefować żagle, przygotować żagle sztormowe, sprawdzić silnik",
+      "B": "Sklarować sprzęt pod pokładem, postawić dryfkotwę, przygotować pirotechnikę.",
+      "C": "Sprawdzić i ewentualnie uruchomić silnik, być w gotowości do zrzucenia żagli."
+    }
+  },
+  {
+    "num": 264,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "W jakiej sytuacji wybrać metodę równoczesnego sztormowania pod żaglami i na silniku?",
+    "options": {
+      "A": "Jeżeli musimy sztormować w bejdewindzie z uwagi na bliski ląd po zawietrznej",
+      "B": "Jeżeli zależy nam na utrzymaniu dużej szybkości",
+      "C": "Jeżeli obawiamy się utraty sterowności w przypadku porwania żagli"
+    }
+  },
+  {
+    "num": 265,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Na jachcie fok zwijany jest na rolerze, a grot do masztu. Czy w przypadku sztormowania lepiej będzie pozostawić zmniejszony fok na rolerze czy postawić mały fok na sztagu wewnętrznym (baby sztag)?",
+    "options": {
+      "A": "Pozostawić zmniejszony fok na rolerze",
+      "B": "Postawić mały fok na sztagu wewnętrznym",
+      "C": "Nie ma to znaczenia byle zmniejszenie powierzchni żagli było takie samo"
+    }
+  },
+  {
+    "num": 266,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "W przypadku wypadnięcia człowieka za burtę oficer (członek załogi) wachtowy w pierwszej kolejności powinien wykonać następujące czynności (jacht pod żaglami):",
+    "options": {
+      "A": "Ogłosić alarm, rzucić środki ratunkowe (koło lub t.p.), wcisnąć przycisk MOB (GPS, Ploter), uruchomić silnik, wyznaczyć natychmiast obserwatora, dalsze działanie pod komendą kapitana.",
+      "B": "Ogłosić alarm, rzucić środki ratunkowe (koło lub t.p.), obserwować człowieka, rozpocząć manewr pod żaglami, zapisać pozycje z GPS, dalsze działanie pod komendą kapitana",
+      "C": "Ogłosić alarm, rzucić środki ratunkowe (koło lub t.p.), czekać na komendy kapitana"
+    }
+  },
+  {
+    "num": 267,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Jacht na skutek uszkodzenia steru dryfuje w kierunku zawietrznego brzegu. Wystrzelono czerwone rakiety i nadano sygnał May Day. Po pewnym czasie zaobserwowano przy brzegu pomarańczowy dym. Co to oznacza?",
+    "options": {
+      "A": "Prawdopodobnie jakaś inna jednostka wzywa pomocy",
+      "B": "Ten brzeg jest niebezpieczny, starajcie się tu nie sztrandować.",
+      "C": "Widzimy was, pomocy udzielimy jak najprędzej."
+    }
+  },
+  {
+    "num": 268,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Kapitan zdecydował się sztrandować. Na brzegu do którego płynie jacht wystrzelono czerwoną rakietę. Co to oznacza?",
+    "options": {
+      "A": "Widzimy was i możemy udzielić pomocy",
+      "B": "Lądowanie tutaj jest nadzwyczaj niebezpieczne",
+      "C": "Podejście jednostki ratowniczej do was jest niemożliwe"
+    }
+  },
+  {
+    "num": 269,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Odebrany został sygnał May Day. Po chwili stacja brzegowa zawiadomiła, że statki w pobliżu proszone są o pomoc i po pewnym czasie zaobserwowano samolot, który nisko okrążył jacht, a potem odleciał kursem ok. 30°. Co to oznacza?",
+    "options": {
+      "A": "Samolot dał znać, że nasza pomoc jest niepotrzebna.",
+      "B": "Samolot naprowadza nas na jednostkę potrzebującą pomocy",
+      "C": "Samolot poszukuje jednostki wzywającej pomocy i sprawdzał czy to nie nasza jednostka"
+    }
+  },
+  {
+    "num": 270,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Kapitan zdecydował się sztrandować. Na brzegu do którego płynie jacht wystrzelono czerwoną rakietę, a na prawo od niej białą rakietę. Co to oznacza?",
+    "options": {
+      "A": "Widzimy was i możemy udzielić pomocy",
+      "B": "Starajcie się lądować w kierunku wskazanym białą rakietą.",
+      "C": "Podejście jednostki ratowniczej do was jest niemożliwe"
+    }
+  },
+  {
+    "num": 271,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Na jachcie jest ciężko ranny członek załogi. Wezwano pomocy i otrzymano informację, że do jachtu płynie jednostka ratownicza. Po pewnym czasie zaobserwowano na horyzoncie kolejno trzy białe rakiety. Co to oznacza?",
+    "options": {
+      "A": "Widzę was i płynę do was.",
+      "B": "Nie widzę waszej jednostki, nadajcie sygnał identyfikujący waszą jednostkę",
+      "C": "Taki sygnał nic nie oznacza. Raczej nie ma nic wspólnego z nami."
+    }
+  },
+  {
+    "num": 272,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Na jachcie jest człowiek mocno poparzony, ale sprawny. Wezwano pomoc i nadleciał helikopter. Jak postępować?",
+    "options": {
+      "A": "Zrzucić żagle, możliwie oczyścić pokład ze sprzętu, na silniku iść powoli pod wiatr, nawiązać łączność z helikopterem przy pomocy radiotelefonu UKF i postępować ściśle według jego wskazówek.",
+      "B": "Ustawić jacht w dryfie, czekać aż helikopter opuści ratownika na pokład i zabierze poszkodowanego.",
+      "C": "Zrzucić żagle, iść powoli z wiatrem, czekać na podanie z helikoptera liny z pętlą."
+    }
+  },
+  {
+    "num": 273,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Zaobserwowano wydobywanie się dymu z bakisty rufowej, po otwarciu klapy pokazał się płomień. Jak postępować?",
+    "options": {
+      "A": "Ogłosić alarm, otworzyć klapę i sprawdzić co się pali, przygotować gaśnice i gasić pożar. Po ugaszeniu dokładnie zbadać pomieszczenie",
+      "B": "Natychmiast zamknąć klapę, ogłosić alarm, zmienić kurs jachtu na bejdewind, przygotować gaśnice i po lekkim uchyleniu klapy gasić pożar. Po ugaszeniu dokładnie zbadać pomieszczenie",
+      "C": "Ogłosić alarm, otworzyć klapę i sprawdzić co się pali, gasić pożar wodą czerpaną z za burty. Po ugaszeniu dokładnie zbadać pomieszczenie"
+    }
+  },
+  {
+    "num": 274,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "W trakcie żeglugi bezpieczniej poruszać się po pokładzie po burcie:",
+    "options": {
+      "A": "Zawietrznej,",
+      "B": "Nawietrznej,",
+      "C": "Nie ma to znaczenia"
+    }
+  },
+  {
+    "num": 275,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "W celu zabezpieczenia załogi przy poruszaniu się na pokładzie w ciężkich warunkach najkorzystniejsze jest zainstalowanie:",
+    "options": {
+      "A": "Mocnych uchwytów w kilku miejscach pozwalających na wpinanie pasa bezpieczeństwa",
+      "B": "Relingów wzdłuż całej nadbudówki",
+      "C": "Taśm albo lin rozpiętych od dziobu do rufy"
+    }
+  },
+  {
+    "num": 276,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Przy złamaniu kończyny należy :",
+    "options": {
+      "A": "Ułożyć poszkodowanego w koi, podać środki przeciwbólowe, płynąć jak najszybciej do portu",
+      "B": "Ułożyć poszkodowanego w t.zw. pozycji bezpiecznej, płynąć jak najszybciej do portu",
+      "C": "Usztywnić 2 przyległe stawy, ułożyć chorego wygodnie, podać środki przeciwbólowe, możliwie szybko wezwać pomoc lekarską"
+    }
+  },
+  {
+    "num": 277,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Czy na Zatoce Gdańskiej i Zalewie Szczecińskim działa służba ratownictwa morskiego SAR?",
+    "options": {
+      "A": "Tak, z centrum koordynacyjnym w Gdyni i Stacjami ratownictwa w portach.",
+      "B": "Nie, SAR działa tylko na pełnym morzu",
+      "C": "Nie, działa tam tylko WOPR"
+    }
+  },
+  {
+    "num": 278,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Zaobserwowano, że znajdujący się w pobliżu jacht ma podniesiony sygnał jak na rysunku. Co należy zrobić ?",
+    "options": {
+      "A": "Taki sygnał nic nie oznacza, kontynuować swoje pływanie.",
+      "B": "Jacht stoi na mieliźnie, nie podchodzić w pobliże",
+      "C": "Jacht wzywa pomocy, podejść i podjąć odpowiednie działania"
+    }
+  },
+  {
+    "num": 279,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Członek załogi przewrócił się na pokładzie, ma silny ból klatki piersiowej szczególnie przy wdechu. Jak postępować z poszkodowanym?",
+    "options": {
+      "A": "Umieścić go w pozycji półsiedzącej w miejscu najmniej narażonym na kołysanie, założyć okrężna opaskę z szerokiego bandaża na klatkę piersiową, podać środki przeciwbólowe",
+      "B": "Ułożyć go w pozycji bezpiecznej, w miejscu dobrze wentylowanym",
+      "C": "Podawać ciepłe płyny i środki przeciwkaszlowe"
+    }
+  },
+  {
+    "num": 280,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Przy pracach konserwacyjnych członek załogi oparzył się kwasem z akumulatora. Jak postępować?",
+    "options": {
+      "A": "Nałożyć na miejsce oparzone sterylny opatrunek",
+      "B": "Starannie i długo płukać miejsce oparzone wodą, a następnie roztworem sody oczyszczonej lub mydła. Nałożyć sterylny opatrunek.",
+      "C": "Nałożyć na miejsce oparzone okład alkaliczny np.z mydła"
+    }
+  },
+  {
+    "num": 281,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Przy wychodzeniu z jachtu członek załogi doznał urazu stawu skokowego ( ból i zasinienie) jak należy postępować?",
+    "options": {
+      "A": "Nałożyć ciasny bandaż, trzymać nogę w cieple",
+      "B": "Unieruchomić całą kończynę, wzywać natychmiast pomoc lekarską",
+      "C": "Zastosować zimne oklady przez 15 - 30 minut, unieruchomić staw, podać środki przeciwbólowe"
+    }
+  },
+  {
+    "num": 282,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Na jachcie jest ranny członek załogi. Wezwano pomoc. Przyleciał helikopter. Kto kieruje akcją, jakie są obowiązki kapitana?",
+    "options": {
+      "A": "Akcją kieruje załoga helikloptera, kapitan powinien nawiązać łączność i przygotować jacht, załogę i poszkodowanego",
+      "B": "Akcją kieruje kapitan, który powinien nawiązać łączność z helikopterem i ustalać działania",
+      "C": "Akcją kieruje MRCC, kapitan powinien tylko utrzymać żadany kurs i prędkość jachtu."
+    }
+  },
+  {
+    "num": 283,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Jak powinna być przygotowana załoga i jak działać w przypadku konieczności opuszczenia jachtu?",
+    "options": {
+      "A": "Nie za ciężkie ubranie, założone pasy ratunkowe, jak najszybciej wejść do tratwy",
+      "B": "Ubrani jak najcieplej, założone pasy ratunkowe, zabrać sprzęt łaczności i sygnalizacyjny, żywność, apteczkę",
+      "C": "Ubrani jak najcieplej, założone pasy ratunkowe, natychmiast po wejsciu do tratwy wzywać pomocy środkami pirotechnicznymi, jeżeli jest ręczny radiotelefon UKF prowadzić ciągły nasłuch na kanale 16."
+    }
+  },
+  {
+    "num": 284,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Jacht znajduje się w zatoce Hano na N od Bornholmu siła wiatru wzrosła do NE 10°B. Jaki wybrać stosunkowo najbezpieczniejszy sposób sztormowania?",
+    "options": {
+      "A": "Sztormowanie z wiatrem na foku sztormowym, wejscie za Bornholm po stronie zachodniej, ewentualne wejscie do portu schronienia.",
+      "B": "Sztormowanie w dryfie bez żagli, w razie potrzeby użycie silnika",
+      "C": "Żagle maksymalnie zarefowane, wspomaganie silnikiem, starać się podejść pod południowe wybrzeże szwedzkie."
+    }
+  },
+  {
+    "num": 285,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Jacht ma dość wysoką burtę. Człowiek w wodzie jest przy burcie, przytomny może wspólpracować. Jak najlepiej wciągnąć go na pokład?",
+    "options": {
+      "A": "Dwóch najsilniejszych członków załogi wciaga go na pokład na śródokręciu",
+      "B": "Podać pętlę z grubej liny, którą powinien założyc pod pachy, wciągać wolnym fałem",
+      "C": "Podać mu linę, którą powinien na sobie zawiązać i wciagać go tą liną"
+    }
+  },
+  {
+    "num": 286,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Najważniejsze czynności przygotowawcze do sztormowaniu na pełnym morzu to:",
+    "options": {
+      "A": "Szczelne zamknięcie luków, klap itp. sprawdzenie pomp zęzowych, usunięcie z pokładu zbędnego sprzętu, postawienie lub przygotowanie żagli sztormowych",
+      "B": "Przegląd środków pirotechnicznych, sprawdzenie stanu pasów ratunkowych, przygotowanie apteczki.",
+      "C": "Przygotowanie ciepłego posiłku dla załogi, zamknięcie zaworów zaburtowych WC, sprawdzenie stanu baterii przenośnych radiotelefonow UKF,"
+    }
+  },
+  {
+    "num": 287,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "W jakich sytuacjach sztormowych możemy spodziewać się wzrostu wysokości i nieregularności fali?",
+    "options": {
+      "A": "Na wodach pływowych, kiedy prąd pływowy zmieni kierunek na przeciwny do kierunku wiatru",
+      "B": "Na wodach pływowych, kiedy prąd pływowy zmieni kierunek na zgodny z kierunkiem wiatru",
+      "C": "Na wodach pływowych, w okresie bliskim wystąpienia niskiej wody"
+    }
+  },
+  {
+    "num": 288,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "W jakich sytuacjach sztormowych możemy spodziewać się wzrostu wysokości i nieregularności fali?",
+    "options": {
+      "A": "W sytacji, kiedy następuje szybka zmiana kierunku nadal silnego wiatru do kierunku występujacej fali, np. o 45° - 90°",
+      "B": "W sytuacji wyjścia ze strefy przybrzeżnej na otwarte morze",
+      "C": "W sytuacji zbliżania się do brzegu nawietrznego"
+    }
+  },
+  {
+    "num": 289,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "W przypadku cięższych warunków atmosferycznych należy unikać żeglugi w obszarach:",
+    "options": {
+      "A": "Gdzie stałe prądy mają kierunek zgodny z kierunkiem wiatru",
+      "B": "Gdzie występuje wzmocnienie szybkości prądów ( np. przylądki, obszary o silniejszym prądzie itp.)",
+      "C": "Gdzie głebokośc morza jest znaczna, aż do bezpośredniej bliskości lądu"
+    }
+  },
+  {
+    "num": 290,
+    "scope": "Ratownictwo",
+    "scopeRaw": "RATOWNICTWO",
+    "question": "Czy przy sztrandowaniu na polskim wybrzeżu możemy liczyc na pomoc BEZPOŚREDNIO z lądu.",
+    "options": {
+      "A": "Nie",
+      "B": "Nie, ale TYLKO przy pomocy helikoptera jest to ewentualnie możliwe",
+      "C": "Tak, Na polskim wybrzeżu są stacje ratownictwa brzegowego dysponujace odpowiednim sprzętem do ratownictwa z brzegu."
+    }
+  },
+  {
+    "num": 291,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Jeden z klawiszy radiotelefonu VHF opisany jest jako \"DW\" oznacza to:",
+    "options": {
+      "A": "Wybór poziomu mocy nadajnka radiotelefonu: 1W lub 25W",
+      "B": "Wybór podwójnego nasłuchu na kanale 16 i dowolnym innym",
+      "C": "Wybór podwójnego nasluchu na dwóch dowolnych kanałach"
+    }
+  },
+  {
+    "num": 292,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Podczas mgły usłyszano przed dziobem jachtu sygnał \"jeden długi dźwięk\", na jachcie nie ma radaru, sygnał powtarza się. Jak zareagować?",
+    "options": {
+      "A": "Zmniejszyć szybkość, nadawać sygnały mgłowe, ustalić w którą stronę przemieszcza się sygnał, gotowość do manewrów",
+      "B": "Kontynuować kurs i szybkość, to statek przecinający nasz kurs, wkrótce się oddali",
+      "C": "Zatrzymać się, pozostać w dryfie, aż statek się oddali"
+    }
+  },
+  {
+    "num": 293,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Czy podczas żeglugi we mgle powinno się używać normalnych sygnałów manewrowych np. moje maszyny pracują wstecz \" . . . \"",
+    "options": {
+      "A": "Tak",
+      "B": "Nie",
+      "C": "To zależy od akwenu i typu statku"
+    }
+  },
+  {
+    "num": 294,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Na jaki zasięg radiotelefonu UKF można liczyć przy nawiązywaniu łączności?",
+    "options": {
+      "A": "60 - 70 Mm",
+      "B": "70 - 80 Mm",
+      "C": "30 - 40 Mm urządzeniach na fonii?"
+    }
+  },
+  {
+    "num": 295,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Na jachcie jest radiostacja pośredniofalowa i UKF. Na jakich kanałach/częstotliwościach prowadzi się korespondencję w niebezpieczeństwie na tych",
+    "options": {
+      "A": "Pośredniofalowa 2187,5 kHz, UKF kanał 70",
+      "B": "Pośredniofalowa 2182 kHz, UKF kanał 16",
+      "C": "Pośredniofalowa 2187,5 kHz, UKF kanał 6"
+    }
+  },
+  {
+    "num": 296,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Czy po wciśnięciu przycisku \"DISTRESS\" radiotelefon nada sygnał alarmowy?",
+    "options": {
+      "A": "Tylko raz",
+      "B": "Będzie go powtarzał, jeżeli nie wciśniemy przycisku \"STOP\"",
+      "C": "Zawsze powtórzy sygnał alarmowy trzy razy"
+    }
+  },
+  {
+    "num": 297,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Na jakim kanale w obszarze A1 może być nadawane wezwanie w niebezpieczeństwie (DSC), a na jakim zawiadomienie w niebezpieczeństwie?",
+    "options": {
+      "A": "Wezwanie(DSC) kanał 70 (automatycznie), zawiadomienie kanał 16 na fonii",
+      "B": "Wezwanie i zawiadomienie zawsze tylko na kanale 16",
+      "C": "Wezwanie i zawiadomienie zawsze tylko na kanale 70"
+    }
+  },
+  {
+    "num": 298,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Na płynącym w pobliżu jachcie jakiś człowiek macha rękami jak na rysunku. Jak zareagować?",
+    "options": {
+      "A": "To pozdrowienie, odpowiedzieć podobnie",
+      "B": "To wzywanie pomocy, podejść jak najbliżej, nawiązać łączność",
+      "C": "To ostrzeżenie, idziecie ku niebezpieczeństwu"
+    }
+  },
+  {
+    "num": 299,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Przy odbiorze pirotechniki ( na rejs pełnomorski) przekazano 8 rakiet czerwonych i pławkę \"pomarańczowy dym\". Czy jest to stan zgodny z przepisami (bandera polska)?",
+    "options": {
+      "A": "Tak, o ile posiadają ważny atest (datę ważności)",
+      "B": "Nie",
+      "C": "Tak, o ile są w dobrym stanie technicznym"
+    }
+  },
+  {
+    "num": 300,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Jakie dokumenty powinny być na jachcie wyposażonym w radiotelefon UKF.",
+    "options": {
+      "A": "Nie sa potrzebne żadne dokumenty",
+      "B": "Zezwolenie na urządzenie (Licencja) państwa bandery",
+      "C": "Zezwolenie na urządzenie (Licencja), jeden z członków załogi musi mieć świadectwo operatora"
+    }
+  },
+  {
+    "num": 301,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "W przypadku braku łączności radiowej albo trudności językowych można posłużyć się sygnałami skrótowymi (literowymi) Kodu Sygnałowego. Gdzie znaleźć informacje o takich sygnałach?",
+    "options": {
+      "A": "W locjach ( cz. ogólna, informacje o danym kraju)",
+      "B": "W \"Admiralty List of Radio Signals\"",
+      "C": "W książce \"Miedzynarodowy Kod Sygnalowy\""
+    }
+  },
+  {
+    "num": 302,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Statek idący równolegle z jachtem skierował przed dziób jachtu światło reflektora. Co to oznacza?",
+    "options": {
+      "A": "Nie wiadomo, może coś zaobserwował na morzu",
+      "B": "Spodziewa się pilota i daje mu znać gdzie jest",
+      "C": "Ostrzeżenie dla jachtu, aby nie zmieniał kursu w stronę statku"
+    }
+  },
+  {
+    "num": 303,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Statek idący w pobliżu jachtu nadał sygnał: pięć krótkich dźwieków. Co to oznacza?",
+    "options": {
+      "A": "Statek pilotowy pełniący służbę pilotową",
+      "B": "Uwaga! nie rozumiem waszych zamiarów",
+      "C": "Moje maszyny pracują wstecz"
+    }
+  },
+  {
+    "num": 304,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Czy jachty powinny być wyposażone w dzwon?",
+    "options": {
+      "A": "Tak, ale tylko dłuższe od 12 m",
+      "B": "Nie",
+      "C": "Tak, wszystkie"
+    }
+  },
+  {
+    "num": 306,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Na kanale 16 nadano komunikat: All stations... x3, Seelonce distress. Chcemy nawiązać łączność z mariną, która pracuje na kanale 69. Czy zgodnie z przepisami możemy to zrobić?",
+    "options": {
+      "A": "Nie , bo obowiazuje cisza radiowa",
+      "B": "Nawiązujemy łączność, bo cisza radiowa dotyczy tylko kanłu 16",
+      "C": "Słuchać na kanale 16 i jeżeli nastapi przerwa w korespondencji przejść na kanał 69 i nawiązać łączność."
+    }
+  },
+  {
+    "num": 307,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Chcemy nawiązac łączność, ale na kanale 16 słyszymy korespondencję w niebezpieczeństwie, po pewnym czasie usłyszeliśmy komunikat: All stations.. x3, SEELONCE FEENEE. Co to oznacza?",
+    "options": {
+      "A": "Zapowiedź komunikatu dotyczącego niebezpieczeństwa",
+      "B": "Koniec ciszy radiowej",
+      "C": "Należy nadal czekać, cisza radiowa obowiązuje"
+    }
+  },
+  {
+    "num": 308,
+    "scope": "MPZZM (przepisy)",
+    "scopeRaw": "MPZZM",
+    "question": "Jeden z członków załogi przypadkowo wcisnął przycisk radiotelefonu \"DISTRESS\". Co powinniśmy zrobić?",
+    "options": {
+      "A": "Wyłączyć na chwilę radiotelefon, następnie włączyć go i po usłyszeniu stacji brzegowej nadać: Cancel my distress alert.",
+      "B": "Ustawić kanał 16 i słuchać czy ktoś nawiąże z nami korespondencję. Po nawiązaniu łączności nadać: ? nazwa nadjącego do nas x 3: this is ?(nazwa jachtu) x 3, cancel my dstress alert",
+      "C": "Wyłączyć na chwilę radiotelefon, następnie włączyć go i nadać komunikat: All stations? x3 this is ?(nazwa jachtu) x 3, cancel my dstress alert of ?. ( data, godzina)"
+    }
+  },
+  {
+    "num": 309,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Na kanale 16 zaczęliśmy wywoływać stację brzegową, chcemy zamówić rozmowe telefoniczną . Po chwili usłyszeliśmy komunikat: All stations? x3, Seelonce distress. co to oznacza?",
+    "options": {
+      "A": "Stacja brzegowa prosi aby chwilę zaczekać.",
+      "B": "Za chwilę zostanie podane ostrzeżenie nawigacyjne",
+      "C": "Jest to wezwanie do zachowania ciszy radiowej bo prowadzona jest korespondencja ze statkiem w niebezpieczeństwie."
+    }
+  },
+  {
+    "num": 310,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Jak bezpiecznie użyć czerwonej pochodni ręcznej?",
+    "options": {
+      "A": "Zdjąć korek zabezpieczający, pociagnąć linkę spustową i skierować wylot w dół",
+      "B": "Trzymać pochodnię jedną ręką, drugą nacisnąć spust i zapalić pochodnię",
+      "C": "Zdjąć korek zabezpieczający, skierować wylot w górę, trzymać pochodnię z dala od siebie wylotem w górę, uruchomić zgodnie z instrukcją na obudowie"
+    }
+  },
+  {
+    "num": 311,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Czy od jednostki ratowniczej możemy żądać holowania jachtu?",
+    "options": {
+      "A": "Tak, ratownictwo obejmuje ratowanie załogi i jachtu",
+      "B": "Nie, ratownictwo obejmuje tylko ratowanie ludzi",
+      "C": "Tak, jeżeli ratowanie ludzi może odbyć się tylko w ten sposób (np. bardzo poważne niebezpieczeństwo przy ewakuacji, decyduje jednostka ratownicza)"
+    }
+  },
+  {
+    "num": 312,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Jacht znajdujacy się ok. 25 Mm na północ od Ustki nadał sygnał \"May Day\" jakiej pomocy może się spodziewać?",
+    "options": {
+      "A": "Po odebraniu sygnału zgłosi się za posrednictwem stacji brzegowej MRCC/MRCK Gdynia lub Świnoujście, które powiadomią o rodzaju pomocy.",
+      "B": "Nie wiadomo, należy oczekiwać helikoptera lub jednostki ratowniczej",
+      "C": "Należy nawiązać łączność z najbliższym kapitanatem portu i uzgodnić rodzaj pomocy"
+    }
+  },
+  {
+    "num": 313,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Na jachcie usłyszano korespondencje na kanale 16: May Day, May Day, May Day, this is yacht Regina SPG 1234, my position is ??.., I have fire on board, immediate help necessary, 5 persons on board. Upłynęło kilka minut, nie słychać żadnej korespondencji. Co należy zrobić ?",
+    "options": {
+      "A": "Nadać komunikat May Day Relay, dalszą akcją zajmie się stacja brzegowa.",
+      "B": "Natychmiast próbować nawiązać kontakt z tą jednostką i płynąć do niej.",
+      "C": "Nadać komunikat May Day Relay, jeżeli nie ma odzewu stacji brzegowej nawiazać kontakt z tą jednostką i plynąć do niej"
+    }
+  },
+  {
+    "num": 314,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Musimy wzywac pomocy. Jak uruchomic pławkę dymną?",
+    "options": {
+      "A": "Wyrzucić pławkę za burtę uruchomi się samoczynnie.",
+      "B": "Odkręcić korek zabezpieczajacy, pociągnąć linkę załponu, trzymać wysoko w ręku.",
+      "C": "Odkręcić korek zabezpieczajacy, pociągnąć linkę załponu, wrzucić pławkę do wody"
+    }
+  },
+  {
+    "num": 315,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Jak bezpiecznie użyć rakiety spadochronowej?",
+    "options": {
+      "A": "Zdjąć korek zabezpieczający, pociagnąć linkę spustową i skierować wylot w górę",
+      "B": "Trzymać rakietę jedną ręką, drugą nacisnąć spust i wystrzelić rakietę w górę",
+      "C": "Zdjąć korek zabezpieczający, skierować wylot w górę celując z dala od takielunku jachtu i wystrzelić rakietę wg. instrukcji na obudowie"
+    }
+  },
+  {
+    "num": 316,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Czy całą załogę należy przed rejsem zapoznać z obsługą środków pirotechnicznych",
+    "options": {
+      "A": "Nie, środki pirotechniczne powinien obsługiwać tylko kapitan lub wyznaczony oficer",
+      "B": "Nie, środki pirotechniczne powinna obsługiwać tylko osoba posiadajaca certyfikat Inywidualnych technik ratunkowych",
+      "C": "Tak, najlepiej przy instruktażu dotyczacym rozkladów alarmowych"
+    }
+  },
+  {
+    "num": 317,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Jak powinny być przechowywane środki pirotechniczne na jachcie?",
+    "options": {
+      "A": "Nie jest to istotne, tylko z dala od źródeł ciepła",
+      "B": "W miejscu łatwo dostępnym znanym całej załodze, najlepiej w wodoszczelnym pojemniku",
+      "C": "Każdy rodzaj oddzielnie w szafkach lub bakistach"
+    }
+  },
+  {
+    "num": 318,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Kanał 16 w łączności radiotelefonicznej słuzy do:",
+    "options": {
+      "A": "Tylko do korespondencji w niebezpieczeństwie",
+      "B": "Do wywołania, łączności w niebezpieczeństwie, łączności pilnej i bezpieczeństwa",
+      "C": "Tylko do łączności w niebezpieczeństwie, łączności pilnej i bezpieczeństwa"
+    }
+  },
+  {
+    "num": 319,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Przejmując jacht i przygotowując się do rejsu chcemy się upewnić co do sprawności radioplawy EPIRB. Na co należy zwrócic uwagę?",
+    "options": {
+      "A": "Czy bateria nie jest przedatowana (spr. w ateście), czy zwalniak hydrostatyczny nie jest przedatowany (spr. oznaczenie na obudowie), wykonać test sprawdzający",
+      "B": "Wykonac test sprawdzający, jeżeli jest pozytywny nie trzeba nic wiecej robić",
+      "C": "Sprawdzic świadectwo radiopławy i wykonac test sprawdzający"
+    }
+  },
+  {
+    "num": 320,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Usłyszano komunikat na kanale 16: Securite, securite, securite, All stations, All stations, All stations, gale warning, working channels. Co nalezy zrobić?",
+    "options": {
+      "A": "Pozostać na kanale 16 i czekac na podanie komunikatu.",
+      "B": "Nawiązać łączność ze stacja nadającą komunikat i ustalić kanał do odbioru komunikatu",
+      "C": "Sprawdzić na jakim kanale pracuje najbliższa stacja (np.Admiralty List of RadioSignals tom 3), ustawić ten kanał i słuchać komunikatu"
+    }
+  },
+  {
+    "num": 321,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Kiedy należy używać procedury SECURITE, a kiedy procedury PAN PAN?",
+    "options": {
+      "A": "SECURITE dla wiadomości dot. bezpieczeństwa i ostrzeżeń, PAN PAN dla pilnych wiadomości dotyczacych bezpieczeństwa lub niebezpieczenstwa, ale bez wzywania natychmiastowej pomocy.",
+      "B": "SECURITE tylko do ostrzeżeń, PAN PAN dla pilnych wiadomości adresowanych do konkretnych stacji.",
+      "C": "SECURITE dla wiadomości dot. bezpieczeństwa i ostrzeżeń, PAN PAN dla pilnych wiadomości dotyczacych tylko pomocy lekarskiej."
+    }
+  },
+  {
+    "num": 322,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Kiedy należy używać procedury MAY DAY, a kiedy procedury PAN PAN?",
+    "options": {
+      "A": "MAY DAY tylko przy bezpośrednim zagrożeniu życia lub jednostki, PAN PAN jeżeli potrzebna jest pomoc, ale nie natychmiastowa",
+      "B": "MAY DAY tylko przy bezpośrednim zagrożeniu dot. jednostki, PAN PAN jeżeli potrzebna jest pomoc techniczna",
+      "C": "MAY DAY tylko przy bezpośrednim zagrożeniu życia lub jednostki, PAN PAN tylko do ostrzegania innych jednostek."
+    }
+  },
+  {
+    "num": 324,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Zauważono podniesiony na statku sygnał. Co on oznacza?",
+    "options": {
+      "A": "Trzymajcie się z daleka ode mnie, manewruję z trudem",
+      "B": "Chcę nawiązać z wami łączność",
+      "C": "Zatrzymać się, natychmiast!!"
+    }
+  },
+  {
+    "num": 325,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Zauważono podniesiony na statku sygnał. Co on oznacza?",
+    "options": {
+      "A": "Człowiek za burtą",
+      "B": "Chcę nawiązać z wami łączność",
+      "C": "Zatrzymać się natychmiast"
+    }
+  },
+  {
+    "num": 326,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Jachtowi grozi zatonięcie, kapitan jachtu zdecydował wezwać pomoc przy pomocy radiotelefonu UKF. Jaką procedurę powinien zastosować?",
+    "options": {
+      "A": "Włączyć radiotelefon na kanał 16 i nadać MAY DAY ( X 3), this is NAZWA JACHTU i dalej rodzaj niebezpieczenstwa, potrzebną pomoc.",
+      "B": "Włączyć radiotelefon na kanał 16 i wcisnąć przycisk Distress, po chwili nadać MAY DAY ( X 3), this is NAZWA JACHTU, sygnał wywoławczy i/lub MMSI, po usłyszeniu odpowiedzi stacji brzegowej lub statku nadać ponownie MAY DAY, nazwę i sygnał wywolawczy, pozycję, rodzaj niebezpieczenstwa, ilość osób, potrzebną pomoc.",
+      "C": "Włączyć radiotelefon na kanał 16 i wcisnąć przycisk Distress, po chwili nadać MAY DAY ( X 3), this is NAZWA JACHTU, sygnał wywoławczy i/lub MMSI, pozycję, rodzaj niebezpieczeństwa, ilość osób, potrzebną pomoc.C."
+    }
+  },
+  {
+    "num": 328,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Zauważono podniesiony na statku sygnał. Co on oznacza?",
+    "options": {
+      "A": "Trzymajcie się z daleka ode mnie, manewruję z trudem",
+      "B": "Mam nurka pod wodą, Uwaga!",
+      "C": "Mam pilota na pokładzie"
+    }
+  },
+  {
+    "num": 329,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "W nocy na kursie zaobserwowano światło: trzy krótki błyski, trzy długie światła, trzy krótkie błyski, sygnał powtarza się, jaka powinna być reakcja kapitana?",
+    "options": {
+      "A": "Ustawić kanał 16 radiotelefonu UKF i prowadzić nasłuch",
+      "B": "Natychmiast skierować jacht w kierunku w którym widziano sygnały",
+      "C": "Ustawić kanał 16 radiotelefonu UKF i prowadzić nasłuch. Natychmiast skierować jacht w kierunku w którym widziano sygnały. Nadać May Day Relay jeżeli nie ma reakcji stacji brzegowej"
+    }
+  },
+  {
+    "num": 330,
+    "scope": "Sygnalizacja i łączność",
+    "scopeRaw": "SYGNALIZACJA I ŁĄCZNOŚĆ",
+    "question": "Na pełnym morzu jacht nabiera wody, przecieku nie można opanować. W zasięgu widoczności nie widać żadnych jednostek.Wysłano sygnał Distress (May Day) przy pomocy UKF, brak odpowiedzi. Jak NAJLEPIEJ/NAJBEZPIECZNIEJ dalej postępować?",
+    "options": {
+      "A": "Wzywać pomocy środkami pirotechnicznymi",
+      "B": "Uruchomić pławę EPIRB, przygotować się do opuszczenia jachtu, nie przełączać/wyłączać UKF",
+      "C": "Tylko wywiesić sygnały optyczne wzywania pomocy."
+    }
+  }
+]

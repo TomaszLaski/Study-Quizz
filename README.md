@@ -1,16 +1,12 @@
-# React Interview Quiz
+# Quizy egzaminacyjne
 
-A quiz app for practicing React interview questions.
+Aplikacja do nauki z trzema kursami:
 
-## Credits & license
+1. **React Interview** — pytania rekrutacyjne z React
+2. **React Interview: Wzorce** — A1–A10 + B1–B7 (kiedy używać, rozpoznawanie, klocki)
+3. **Jachtowy Sternik Morski** — przykładowe pytania egzaminacyjne PZŻ
 
-Question and answer content is derived from
-[sudheerj/reactjs-interview-questions](https://github.com/sudheerj/reactjs-interview-questions)
-by Sudheer Jonna, used under the MIT License. The full copyright notice and
-license text are reproduced in [ATTRIBUTION.md](./ATTRIBUTION.md), as required
-by the MIT License.
-
-## Run locally (Git Bash)
+## Uruchomienie (Git Bash)
 
 ```bash
 cd /c/Users/Tomasz/react-interview-quiz
@@ -18,23 +14,38 @@ npm install
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173`.
+Aplikacja: `http://127.0.0.1:5173/`
 
-## Update questions from GitHub
+## Kurs: React Interview: Wzorce
+
+Na podstawie PDF-ów:
+- `wzorce-komplet-A1-A10.pdf`
+- `klocki-komplet-B1-B7.pdf`
+
+Zakresy (wymagany wybór przed startem):
+- Rozpoznawanie (kiedy używać) — scenariusze jak z rozmowy + słowa-klucze
+- Wzorce A1–A5 / A6–A10
+- Klocki B1–B3 / B4–B7
+- Klocki → wzorce (kompozycja)
+- Porównania i pułapki (A2 vs A5, A3 vs A7, …)
+- Architektura (container, lifting state, hooks, compound, reducer)
+
+Zasada z materiału: najpierw **słowa-klucze** (dowód), potem **nazwa wzorca** (wniosek).
 
 ```bash
-cd /c/Users/Tomasz/react-interview-quiz
-rm scripts/README.md
-npm run parse
+npm run parse:patterns
 ```
 
-## Features
+## Kurs JSM
 
-- 400+ questions with answers, tags and difficulty
-- Each question has 4 options (A/B/C/D): 1 correct and 3 incorrect
-- Practice all questions or a selected category
-- Answer checking, key points and full explanation after verification
-- Resume where you left off + track passed questions (saved in `localStorage`)
-- "Start over" from question 1
-- Mark difficult questions (saved in `localStorage`)
-- Navigation: previous / next question
+```bash
+npm run parse:jsm
+```
+
+## Kurs React (Q&A)
+
+Źródło: [sudheerj/reactjs-interview-questions](https://github.com/sudheerj/reactjs-interview-questions) (MIT).
+
+```bash
+npm run parse
+```

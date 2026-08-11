@@ -241,6 +241,21 @@
   border: 1px solid #ffcc80;
 }
 
+.result-banner.is-study {
+  background: #e3f2fd;
+  color: #0d47a1;
+  border: 1px solid #90caf9;
+  font-weight: 600;
+}
+
+.btn-mastered {
+  background: #2e7d32;
+}
+
+.btn-mastered:hover:not(:disabled) {
+  background: #1b5e20;
+}
+
 .answer-panel {
   background: #fafcff;
   border: 1px solid #dbe7f5;

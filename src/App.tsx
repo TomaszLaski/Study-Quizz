@@ -1,14 +1,23 @@
 import { useCallback, useMemo, useState } from 'react';
-import questionsData from './data/questions.json';
+import reactQuestionsData from './data/questions.json';
+import jsmQuestionsData from './data/jsm-questions.json';
+import patternsQuestionsData from './data/patterns-questions.json';
+import CoursePicker from './components/CoursePicker';
 import HomeScreen from './components/HomeScreen';
 import QuizScreen from './components/QuizScreen';
-import type { Question } from './types';
+import type { CourseId, Question } from './types';
+import { COURSES } from './types';
 import './App.css';
 
-const ALL_QUESTIONS = questionsData as Question[];
-const DIFFICULT_KEY = 'react-quiz-difficult';
-const PASSED_KEY = 'react-quiz-passed';
-const LAST_KEY = 'react-quiz-last';
+const QUESTIONS_BY_COURSE: Record<CourseId, Question[]> = {
+  react: reactQuestionsData as Question[],
+  jsm: jsmQuestionsData as Question[],
+  patterns: patternsQuestionsData as Question[],
+};
+
+function storageKey(course: CourseId, kind: 'difficult' | 'passed' | 'last') {
+  return `quiz-${course}-${kind}`;
+}
 
 function loadIds(key: string): number[] {
   try {
@@ -23,9 +32,9 @@ function saveIds(key: string, ids: number[]) {
   localStorage.setItem(key, JSON.stringify(ids));
 }
 
-function loadLastId(): number | null {
+function loadLastId(course: CourseId): number | null {
   try {
-    const raw = localStorage.getItem(LAST_KEY);
+    const raw = localStorage.getItem(storageKey(course, 'last'));
     return raw ? (JSON.parse(raw) as number) : null;
   } catch {
     return null;
@@ -33,83 +42,137 @@ function loadLastId(): number | null {
 }
 
 export default function App() {
-  const [screen, setScreen] = useState<'home' | 'quiz'>('home');
+  const [screen, setScreen] = useState<'courses' | 'home' | 'quiz'>('courses');
+  const [courseId, setCourseId] = useState<CourseId | null>(null);
   const [activeQuestions, setActiveQuestions] = useState<Question[]>([]);
   const [startIndex, setStartIndex] = useState(0);
-  const [difficultIds, setDifficultIds] = useState<number[]>(() =>
-    loadIds(DIFFICULT_KEY),
+  const [difficultIds, setDifficultIds] = useState<number[]>([]);
+  const [passedIds, setPassedIds] = useState<number[]>([]);
+  const [lastId, setLastId] = useState<number | null>(null);
+
+  const course = useMemo(
+    () => COURSES.find((c) => c.id === courseId) ?? null,
+    [courseId],
   );
-  const [passedIds, setPassedIds] = useState<number[]>(() => loadIds(PASSED_KEY));
-  const [lastId, setLastId] = useState<number | null>(loadLastId);
+
+  const allQuestions = courseId ? QUESTIONS_BY_COURSE[courseId] : [];
 
   const categories = useMemo(() => {
     const map = new Map<string, number>();
-    for (const q of ALL_QUESTIONS) {
+    for (const q of allQuestions) {
       map.set(q.category, (map.get(q.category) ?? 0) + 1);
     }
-    return [...map.entries()].sort((a, b) => a[0].localeCompare(b[0]));
-  }, []);
-
-  const difficultCount = difficultIds.length;
-  const passedCount = passedIds.length;
+    return [...map.entries()].sort((a, b) => a[0].localeCompare(b[0], 'pl'));
+  }, [allQuestions]);
 
   const resumeIndex = useMemo(() => {
     if (lastId == null) return 0;
-    const i = ALL_QUESTIONS.findIndex((q) => q.id === lastId);
+    const i = allQuestions.findIndex((q) => q.id === lastId);
     return i >= 0 ? i : 0;
-  }, [lastId]);
+  }, [lastId, allQuestions]);
   const hasProgress = resumeIndex > 0;
 
+  const courseCounts = useMemo(
+    () => ({
+      react: QUESTIONS_BY_COURSE.react.length,
+      jsm: QUESTIONS_BY_COURSE.jsm.length,
+      patterns: QUESTIONS_BY_COURSE.patterns.length,
+    }),
+    [],
+  );
+
+  const selectCourse = useCallback((id: CourseId) => {
+    setCourseId(id);
+    setDifficultIds(loadIds(storageKey(id, 'difficult')));
+    setPassedIds(loadIds(storageKey(id, 'passed')));
+    setLastId(loadLastId(id));
+    setScreen('home');
+  }, []);
+
+  const backToCourses = useCallback(() => {
+    setScreen('courses');
+    setCourseId(null);
+    setActiveQuestions([]);
+    setStartIndex(0);
+  }, []);
+
   const startQuiz = useCallback((questions: Question[], index = 0) => {
+    if (questions.length === 0) return;
     setActiveQuestions(questions);
     setStartIndex(index);
     setScreen('quiz');
   }, []);
 
   const continueAll = useCallback(() => {
-    startQuiz(ALL_QUESTIONS, resumeIndex);
-  }, [startQuiz, resumeIndex]);
+    startQuiz(allQuestions, resumeIndex);
+  }, [startQuiz, allQuestions, resumeIndex]);
 
   const startOver = useCallback(() => {
-    setLastId(ALL_QUESTIONS[0].id);
-    localStorage.setItem(LAST_KEY, JSON.stringify(ALL_QUESTIONS[0].id));
-    startQuiz(ALL_QUESTIONS, 0);
-  }, [startQuiz]);
+    if (!courseId || allQuestions.length === 0) return;
+    setLastId(allQuestions[0].id);
+    localStorage.setItem(storageKey(courseId, 'last'), JSON.stringify(allQuestions[0].id));
+    startQuiz(allQuestions, 0);
+  }, [startQuiz, allQuestions, courseId]);
 
-  const markPassed = useCallback((id: number) => {
-    setPassedIds((prev) => {
-      if (prev.includes(id)) return prev;
-      const next = [...prev, id];
-      saveIds(PASSED_KEY, next);
-      return next;
-    });
-  }, []);
+  const startAllWithScope = useCallback(
+    (scope: string | 'all') => {
+      if (!courseId) return;
+      const filtered =
+        scope === 'all' ? allQuestions : allQuestions.filter((q) => q.category === scope);
+      if (filtered.length === 0) return;
+      setLastId(filtered[0].id);
+      localStorage.setItem(storageKey(courseId, 'last'), JSON.stringify(filtered[0].id));
+      startQuiz(filtered, 0);
+    },
+    [allQuestions, courseId, startQuiz],
+  );
 
-  const markProgress = useCallback((id: number) => {
-    setLastId(id);
-    localStorage.setItem(LAST_KEY, JSON.stringify(id));
-  }, []);
+  const markPassed = useCallback(
+    (id: number) => {
+      if (!courseId) return;
+      setPassedIds((prev) => {
+        if (prev.includes(id)) return prev;
+        const next = [...prev, id];
+        saveIds(storageKey(courseId, 'passed'), next);
+        return next;
+      });
+    },
+    [courseId],
+  );
+
+  const markProgress = useCallback(
+    (id: number) => {
+      if (!courseId) return;
+      setLastId(id);
+      localStorage.setItem(storageKey(courseId, 'last'), JSON.stringify(id));
+    },
+    [courseId],
+  );
 
   const startCategory = useCallback(
     (category: string) => {
-      const filtered = ALL_QUESTIONS.filter((q) => q.category === category);
+      const filtered = allQuestions.filter((q) => q.category === category);
       startQuiz(filtered);
     },
-    [startQuiz],
+    [startQuiz, allQuestions],
   );
 
   const startDifficult = useCallback(() => {
-    const filtered = ALL_QUESTIONS.filter((q) => difficultIds.includes(q.id));
+    const filtered = allQuestions.filter((q) => difficultIds.includes(q.id));
     startQuiz(filtered);
-  }, [difficultIds, startQuiz]);
+  }, [difficultIds, startQuiz, allQuestions]);
 
-  const toggleDifficult = useCallback((id: number) => {
-    setDifficultIds((prev) => {
-      const next = prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id];
-      saveIds(DIFFICULT_KEY, next);
-      return next;
-    });
-  }, []);
+  const toggleDifficult = useCallback(
+    (id: number) => {
+      if (!courseId) return;
+      setDifficultIds((prev) => {
+        const next = prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id];
+        saveIds(storageKey(courseId, 'difficult'), next);
+        return next;
+      });
+    },
+    [courseId],
+  );
 
   const exitQuiz = useCallback(() => {
     setScreen('home');
@@ -117,11 +180,16 @@ export default function App() {
     setStartIndex(0);
   }, []);
 
-  if (screen === 'quiz' && activeQuestions.length > 0) {
+  if (screen === 'courses') {
+    return <CoursePicker onSelect={selectCourse} counts={courseCounts} />;
+  }
+
+  if (screen === 'quiz' && activeQuestions.length > 0 && course) {
     return (
       <QuizScreen
         questions={activeQuestions}
         initialIndex={startIndex}
+        course={course}
         difficultIds={difficultIds}
         passedIds={passedIds}
         onToggleDifficult={toggleDifficult}
@@ -132,18 +200,26 @@ export default function App() {
     );
   }
 
+  if (!course) {
+    return <CoursePicker onSelect={selectCourse} counts={courseCounts} />;
+  }
+
   return (
     <HomeScreen
-      totalCount={ALL_QUESTIONS.length}
+      course={course}
+      totalCount={allQuestions.length}
       categories={categories}
-      difficultCount={difficultCount}
-      passedCount={passedCount}
+      difficultCount={difficultIds.length}
+      passedCount={passedIds.length}
       hasProgress={hasProgress}
       resumeNumber={resumeIndex + 1}
+      requiresScope={course.requiresScope}
+      onBack={backToCourses}
       onContinue={continueAll}
       onStartOver={startOver}
       onStartCategory={startCategory}
       onStartDifficult={startDifficult}
+      onStartAllWithScope={startAllWithScope}
     />
   );
 }
