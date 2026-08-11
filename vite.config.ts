@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // base must match the GitHub Pages sub-path: https://<user>.github.io/<repo>/
 export default defineConfig({
-  base: '/react-interview-quiz/',
+  base: '/Study-Quizz/',
   plugins: [react()],
 })

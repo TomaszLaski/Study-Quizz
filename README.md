@@ -1,12 +1,20 @@
-# Quizy egzaminacyjne
+# Study Quizz
 
 Aplikacja do nauki z trzema kursami:
 
 1. **React Interview** — pytania rekrutacyjne z React
-2. **React Interview: Wzorce** — A1–A10 + B1–B7 (kiedy używać, rozpoznawanie, klocki)
+2. **React Interview: Wzorce** — wzorce + klocki (kiedy używać, rozpoznawanie)
 3. **Jachtowy Sternik Morski** — przykładowe pytania egzaminacyjne PZŻ
 
-## Uruchomienie (Git Bash)
+## GitHub Pages
+
+https://tomaszlaski.github.io/Study-Quizz/
+
+Deploy: push na `main` → workflow `.github/workflows/deploy.yml`.
+
+W ustawieniach repo: **Settings → Pages → Source: GitHub Actions**.
+
+## Uruchomienie lokalne (Git Bash)
 
 ```bash
 cd /c/Users/Tomasz/react-interview-quiz
@@ -16,36 +24,12 @@ npm run dev
 
 Aplikacja: `http://127.0.0.1:5173/`
 
-## Kurs: React Interview: Wzorce
-
-Na podstawie PDF-ów:
-- `wzorce-komplet-A1-A10.pdf`
-- `klocki-komplet-B1-B7.pdf`
-
-Zakresy (wymagany wybór przed startem):
-- Rozpoznawanie (kiedy używać) — scenariusze jak z rozmowy + słowa-klucze
-- Wzorce A1–A5 / A6–A10
-- Klocki B1–B3 / B4–B7
-- Klocki → wzorce (kompozycja)
-- Porównania i pułapki (A2 vs A5, A3 vs A7, …)
-- Architektura (container, lifting state, hooks, compound, reducer)
-
-Zasada z materiału: najpierw **słowa-klucze** (dowód), potem **nazwa wzorca** (wniosek).
+## Regeneracja pytań
 
 ```bash
-npm run parse:patterns
+npm run parse           # React Q&A
+npm run parse:patterns  # Wzorce
+npm run parse:jsm       # JSM + klucz odpowiedzi
 ```
 
-## Kurs JSM
-
-```bash
-npm run parse:jsm
-```
-
-## Kurs React (Q&A)
-
-Źródło: [sudheerj/reactjs-interview-questions](https://github.com/sudheerj/reactjs-interview-questions) (MIT).
-
-```bash
-npm run parse
-```
+Źródło React: [sudheerj/reactjs-interview-questions](https://github.com/sudheerj/reactjs-interview-questions) (MIT).
