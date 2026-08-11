@@ -4257,11 +4257,11 @@
     "course": "jsm",
     "difficulty": "medium",
     "question": "Na kursie zaobserwowano światła jak na rysunku. Jak należy postapić?",
-    "shortAnswer": "Sprawdzi? po?o?enie na mapie i g??boko?ci. Omin?? bior?c pod uwag? g??boko?ci.",
-    "answer": "**Poprawna odpowied?: C.**\n\nNa rysunku: dwa ?wiat?a czerwone w linii pionowej oraz bia?e ?wiat?o kotwiczne ? oznakowanie typowe dla **statku na mieli?nie**. Nale?y sprawdzi? po?o?enie na mapie i g??boko?ci oraz omin?? bior?c je pod uwag?.\n\n(Trzy czerwone w pionie bez bia?ego kotwicznego oznacza?yby statek ograniczony zanurzeniem.)",
+    "shortAnswer": "Sprawdzić położenie na mapie i głębokości. Ominąć biorąc pod uwagę głębokości.",
+    "answer": "**Poprawna odpowiedź: C.**\n\nNa rysunku: dwa światła czerwone w linii pionowej oraz białe światło kotwiczne — oznakowanie typowe dla **statku na mieliźnie**. Należy sprawdzić położenie na mapie i głębokości oraz ominąć biorąc je pod uwagę.\n\n(Trzy czerwone w pionie bez białego kotwicznego oznaczałyby statek ograniczony zanurzeniem.)",
     "keyPoints": [
-      "Dwa czerwone w pionie + bia?e (kotwiczne) = statek na mieli?nie",
-      "Sprawdzi? map? i g??boko?ci; omin?? z ich uwzgl?dnieniem"
+      "Dwa czerwone w pionie + białe (kotwiczne) = statek na mieliźnie",
+      "Sprawdzić mapę i głębokości; ominąć z ich uwzględnieniem"
     ],
     "codeExamples": [],
     "tags": [
