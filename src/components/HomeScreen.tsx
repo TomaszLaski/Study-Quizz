@@ -40,6 +40,7 @@ export default function HomeScreen({
   const passedPercent = totalCount > 0 ? Math.round((passedCount / totalCount) * 100) : 0;
   const isPl = course.id === 'jsm' || course.id === 'patterns';
   const isPatterns = course.id === 'patterns';
+  const isReact = course.id === 'react';
 
   const scopeReady = !requiresScope || selectedScope != null;
 
@@ -54,7 +55,20 @@ export default function HomeScreen({
 
   const scopeHint = isPatterns
     ? 'Trening jak na rozmowie: wybierz zakres (rozpoznawanie, wzorce, klocki, architektura) albo wszystkie pytania.'
-    : 'Egzamin JSM obejmuje kilka zakresów tematycznych. Wybierz jeden zakres albo wszystkie pytania.';
+    : isReact
+      ? 'Pick a category (Core React, Hooks, Redux, …) or study all questions.'
+      : 'Egzamin JSM obejmuje kilka zakresów tematycznych. Wybierz jeden zakres albo wszystkie pytania.';
+
+  const allScopesLabel = isReact ? 'All categories' : 'Wszystkie zakresy';
+  const questionsWord = isReact ? 'questions' : 'pytań';
+  const scopeTitle = isReact ? '1. Choose a category' : '1. Wybierz zakres';
+  const startLabel = !selectedScope
+    ? isReact
+      ? 'Choose a category first'
+      : 'Najpierw wybierz zakres'
+    : isReact
+      ? `2. Start learning${selectedScope === 'all' ? ' (all)' : ''}`
+      : `2. Rozpocznij naukę${selectedScope === 'all' ? ' (wszystkie)' : ''}`;
 
   return (
     <div className="home-page">
@@ -82,10 +96,10 @@ export default function HomeScreen({
         </div>
 
         {requiresScope && (
-          <div className={`scope-panel ${isPatterns ? 'scope-panel-patterns' : ''}`}>
-            <h2>1. Wybierz zakres</h2>
+          <div className={`scope-panel ${isPatterns || isReact ? 'scope-panel-patterns' : ''}`}>
+            <h2>{scopeTitle}</h2>
             <p className="scope-hint">{scopeHint}</p>
-            <div className="scope-list" role="listbox" aria-label="Zakres tematyczny">
+            <div className="scope-list" role="listbox" aria-label={isReact ? 'Category' : 'Zakres tematyczny'}>
               <button
                 type="button"
                 role="option"
@@ -93,8 +107,10 @@ export default function HomeScreen({
                 className={`scope-btn ${selectedScope === 'all' ? 'is-selected' : ''}`}
                 onClick={() => setSelectedScope('all')}
               >
-                <span className="scope-name">Wszystkie zakresy</span>
-                <span className="scope-count">{totalCount} pytań</span>
+                <span className="scope-name">{allScopesLabel}</span>
+                <span className="scope-count">
+                  {totalCount} {questionsWord}
+                </span>
               </button>
               {categories.map(([name, count]) => (
                 <button
@@ -106,7 +122,9 @@ export default function HomeScreen({
                   onClick={() => setSelectedScope(name)}
                 >
                   <span className="scope-name">{name}</span>
-                  <span className="scope-count">{count} pytań</span>
+                  <span className="scope-count">
+                    {count} {questionsWord}
+                  </span>
                 </button>
               ))}
             </div>
@@ -121,9 +139,7 @@ export default function HomeScreen({
               disabled={!scopeReady}
               onClick={startAll}
             >
-              {selectedScope
-                ? `2. Rozpocznij naukę${selectedScope === 'all' ? ' (wszystkie)' : ''}`
-                : 'Najpierw wybierz zakres'}
+              {startLabel}
             </button>
           )}
 
@@ -177,7 +193,8 @@ export default function HomeScreen({
 
         {requiresScope && selectedScope && selectedScope !== 'all' && (
           <p className="scope-selected-note">
-            Wybrany zakres: <strong>{selectedScope}</strong>
+            {isReact ? 'Selected category: ' : 'Wybrany zakres: '}
+            <strong>{selectedScope}</strong>
           </p>
         )}
 

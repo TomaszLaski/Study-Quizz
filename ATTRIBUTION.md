@@ -5,9 +5,8 @@
 The interview questions and answers in this app are derived from the
 open-source project **[reactjs-interview-questions](https://github.com/sudheerj/reactjs-interview-questions)**
 by **Sudheer Jonna**, used under the terms of the MIT License reproduced below.
-The content is parsed from that project's `README.md` by
-`scripts/parse-questions.mjs` and further processed (short summaries, quiz
-options, tags, difficulty, etc.).
+The content has been adapted for this quiz (short summaries, options, tags,
+difficulty, etc.) and lives in `src/data/questions.json`.
 
 ---
 

@@ -62,3 +62,18 @@
   padding: 4px 8px;
   border-radius: 4px;
 }
+
+.course-author {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.course-author a {
+  color: #0d47a1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.course-author a:hover {
+  text-decoration: underline;
+}

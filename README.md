@@ -2,6 +2,8 @@
 
 Aplikacja quizowa do nauki — trzy kursy, pytania wielokrotnego wyboru (A/B/C).
 
+**Autor:** [Tomasz Łaski](https://www.linkedin.com/in/tomasz-%C5%82aski-7888b2185/)
+
 ## Kursy
 
 ### 1. React Interview

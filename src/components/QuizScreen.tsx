@@ -3,20 +3,45 @@ import type { CourseMeta, Question } from '../types';
 import AnswerMarkdown from './AnswerMarkdown';
 import './QuizScreen.css';
 
-/** Hide explanation when it only repeats key points (no extra value). */
-function explanationAddsValue(answer: string, keyPoints: string[]): boolean {
-  const normalized = answer.replace(/\*\*/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
-  if (!normalized) return false;
-  if (keyPoints.length === 0) return true;
+/** Decide which review sections to show so keypoints ≠ explanation. */
+function getReviewDisplay(answer: string, keyPoints: string[]) {
+  const points = keyPoints.map((p) => p.trim()).filter(Boolean);
+  const ans = answer.trim();
 
-  const points = keyPoints.map((p) => p.replace(/\s+/g, ' ').trim().toLowerCase()).filter(Boolean);
-  const pointsJoined = points.join(' ');
-  const covered = points.every((p) => normalized.includes(p));
-  if (!covered) return true;
+  if (points.length === 0) {
+    return { showKeyPoints: false, showAnswer: Boolean(ans), answerContent: ans };
+  }
+  if (!ans) {
+    return { showKeyPoints: true, showAnswer: false, answerContent: '' };
+  }
 
-  // Extra prose beyond the bullets (headings, "dlaczego", steps, etc.)
-  const extraChars = normalized.length - pointsJoined.length;
-  return extraChars > 60;
+  const nAns = ans.replace(/\*\*/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
+  const nPoints = points.map((p) => p.replace(/\s+/g, ' ').trim().toLowerCase());
+  const pointsLen = nPoints.reduce((n, p) => n + p.length, 0);
+  const allEmbedded = nPoints.every((p) => p.length > 0 && nAns.includes(p));
+
+  // Strip embedded keypoints to see what explanation uniquely adds
+  let unique = nAns;
+  for (const p of nPoints) {
+    unique = unique.replace(p, ' ');
+  }
+  unique = unique.replace(/\s+/g, ' ').trim();
+  // Ignore leftover boilerplate like "poprawna odpowiedź: a."
+  unique = unique
+    .replace(/poprawna odpowied[źz]:\s*[abc]\.?/gi, '')
+    .replace(/correct answer:\s*[abc]\.?/gi, '')
+    .replace(/odpowied[źz]:\s*[abc]\.?/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  const uniqueAddsValue = unique.length > 50;
+
+  if (!allEmbedded || uniqueAddsValue || nAns.length > pointsLen + 80) {
+    return { showKeyPoints: true, showAnswer: true, answerContent: ans };
+  }
+
+  // Near-duplicate: keep the scannable checklist only
+  return { showKeyPoints: true, showAnswer: false, answerContent: '' };
 }
 
 interface QuizScreenProps {
@@ -60,6 +85,7 @@ export default function QuizScreen({
   const isPl = isJsm || isPatterns;
   const unknownKey = Boolean(current.correctUnknown);
   const hasOfficialCorrect = current.options.some((o) => o.correct);
+  const review = getReviewDisplay(current.answer, current.keyPoints);
 
   useEffect(() => {
     onProgress(current.id);
@@ -156,6 +182,32 @@ export default function QuizScreen({
                 {course.icon}
               </div>
               <h1 className="question-text">{current.question}</h1>
+              {current.figure && (
+                <div
+                  className={
+                    Array.isArray(current.figure) && current.figure.length > 1
+                      ? 'question-figures is-multi'
+                      : 'question-figures'
+                  }
+                >
+                  {(Array.isArray(current.figure) ? current.figure : [current.figure]).map(
+                    (path, i) => {
+                      const label = Array.isArray(current.figure)
+                        ? String.fromCharCode(65 + i)
+                        : null;
+                      const src = `${import.meta.env.BASE_URL}${path}`;
+                      return (
+                        <figure key={path} className="question-figure">
+                          {label && <figcaption>{label}</figcaption>}
+                          <a href={src} target="_blank" rel="noopener noreferrer">
+                            <img src={src} alt={label ? `Rysunek ${label}` : 'Rysunek do pytania'} />
+                          </a>
+                        </figure>
+                      );
+                    },
+                  )}
+                </div>
+              )}
               {current.tags.length > 0 && (
                 <ul className="tag-list" aria-label="Tags">
                   {current.tags.map((tag) => (
@@ -204,7 +256,7 @@ export default function QuizScreen({
               </div>
             )}
 
-            {checked && current.keyPoints.length > 0 && (
+            {checked && review.showKeyPoints && (
               <div className="keypoints-panel">
                 <h2>{isPl ? 'Najważniejsze punkty' : 'Key points'}</h2>
                 <ul className="keypoints-list">
@@ -215,10 +267,10 @@ export default function QuizScreen({
               </div>
             )}
 
-            {checked && current.answer && explanationAddsValue(current.answer, current.keyPoints) && (
+            {checked && review.showAnswer && (
               <div className="answer-panel">
                 <h2>{isPl ? 'Jak myśleć / wyjaśnienie' : 'Full explanation'}</h2>
-                <AnswerMarkdown content={current.answer} />
+                <AnswerMarkdown content={review.answerContent} />
               </div>
             )}
           </section>

@@ -37,6 +37,17 @@ export default function CoursePicker({ onSelect, counts }: CoursePickerProps) {
             </button>
           ))}
         </div>
+
+        <footer className="home-credit course-author">
+          Autor:{' '}
+          <a
+            href="https://www.linkedin.com/in/tomasz-%C5%82aski-7888b2185/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tomasz Łaski
+          </a>
+        </footer>
       </div>
     </div>
   );

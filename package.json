@@ -6,10 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview",
-    "parse": "node scripts/parse-questions.mjs",
-    "parse:jsm": "python scripts/parse-jsm.py && python scripts/add-missing-jsm.py && python scripts/apply-jsm-answers.py",
-    "parse:patterns": "python scripts/generate-patterns.py"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.1.0",

@@ -27,6 +27,8 @@ export interface Question {
   options: QuestionOption[];
   course?: CourseId;
   sourceNum?: number;
+  /** Paths under public/, e.g. "jsm-figures/q41.png" or A/B/C array */
+  figure?: string | string[];
   /** Official answer key missing — check shows selection only */
   correctUnknown?: boolean;
 }
@@ -44,10 +46,10 @@ export const COURSES: CourseMeta[] = [
   {
     id: 'react',
     title: 'React Interview',
-    subtitle: 'Pytania rekrutacyjne z React (Q&A + test A/B/C)',
+    subtitle: 'Pytania rekrutacyjne z React — wybierz kategorię',
     icon: '⚛️',
     accent: '#0d47a1',
-    requiresScope: false,
+    requiresScope: true,
   },
   {
     id: 'patterns',
